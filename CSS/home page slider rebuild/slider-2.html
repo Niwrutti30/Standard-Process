@@ -1,0 +1,512 @@
+<section class="full-width-screen">
+  <div id="i4g1" class="bg-beige">
+    <div class="sp-container-wrapper">
+      <div class="hs hs-right-content">
+        <input type="radio" name="pslide" id="ps1" checked class="hs-radio"/>
+        <input type="radio" name="pslide" id="ps2" class="hs-radio"/>
+        <input type="radio" name="pslide" id="ps3" class="hs-radio"/>
+        <div class="hs-track">
+          <!-- Product Slide 1 -->
+          <div class="hs-slide">
+            <img src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/53875/6abbb53a081cc878741681-homepage-product-slider-image-1.png" alt="SP Red Food Product" fetchpriority="high" class="hs-img"/>
+            <a href="/products/sp-red-food" tabindex="-1" aria-hidden="true" class="hs-slide-link"></a>
+            <div class="hs-inner">
+              <div class="hs-content-box">
+                <h2 class="hs-title font-ivy-presto-headline">SP
+                  <sup class="hs-sup">®</sup> Red Food
+                </h2>
+                <p class="hs-copy">Supports muscle, metabolic, and cardiovascular health across a range of ages and activity levels, promoting overall well-being and healthy aging.*
+                </p>
+                <a href="/products/sp-red-food" class="hs-cta lite-g">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product Slide 2 -->
+          <div class="hs-slide">
+            <img src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/53876/6abbb55769bdf785222243-spanish-black-radish.png" alt="Spanish black radish" loading="lazy" class="hs-img"/>
+            <a href="/products/spanish-black-radish" tabindex="-1" aria-hidden="true" class="hs-slide-link"></a>
+            <div class="hs-inner">
+              <div class="hs-content-box">
+                <h2 class="hs-title font-ivy-presto-headline sbr-white">Spanish Black Radish
+                </h2>
+                <p class="hs-copy">Designed to support liver health with daily use,
+                  and support toxin elimination with acute use.*
+                </p>
+                <a href="/products/spanish-black-radish" class="hs-cta">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product Slide 3 -->
+          <div class="hs-slide">
+            <img src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/53877/6abbb5616f8c4910872195-possible-peanut-butter-bar.png" alt="Peanut butter bar" loading="lazy" class="hs-img possible"/>
+            <a href="/products/possible-snack-bar" tabindex="-1" aria-hidden="true" class="hs-slide-link"></a>
+            <div class="hs-inner">
+              <div class="hs-content-box">
+                <h2 class="hs-title">
+                  <strong>FLAVOR YOU’LL LOVE</strong>
+                </h2>
+                <h2 class="hs-title">
+                  <strong>INGREDIENTS YOU CAN TRUST</strong>
+                </h2>
+                <a href="/products/possible-snack-bar" class="hs-cta">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <label for="ps3" aria-label="Previous slide" class="hs-arrow hs-prev p1"></label>
+        <label for="ps2" aria-label="Next slide" class="hs-arrow hs-next n1"></label>
+        <label for="ps1" aria-label="Previous slide" class="hs-arrow hs-prev p2"></label>
+        <label for="ps3" aria-label="Next slide" class="hs-arrow hs-next n2"></label>
+        <label for="ps2" aria-label="Previous slide" class="hs-arrow hs-prev p3"></label>
+        <label for="ps1" aria-label="Next slide" class="hs-arrow hs-next n3"></label>
+        <!-- Navigation Dots -->
+        <nav class="hs-dots">
+          <label for="ps1" aria-label="Go to slide 1" class="hs-dot"></label>
+          <label for="ps2" aria-label="Go to slide 2" class="hs-dot"></label>
+          <label for="ps3" aria-label="Go to slide 3" class="hs-dot"></label>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<style>.bg-beige{
+  background-color:#F1EFE6;
+  padding:40px 20px 60px;
+  }
+  .hs{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    max-width:1540px;
+    height:360px;
+    min-height:360px;
+    background:#00573D;
+    border-radius:20px;
+    margin:0 auto;
+  }
+  .hs *{
+    box-sizing:border-box;
+  }
+  .hs-radio{
+    position:absolute;
+    width:1px;
+    height:1px;
+    opacity:0;
+  }
+  .hs-track{
+    position:absolute;
+    inset:0;
+  }
+  .lite-g{
+    background:#A0E870;
+  }
+  .hs-sup{
+    font-size:0.5em;
+    vertical-align:super;
+  }
+  .hs-slide{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    display:flex;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.7s ease, visibility 0s 0.7s;
+  }
+  #ps1:checked ~ .hs-track .hs-slide:nth-child(1), #ps2:checked ~ .hs-track .hs-slide:nth-child(2), #ps3:checked ~ .hs-track .hs-slide:nth-child(3){
+    opacity:1;
+    visibility:visible;
+    z-index:1;
+    transition:opacity 0.7s ease;
+  }
+  .hs-img{
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .hs-inner{
+    position:static;
+    width:100%;
+    max-width:850px;
+    margin:0 auto;
+    padding:40px 20px 20px;
+  }
+  .hs-title{
+    margin:0 0 30px;
+    max-width:600px;
+    color:#A0E870;
+    line-height:1.1;
+    font-weight:400;
+    letter-spacing:-0.5px;
+    font-size:34px;
+  }
+  .hs-copy{
+    margin:0 0 20px !important;
+    max-width:52ch;
+    color:#F4F3EC;
+    line-height:1.5;
+    font-size:15px;
+  }
+  /* Full-slide link sits under the content; the button stays above it with its own hover */
+  .hs-slide-link{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    /* hide any text the CMS editor inserts into this empty link (e.g. "Link") */
+    font-size:0 !important;
+    line-height:0 !important;
+    color:transparent !important;
+    text-decoration:none !important;
+    overflow:hidden;
+  }
+  .hs-cta{
+    position:relative;
+    z-index:1;
+    display:inline-block;
+    padding:10px 38px;
+    border-radius:30px;
+    background:#A0E870;
+    color:#00573D;
+    font-weight:700;
+    font-size:14px;
+    text-decoration:none;
+    transition:background 0.2s ease, transform 0.2s ease;
+    box-shadow:none;
+  }
+  .hs-cta:hover{
+    background:#fff;
+    color:#00573D;
+  }
+  .hs-cta:focus-visible{
+    background:#fff;
+    color:#00573D;
+  }
+  .hs-arrow{
+    position:absolute;
+    top:50%;
+    z-index:6;
+    display:none;
+    width:40px;
+    height:40px;
+    transform:translateY(-50%);
+    border:1px solid rgba(160, 232, 112, 0.55);
+    background:rgba(0, 45, 31, 0.45);
+    backdrop-filter:blur(2px);
+    border-radius:4px;
+    cursor:pointer;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+    transition:background 0.2s ease, border-color 0.2s ease;
+  }
+  #ps1:checked ~ .p1, #ps1:checked ~ .n1, #ps2:checked ~ .p2, #ps2:checked ~ .n2, #ps3:checked ~ .p3, #ps3:checked ~ .n3{
+    display:block;
+  }
+  .hs-prev{
+    left:max(30px, calc(50% - 530px));
+  }
+  .hs-next{
+    right:max(30px, calc(50% - 530px));
+  }
+  .hs-arrow:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:8px;
+    height:8px;
+    border-top:2px solid #A0E870;
+    border-right:2px solid #A0E870;
+    transform:translate(-40%, -50%) rotate(-135deg);
+  }
+  .hs-next:before{
+    transform:translate(-60%, -50%) rotate(45deg);
+  }
+  .hs-arrow:hover{
+    background:#A0E870;
+    border-color:#A0E870;
+  }
+  .hs-arrow:active{
+    background:#A0E870;
+    border-color:#A0E870;
+  }
+  .hs-arrow:hover:before, .hs-arrow:active:before{
+    border-color:#00573D;
+  }
+  .hs-dots{
+    position:absolute;
+    left:max(24px, calc(50% - 405px));
+    bottom:24px;
+    z-index:5;
+    display:flex;
+    gap:7px;
+    pointer-events:none;
+  }
+  .hs-dot{
+    position:relative;
+    width:28px;
+    height:2px;
+    background:rgba(244, 243, 236, 0.4);
+    cursor:pointer;
+    pointer-events:auto;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+    transition:background 0.25s ease;
+    border-radius:2px;
+  }
+  .hs-dot:before{
+    content:'';
+    position:absolute;
+    left:0;
+    right:0;
+    top:-12px;
+    bottom:-12px;
+  }
+  .hs-dot:hover{
+    background:rgba(244, 243, 236, 0.75);
+  }
+  #ps1:checked ~ .hs-dots :nth-child(1), #ps2:checked ~ .hs-dots :nth-child(2), #ps3:checked ~ .hs-dots :nth-child(3){
+    background:#A0E870;
+  }
+  #ps1:focus-visible ~ .hs-dots :nth-child(1), #ps2:focus-visible ~ .hs-dots :nth-child(2), #ps3:focus-visible ~ .hs-dots :nth-child(3){
+    outline:2px solid #A0E870;
+    outline-offset:4px;
+  }
+  .hs-right-content .hs-inner{
+    max-width:910px;
+    margin:0 auto;
+    display:flex;
+    justify-content:flex-end;
+  }
+  .hs-right-content .hs-content-box{
+    max-width:350px;
+    width:100%;
+  }
+  .hs-right-content .hs-title, .hs-right-content .hs-copy{
+    color:#A0E870;
+  }
+  .hs-right-content .hs-dots{
+    left:calc(50% + 85px);
+  }
+  .hs-right-content .hs-slide:nth-child(2) .hs-title, .hs-right-content .hs-slide:nth-child(2) .hs-copy{
+    color:#01573D;
+  }
+  .hs-right-content .hs-slide:nth-child(2) .hs-cta{
+    background:#01573D;
+    color:#A0E870;
+  }
+  .hs-right-content .hs-slide:nth-child(2) .hs-cta:hover, .hs-right-content .hs-slide:nth-child(2) .hs-cta:focus-visible{
+    background:#fff;
+    color:#01573D;
+  }
+  #ps2:checked ~ .hs-dots .hs-dot{
+    background:rgba(1, 87, 61, 0.35);
+  }
+  #ps2:checked ~ .hs-dots .hs-dot:hover{
+    background:rgba(1, 87, 61, 0.7);
+  }
+  #ps2:checked ~ .hs-dots .hs-dot:nth-child(2){
+    background:#01573D;
+  }
+  #ps2:focus-visible ~ .hs-dots :nth-child(2){
+    outline-color:#01573D;
+  }
+  .hs-right-content .hs-slide:nth-child(3) .hs-title, .hs-right-content .hs-slide:nth-child(3) .hs-copy{
+    color:#F1EFE6;
+  }
+  .hs-right-content .hs-slide:nth-child(3) .hs-cta{
+    background:#000;
+    color:#fff;
+  }
+  .hs-right-content .hs-slide:nth-child(3) .hs-cta:hover, .hs-right-content .hs-slide:nth-child(3) .hs-cta:focus-visible{
+    background:#fff;
+    color:#000;
+  }
+  #ps3:checked ~ .hs-dots .hs-dot{
+    background:rgba(0, 0, 0, 0.35);
+  }
+  #ps3:checked ~ .hs-dots .hs-dot:hover{
+    background:rgba(0, 0, 0, 0.7);
+  }
+  #ps3:checked ~ .hs-dots .hs-dot:nth-child(3){
+    background:#000;
+  }
+  #ps3:focus-visible ~ .hs-dots :nth-child(3){
+    outline-color:#000;
+  }
+  #ps3:checked ~ .hs-arrow{
+    border-color:#000;
+    background:transparent;
+  }
+  #ps3:checked ~ .hs-arrow:before{
+    border-color:#000;
+  }
+  #ps3:checked ~ .hs-arrow:hover, #ps3:checked ~ .hs-arrow:active{
+    background:#000;
+    border-color:#000;
+  }
+  #ps3:checked ~ .hs-arrow:hover:before, #ps3:checked ~ .hs-arrow:active:before{
+    border-color:#fff;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hs-slide{
+      transition:none;
+    }
+  }
+  @media (max-width: 1200px){
+    .hs-inner, .hs-right-content .hs-inner{
+      max-width:100%;
+      padding-left:85px;
+      padding-right:85px;
+    }
+    .hs-prev{
+      left:24px;
+    }
+    .hs-next{
+      right:24px;
+    }
+    .hs-dots{
+      left:85px;
+    }
+    .hs-right-content .hs-dots{
+      left:calc(100% - 435px);
+    }
+  }
+  @media (max-width: 900px){
+    .hs{
+      height:auto;
+      min-height:320px;
+    }
+    .hs-inner{
+      padding:28px 24px 84px;
+    }
+    .hs-right-content .hs-inner{
+      padding:28px 24px 40px;
+      justify-content:flex-end;
+    }
+    .hs-right-content .hs-slide::after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:rgba(0, 0, 0, 0.35);
+      z-index:-1;
+      pointer-events:none;
+    }
+    .hs-right-content .hs-img{
+      object-position:29%;
+    }
+    .hs-right-content .hs-img.possible{
+      object-position:72%;
+    }
+    .hs-right-content .hs-slide:nth-child(2) .hs-title, .hs-right-content .hs-slide:nth-child(2) .hs-copy{
+      color:#fff;
+    }
+    .hs-title{
+      font-size:28px;
+      max-width:272px;
+    }
+    .hs-dots, .hs-right-content .hs-dots{
+      left:auto;
+      right:24px;
+      bottom:37px;
+    }
+    .hs-arrow{
+      top:auto;
+      bottom:18px;
+      width:40px;
+      height:40px;
+      transform:none;
+    }
+    .hs-prev{
+      left:24px;
+      right:auto;
+    }
+    .hs-next{
+      left:72px;
+      right:auto;
+    }
+  }
+  @media (max-width: 600px){
+    .bg-beige{
+      padding:25px 12px 40px;
+    }
+    .hs{
+      height:auto;
+      min-height:290px;
+      border-radius:12px;
+    }
+    .hs-inner, .hs-right-content .hs-inner{
+      max-width:100%;
+      padding:24px 20px 30px;
+      justify-content:left;
+    }
+    .hs-title{
+      font-size:24px;
+      max-width:100%;
+      margin-bottom:20px;
+    }
+    .hs-copy{
+      font-size:14px;
+    }
+    .hs-cta{
+      padding:10px 28px;
+    }
+    .hs-right-content .hs-img{
+      object-position:100%;
+    }
+    .hs-right-content .hs-img.possible{
+      object-position:100%;
+    }
+    .hs-dots, .hs-right-content .hs-dots{
+      left:auto;
+      right:20px;
+      bottom:33px;
+    }
+    .hs-dot{
+      width:25px;
+    }
+    .hs-arrow{
+      width:36px;
+      height:36px;
+      bottom:16px;
+    }
+    .hs-prev{
+      left:20px;
+    }
+    .hs-next{
+      left:64px;
+    }
+    .hs-img{
+      object-position:2%;
+    }
+  }
+  @media (max-width: 480px){
+    .hs-copy{
+      margin-bottom:10px !important;
+    }
+    .hs-title{
+      margin-bottom:10px !important;
+    }
+    .hs-inner, .hs-right-content .hs-inner{
+      max-width:100%;
+      padding:0px 20px 30px;
+    }
+  }
+  @media (max-width: 400px){
+    .hs{
+      min-height:260px;
+    }
+    .hs-title{
+      font-size:22px;
+    }
+    .hs-inner{
+      padding-left:16px;
+      padding-right:16px;
+    }
+  }
+</style>

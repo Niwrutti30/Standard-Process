@@ -1,0 +1,159 @@
+<section class="testimonial-flip-section flip-cards ">
+  <div class="sp-container-wrapper">
+    <div class="testimonial-flip-grid Center-Programs">
+      <!-- Card 1 -->
+      <div class="testimonial-flip-item">
+        <div tabindex="0" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/9225/69ba91398fc84622303035-HEY_6905.png"
+                alt="Heather testimonial" />
+            </div>
+            <div class="flip-card-back">
+              <p>State-of-the-art equipment conducts innovative research, including our work in nutrigenomics,
+                epigenetics and the complete analytical profiling of natural products and plants to define their active
+                components and impact on targeted health conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-name whole-test">
+          Discovery Lab
+
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="testimonial-flip-item">
+        <div tabindex="0" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/9226/69ba916a0adda452155226-HEY_6588.png"
+                alt="Hailey testimonial" />
+            </div>
+            <div class="flip-card-back">
+              <p>Collaboration with leading research universities and integrative and functional health care
+                practitioners.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-name whole-test">
+          Clinical Research
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="testimonial-flip-item">
+        <div tabindex="0" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/9227/69ba917309d60412524809-Dr.-Brandon-Metzger-in-Media-Education-Room.png"
+                alt="Janelle testimonial" />
+            </div>
+            <div class="flip-card-back">
+              <p>Professional media and learning center that provides advanced educational tools and capabilities to
+                enhance practitioner education and training.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-name whole-test">
+          Education
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="testimonial-flip-item ">
+        <div tabindex="0" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/9228/69ba917f30ffa433835246-Inside-Nutrition-Kitchen.png"
+                alt="Janelle testimonial" />
+            </div>
+            <div class="flip-card-back">
+              <p>Allows people to better understand and adapt whole food nutrition into their daily lifestyles,
+                providing a healthier way of preparing food.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-name whole-test">
+          Science Kitchen
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="care-practitioners">
+
+    <a href="#" class="btn sp-prod-links">Learn More</a>
+  </div>
+</section>
+<style>
+    /* ── Flip Cards Section ── */
+
+.testimonial-flip-grid.Center-Programs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  padding: 60px 20px 0 20px;
+  justify-items: center;
+}
+
+.testimonial-flip-section.flip-cards .flip-card {
+  aspect-ratio: 4/5;
+}
+
+.testimonial-flip-section.flip-cards .flip-card-front,
+.testimonial-flip-section.flip-cards .flip-card-back {
+  border-radius: 4px;
+}
+
+.testimonial-name.whole-test {
+  margin-top: 40px !important;
+}
+
+
+/* ── Responsive ── */
+
+/* 1024px */
+@media (max-width:1024px) {
+  .testimonial-flip-grid.Center-Programs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .testimonial-name.whole-test {
+    margin-top: 20px !important;
+  }
+
+  .Center-Programs .testimonial-flip-item:last-child {
+    justify-self: center;
+    grid-column: 2;
+  }
+}
+
+/* 768px */
+@media (max-width:768px) {
+  .testimonial-flip-grid.Center-Programs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 40px 15px;
+  }
+}
+
+/* 480px */
+@media (max-width:480px) {
+  .testimonial-flip-grid.Center-Programs {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+    padding: 30px 15px;
+  }
+
+  .Center-Programs .testimonial-flip-item:last-child {
+    grid-column: auto;
+    justify-self: auto;
+  }
+}
+</style>

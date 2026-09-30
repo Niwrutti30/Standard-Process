@@ -1,0 +1,38 @@
+/* ================================
+   Global Font
+================================ */
+
+:root { --global-font-family: "Georgia", "Helvetica", Arial, sans-serif; }
+
+html, body { font-family: var(--global-font-family); }
+
+/* Force inheritance */
+h1, h2, h3, h4, h5, h6, p, span, a, li, button, input, textarea, label { font-family: inherit; }
+
+/* Main Page Content Top Padding */
+section.page-content {padding-top: 0;}
+
+/* Scroll Top Button */
+.scroll-top--bottom-left {left: 95%;}
+
+/* Accordian CSS */
+button.accordion-group__trigger {text-align: left;}
+
+/* Responsive */
+@media screen and (max-width:1151px) {
+.scroll-top--bottom-left {left: 92%;}    
+}
+
+@media screen and (max-width:799px) {
+button.accordion-group__trigger {align-items: unset;}  
+button.accordion-group__trigger svg.theme-icon {margin-top: 2px;} 
+}
+
+@media screen and (max-width:767px) {
+.scroll-top--bottom-left {left: 88%;} 
+.oro-tabs__head ul.nav.nav-tabs li.nav-item:first-child {padding-left: 50px;}   
+}
+
+@media screen and (max-width:479px) {
+.scroll-top--bottom-left {left: 85%;}    
+}

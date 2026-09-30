@@ -1,0 +1,162 @@
+/* font-family */
+
+p,h1,h2,h3,h5,h6,a,span,label,h4{font-family:"Owners Text", sans-serif;}
+.ivypresto{font-family:"ivypresto-headline";}
+.text-sans{font-size:25px;line-height:1.6;}
+
+/* ===== TOP NAV BAR ===== */
+.top-nav-bar{width:100%;background-color:#00573D;}
+.top-nav-inner{max-width:1200px;margin:0 auto;height:50px;padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:80px;}
+
+/* LINKS */
+.top-nav-link{color:#ffffff;font-size:20px;font-weight:500;text-decoration:none;letter-spacing:0.3px;transition:opacity 0.3s ease;}
+.top-nav-link:hover{opacity:0.7;}
+
+/* 1. Global Resets & Layout */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background-color:#F1EFE6;color:#00573D;}
+.container{max-width:1540px;width:100%;margin:0 auto;padding:0 40px;}
+.responsive-img{max-width:100%;height:auto;display:block;}
+.text-center{text-align:center;}
+
+/* 2. Typography */
+.text-dark-green{color:#00573D;}
+.text-serif{font-weight:500;}
+
+/* .text-sans{font-size:18px;line-height:1.6;} */
+h2,.large-quote{font-size:60px;font-weight:500;line-height:1.2;text-align:center;margin:0 auto;max-width:1354px;}
+
+/* 3. Section Spacing & Column Layouts */
+.section-space{margin:60px 0;}
+.two-col{display:flex;align-items:center;justify-content:center;gap:80px;}
+.flex-1{flex:1;display:flex;flex-direction:column;justify-content:center;}
+.mw-320{text-align:left;width:62%;}
+.mw-850{max-width:1540px;margin:0 auto!important;text-align:left;}
+.mw-950{max-width:1540px;margin:0 auto!important;text-align:left;}
+
+/* 4. Background Covers & Hero Titles */
+.bg-cover{background-size:cover;background-position:center;background-repeat:no-repeat;width:100%;height:470px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+.hero-title{color:#A0E870;line-height:1.1;font-weight:500;text-align:center;margin:0;}
+h1.hero-title-main{font-size:80px;letter-spacing:-1px;max-width:774px;margin:0 auto;}
+h2.hero-title-lg{font-size:80px;margin-top:0;max-width:878px;margin:0 auto;}
+h2.hero-title-md{font-size:80px;margin-top:0;margin-bottom:30px;max-width:1067px;margin:0 auto;position:relative;z-index:1;}
+.hero-section{background-image:url('https://standardprocesscom.corewebdna.com/cdna-api/files/webix/direct?id=10922');}
+.soil-hero{background-image:url('https://standardprocesscom.corewebdna.com/cdna-api/files/webix/direct?id=10923');position:relative;}
+.banner-no-text{background-image:url('https://standardprocesscom.corewebdna.com/files/VWO%20Files%20-%20ReBrand/systems%20biology.png');padding:0;}
+.future-hero{background-image:url('https://standardprocesscom.corewebdna.com/cdna-api/files/webix/direct?id=10924');min-height:570px;position:relative;}
+.future-hero:before{content:'';position:absolute;width:100%;height:100%;background:rgb(0 0 0 / 16%);}
+.soil-hero:before{content:'';position:absolute;width:100%;height:100%;background:rgb(0 0 0 / 16%);}
+
+/* 5. Buttons */
+.btn-primary{display:inline-block;margin-top:20px;background-color:#a0e870;color:#00573d;font-size:16px;font-weight:600;padding:15px 35px;border-radius:30px;text-decoration:none;}
+.read-paper{display:inline-block;margin-top:1.1rem;padding:0.55rem 1.6rem;background:#a0e870;color:#00573D;font-weight:600;font-size:16px;border-radius:24px;text-decoration:none;letter-spacing:0.01em;transition:background 0.2s ease, transform 0.15s ease;z-index:1;position:relative;}
+.read-paper:hover{background:#a0e870;transform:translateY(-1px);}
+a.read-paper:hover{color:#A0E870;background:#00573d;}
+
+/* Back to top */
+html{scroll-behavior:smooth;}
+.back-to-top{display:flex;gap:12px;align-items:center;justify-content:center;margin:50px 0;text-decoration:none;color:#0c5843;font-weight:700;transition:color 0.18s ease;}
+.back-to-top:hover{color:#016c36;}
+.back-to-top-text{display:inline-block;line-height:1;letter-spacing:0.6px;}
+
+/* Circle that holds the icon */
+.back-to-top-circle{width:42px;height:42px;background-color:#00573D;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:transform 0.18s ease, background-color 0.18s ease;color:#fff;}
+
+/* Hover effect on circle */
+.back-to-top:hover .back-to-top-circle{transform:translateY(-3px);background-color:#85ac34;}
+
+/* SVG sizing and stroke color follow current layout */
+.chevron-svg{width:30px;height:30px;display:block;}
+
+/* slider css */
+.slider-wrap{position:relative;width:100%;overflow:hidden;}
+
+/* hide radios */
+#s1,#s2,#s3{display:none;}
+
+/* hide all slides */
+.slider-wrap .slide{display:none;}
+
+/* show active slide */
+#s1:checked~.slide:nth-of-type(1),#s2:checked~.slide:nth-of-type(2),#s3:checked~.slide:nth-of-type(3){display:block;}
+
+/* arrows base style */
+.arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.8);color:#00573d;font-size:32px;width:40px;height:40px;border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;z-index:10;}
+
+/* arrow positions */
+.arrow-left{left:10px;}
+.arrow-right{right:10px;}
+
+/* show arrows based on slide */
+#s1:checked~.a1{display:flex;}
+#s2:checked~.a2{display:flex;}
+#s3:checked~.a3{display:flex;}
+.tm{font-size:16px;vertical-align:baseline;position:relative;top:3px;left:-1px;}
+.flex-1.right-p{align-items:flex-end;}
+
+/* 6. Breakpoints: Tab (1151px) */
+@media (max-width: 1440px){
+.mw-320{text-align:left;width:68%;}
+}
+@media (max-width: 1326px){
+.mw-320{text-align:left;width:75%;}
+}
+@media (max-width: 1151px){
+.section-space{margin:40px 0 0 0;}
+.bg-cover{height:370px;}
+.two-col{flex-direction:column;gap:20px;}
+.flex-1{align-items:center;}
+.mobile-order-first{order:-1;}
+.mw-320{text-align:center;margin-bottom:20px;width:75%;}
+h1.hero-title-main{font-size:72px;max-width:610px;}
+h2.hero-title-lg{font-size:72px;}
+h2.hero-title-md{font-size:64px;}
+h2,.large-quote{font-size:52px;margin:0 auto 30px auto;}
+.flex-1.right-p{align-items:center;}
+.text-sans{font-size:22px;}
+}
+@media (max-width: 959px){
+h1.hero-title-main{font-size:60px;max-width:575px;}
+h2,.large-quote{font-size:46px;margin:0 auto 30px auto;}
+}
+@media (max-width: 992px){
+.top-nav-inner{height:40px;gap:40px;}
+.top-nav-link{font-size:18px;}
+}
+
+/* 7. Breakpoints: Mobile (767px) */
+@media (max-width: 767px){
+.section-space{margin:30px 0;}
+.bg-cover{height:290px;}
+h2,.large-quote{font-size:38px;margin:0 auto;}
+h2.hero-title-lg,h2.hero-title-md{font-size:42px;margin-top:0;max-width:480px;}
+.btn-primary{padding:12px 20px;font-size:15px;width:100%;max-width:max-content;line-height:1.4;}
+.container{padding:0 20px;}
+.back-to-top{margin-bottom:30px;margin-top:30px;}
+.text-sans{font-size:18px;}
+.mw-320{width:100%;}
+}
+@media (max-width: 600px){
+.top-nav-inner{height:auto;flex-direction:column;gap:12px;padding:12px 16px;}
+.top-nav-link{font-size:16px;}
+}
+@media (max-width: 599px){
+h1.hero-title-main{font-size:42px;max-width:395px;}
+}
+@media (max-width: 479px){
+.btn-primary{font-size:12px;}
+}
+@media (max-width: 413px){
+h2,.large-quote{font-size:34px;margin:0 auto 30px auto;}
+}
+
+/* 8. Breakpoints: Small Mobile (400px) */
+@media (max-width: 400px){
+h2.hero-title-lg,h2.hero-title-md{font-size:35.2px;}
+}
+@media (max-width: 389px){
+h1.hero-title-main{font-size:36px;}
+}
+@media (max-width: 359px){
+.btn-primary{padding:12px 10px;}
+}

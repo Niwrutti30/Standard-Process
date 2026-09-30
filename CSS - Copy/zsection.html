@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exact Section Recreation</title>
+  <style>
+    :root {
+      --mustard: #c3882c;
+      --green: #006847;
+      --paper: #ffffff;
+      --grey: #f3f1ee;
+      --text: #4a4a4a;
+      --muted: #646464;
+      --line-gold: rgba(146, 97, 22, 0.22);
+      --line-grey: rgba(0, 0, 0, 0.28);
+      --shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: #fcfbf8;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .product-image {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 440 / 370;
+      max-height: 70vh;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .product-image[loading="lazy"] {
+      opacity: 1;
+    }
+
+    .section-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 1540px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section-inner {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      min-height: 794px;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .stage {
+      position: relative;
+      width: 1280px;
+      max-width: 100%;
+      min-height: 820px;
+      margin: 0 auto;
+    }
+
+    .top-panel {
+      position: absolute;
+      top: 3px;
+      left: 240px;
+      width: 877px;
+      height: 430px;
+      background: var(--mustard);
+      color: #fff;
+      padding: 1.5rem;
+      clip-path: polygon(0 0, 94% 0, 100% 14.5%, 100% 100%, 0 100%);
+      z-index: 1;
+    }
+
+    .top-content {
+      position: relative;
+      z-index: 1000;
+      width: 100%;
+      padding: 0;
+      margin-left: 31px;
+      margin-top: 22px;
+    }
+
+    .top-content h1 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      color: #fff;
+      max-width: 75%;
+    }
+
+    .top-content p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.52;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.96);
+      max-width: 75%;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      min-width: 202px;
+      height: 44px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 104, 71, 0.15);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .button-white {
+      color: var(--green);
+      background: #fff;
+      position: relative;
+      z-index: 4;
+    }
+
+    .button-green {
+      color: #fff;
+      background: var(--green);
+      min-width: 110px;
+      height: 42px;
+      margin-top: 28px;
+      font-size: 13px;
+    }
+
+    .button svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 auto;
+    }
+
+    .bottom-panel {
+      position: absolute;
+      top: 430px;
+      left: 605px;
+      width: 522px;
+      min-height: 413px;
+      padding: 38px 42px 40px 40px;
+      background: transparent;
+      z-index: 0;
+    }
+
+    .bottom-panel h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.22;
+      font-weight: 600;
+      color: #4b4b4b;
+    }
+
+    .bottom-panel p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.50;
+      color: #5d5d5d;
+    }
+
+    .image-block {
+      position: absolute;
+      top: 370px;
+      left: 166px;
+      width: 438px;
+      padding: 0;
+      border: 0px solid rgba(0, 0, 0, 37.48);
+      box-shadow: var(--shadow);
+      z-index: 3;
+    }
+
+    .art {
+      position: absolute;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .art svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .art img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .art-right {
+      top: -208px;
+      right: -85px;
+      width: 508px;
+      height: 990px;
+      opacity: 2;
+      transform: rotate(1deg);
+      z-index: 2;
+    }
+
+    .art-right::after {
+      content: "";
+      position: absolute;
+      top: 62px;
+      right: -82px;
+      width: 154px;
+      height: 286px;
+      background: url("SP_Oats_ink.png") center/contain no-repeat;
+      opacity: 0.34;
+      transform: scaleX(-1);
+    }
+
+    .art-left {
+      left: -212px;
+      bottom: -93px;
+      width: 1000px;
+      height: 820px;
+      opacity: 30;
+      transform: rotate(-14deg);
+      z-index: inherit
+    }
+
+    .line {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.25;
+    }
+
+    .gold {
+      stroke: var(--line-gold);
+    }
+
+    .grey {
+      stroke: var(--line-grey);
+    }
+
+    .top-panel .top-content p {
+      max-width: 500px;
+    }
+
+    @media (max-width: 1279px) {
+      .top-panel .top-content h1 {
+        max-width: 560px;
+      }
+
+      .top-panel .top-content p {
+        max-width: 565px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .section-inner {
+        min-height: 0;
+        background: #fcfbf8;
+      }
+
+      .stage {
+        width: 100%;
+        min-height: 0;
+        padding: 36px 0 54px;
+        display: grid;
+        gap: 0;
+      }
+
+      .top-panel,
+      .bottom-panel,
+      .art {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+
+      .top-panel {
+        width: 780px;
+        max-width: calc(100% - 120px);
+        margin: 0 auto;
+        height: auto;
+        min-height: 520px;
+        padding: 2.5rem 2.5rem 10rem 2.5rem;
+        clip-path: polygon(0 0, 94% 0, 100% 11%, 100% 100%, 0 100%);
+      }
+
+      .top-content {
+        width: 100%;
+        margin: 0 0 0 20px;
+        padding: 0;
+        text-align: left;
+      }
+
+      .top-content h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 1.28;
+      }
+
+      .top-content p {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.45;
+      }
+
+      .button-white {
+        width: auto;
+        min-width: 280px;
+        display: inline-flex;
+      }
+
+      .image-block {
+        position: absolute;
+        top: 380px;
+        left: 50%;
+        width: 620px;
+        max-width: calc(100% - 160px);
+        margin: 0;
+        transform: translateX(-50%);
+      }
+
+      .bottom-panel {
+        width: 100%;
+        min-height: 0;
+        margin-top: 215px;
+        padding: 0 40px 42px;
+        background: transparent;
+        text-align: center;
+      }
+
+      .bottom-panel h2 {
+        max-width: 760px;
+        margin: 0 auto 14px;
+        font-size: 28px;
+      }
+
+      .bottom-panel p {
+        max-width: 760px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .button-green {
+        display: inline-flex;
+        margin-top: 30px;
+      }
+
+      .art-right {
+        position: absolute;
+        top: -208px;
+        right: -85px;
+        width: 508px;
+        height: 990px;
+        opacity: 2;
+        transform: rotate(1deg);
+        z-index: 2;
+      }
+
+      .art-left {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .stage {
+        min-height: 0;
+        padding: 0 0 40px;
+      }
+
+      .top-panel,
+      .bottom-panel,
+      .art {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+
+      .top-panel {
+        width: 520px;
+        max-width: calc(100% - 28px);
+        margin: 0 auto;
+        height: 420px;
+        min-height: 420px;
+        padding: 0;
+      }
+
+      .top-content {
+        display: block;
+        margin: 0;
+        padding: 24px 20px 150px;
+        max-width: none;
+        text-align: left;
+      }
+
+      .top-content h1,
+      .bottom-panel h2 {
+        font-size: 28px;
+      }
+
+      .top-content h1,
+      .top-content p {
+        max-width: 100%;
+      }
+
+      .top-content p,
+      .bottom-panel p {
+        font-size: 15px;
+      }
+
+      .button,
+      .button-green {
+        min-width: 0;
+      }
+
+      .image-block {
+        position: absolute;
+        top: 340px;
+        left: 50%;
+        width: 430px;
+        max-width: calc(100% - 32px);
+        transform: translateX(-50%);
+      }
+
+      .product-image {
+        max-height: none;
+        aspect-ratio: auto;
+        height: auto;
+      }
+
+      .bottom-panel {
+        width: 100%;
+        margin-top: 264px;
+        padding: 34px 32px 0;
+        text-align: center;
+      }
+
+      .art-right {
+        display: none;
+      }
+
+      .art-left {
+        display: none;
+      }
+
+      .bottom-panel p {
+        max-width: 470px;
+        margin: 0 auto;
+      }
+
+      .button-green {
+        display: inline-flex;
+        margin-top: 26px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .stage {
+        min-height: 0;
+        padding: 0 0 40px;
+      }
+
+      .top-panel,
+      .bottom-panel,
+      .art {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+
+      .top-panel {
+        width: 460px;
+        max-width: calc(100% - 28px);
+        margin: 0 auto;
+        height: 446px;
+        min-height: 446px;
+        padding: 0;
+      }
+
+      .top-content {
+        display: block;
+        margin: 0;
+        padding: 24px 18px 168px;
+        max-width: none;
+        text-align: left;
+      }
+
+      .top-content h1,
+      .bottom-panel h2 {
+        font-size: 28px;
+      }
+
+      .top-content p,
+      .bottom-panel p {
+        font-size: 15px;
+      }
+
+      .button,
+      .button-green {
+        min-width: 0;
+      }
+
+      .image-block {
+        position: absolute;
+        top: 356px;
+        left: 50%;
+        width: 404px;
+        max-width: calc(100% - 32px);
+        transform: translateX(-50%);
+      }
+
+      .product-image {
+        max-height: none;
+        aspect-ratio: auto;
+        height: auto;
+      }
+
+      .bottom-panel {
+        width: 100%;
+        margin-top: 280px;
+        padding: 34px 32px 0;
+        text-align: center;
+      }
+
+      .art-right {
+        display: none;
+      }
+
+      .art-left {
+        display: none;
+      }
+
+      .bottom-panel p {
+        max-width: 470px;
+        margin: 0 auto;
+      }
+
+      .button-green {
+        display: inline-flex;
+        margin-top: 26px;
+      }
+    }
+
+    @media (min-width: 365px) and (max-width: 486px) {
+      .top-panel {
+        width: 430px;
+        max-width: calc(100% - 24px);
+        height: 430px;
+        min-height: 430px;
+      }
+
+      .top-content {
+        padding: 22px 16px 150px;
+      }
+
+      .image-block {
+        top: 350px;
+        width: 382px;
+        max-width: calc(100% - 28px);
+      }
+
+      .bottom-panel {
+        margin-top: 250px;
+        padding: 28px 22px 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .button-white {
+        display: inline-flex;
+        margin-right: 0.5rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .top-panel {
+        padding: 3rem;
+      }
+
+      .top-content {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .section-inner {
+        min-height: 0;
+        background: #fcfbf8;
+      }
+
+      .stage {
+        width: 100%;
+        min-height: 0;
+        padding: 36px 0 54px;
+        display: grid;
+        gap: 0;
+      }
+
+      .top-panel,
+      .bottom-panel,
+      .art {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+
+      .top-panel {
+        width: 780px;
+        max-width: calc(100% - 120px);
+        margin: 0 auto;
+        height: auto;
+        min-height: 520px;
+        padding: 2.5rem 2.5rem 10rem 2.5rem;
+        clip-path: polygon(0 0, 94% 0, 100% 11%, 100% 100%, 0 100%);
+      }
+
+      .top-content {
+        width: 100%;
+        margin: 0 0 0 20px;
+        padding: 0;
+        text-align: left;
+      }
+
+      .top-content p {
+        max-width: 495px;
+      }
+
+      .top-content h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 1.28;
+      }
+
+      .top-content p {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.45;
+      }
+
+      .button-white {
+        width: auto;
+        min-width: 280px;
+        display: inline-flex;
+      }
+
+      .image-block {
+        position: absolute;
+        top: 380px;
+        left: 50%;
+        width: 620px;
+        max-width: calc(100% - 160px);
+        margin: 0;
+        transform: translateX(-50%);
+      }
+
+      .bottom-panel {
+        width: 100%;
+        min-height: 0;
+        margin-top: 375px;
+        padding: 0 40px 42px;
+        background: transparent;
+        text-align: center;
+      }
+
+      .bottom-panel h2 {
+        max-width: 760px;
+        margin: 0 auto 14px;
+        font-size: 28px;
+      }
+
+      .bottom-panel p {
+        max-width: 760px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .button-green {
+        display: inline-flex;
+        margin-top: 30px;
+      }
+
+      .art-right {
+        position: absolute;
+        top: -208px;
+        right: -85px;
+        width: 508px;
+        height: 990px;
+        opacity: 2;
+        transform: rotate(1deg);
+        z-index: 2;
+      }
+
+      .art-left {
+        display: none;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 474px) {
+      .top-panel {
+        width: 100%;
+        max-width: 100%;
+        height: 290px;
+        min-height: 438px;
+      }
+
+      .top-content {
+        padding: 20px 14px 168px;
+      }
+
+      .top-content h1,
+      .bottom-panel h2 {
+        font-size: 20px;
+      }
+
+      .top-content p,
+      .bottom-panel p {
+        font-size: 14px;
+        line-height: 1.45;
+      }
+
+      .button-white {
+        min-width: 0;
+      }
+
+      .image-block {
+        top: 304px;
+        width: 303px;
+        max-width: calc(100% - 24px);
+      }
+
+      .bottom-panel {
+        margin-top: 135px;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .top-panel .top-content h1 {
+        max-width: 300px;
+      }
+
+      .top-panel .top-content p {
+        max-width: 330px;
+      }
+    }
+
+    @media screen and (max-width:413px) {
+      .top-panel .top-content p {
+        max-width: 300px;
+      }
+
+      .image-block {
+        top: 335px;
+      }
+
+      .bottom-panel {
+        margin-top: 175px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 35px;
+        text-align: left;
+      }
+    }
+
+
+    @media screen and (max-width:389px) {
+      .top-panel .top-content h1 {
+        max-width: 310px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section-wrap">
+    <div class="section-inner">
+      <div class="stage">
+        <div class="top-panel">
+          <div class="top-content">
+            <h1>Whole Grains Compatible With Many Common Diets</h1>
+            <p>
+              Our high-quality, certified organic whole grains bring healthful living into the
+              kitchen. Full of vital nutrients, they provide health benefits that improve quality
+              of life. All products are certified organic and many are compatible with common
+              diets, including acid alkaline diet, Atkins diet, gluten-free
+              diet, low-carb diet, macrobiotic diet, and the Mediterranean diet.
+            </p>
+            <a class="button button-white" href="https://www.royalleeorganics.com/" target="_blank" rel="noreferrer">
+              <span>Visit Royal Lee Organics</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M10.7 2.4a1 1 0 0 0 0 2h3.48l-7 7a1 1 0 1 0 1.42 1.41l7-6.99v3.49a1 1 0 1 0 2 0V3.4a1 1 0 0 0-1-1z">
+                </path>
+                <path fill="currentColor"
+                  d="M4.6 5.4A2.6 2.6 0 0 0 2 8v7.4A2.6 2.6 0 0 0 4.6 18h7.4a2.6 2.6 0 0 0 2.6-2.6V10a1 1 0 1 0-2 0v5.4a.6.6 0 0 1-.6.6H4.6a.6.6 0 0 1-.6-.6V8a.6.6 0 0 1 .6-.6H10a1 1 0 1 0 0-2z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="art art-right" aria-hidden="true">
+          <img src="SP_Oats_ink.png" alt="">
+        </div>
+
+        <div class="image-block">
+          <img class="product-image" loading="lazy" src="Screen Shot 2020-07-16 at 2.37.37 PM@2x.png"
+            alt="Organic grain products, produce, and kitchen appliance">
+        </div>
+
+        <div class="art art-left" aria-hidden="true">
+          <img src="SP_Buckwheat_ink@2x.png" alt="">
+        </div>
+
+        <div class="bottom-panel">
+          <h2>Products Backed by Clinical Research</h2>
+          <p>
+            Our scientists verify the quality, purity, and integrity of our ingredients by running
+            up to 2,100 tests per week. Using state-of-the-art equipment,
+            the team at our Nutrition Innovation Center also conducts innovative research that helps
+            us to develop new targeted formulations as well as substantiate existing ones. We go the
+            extra step to ensure confidence in choosing Standard Process.
+          </p>
+          <a class="button button-green" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

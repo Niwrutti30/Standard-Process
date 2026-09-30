@@ -1,0 +1,216 @@
+/* font-family */
+h1,h2,h3,h5,h6{font-family:'IvyPresto Headline', 'Georgia', serif;}
+p,a,span,label,h4{font-family:"Owners Text", sans-serif;}
+
+/* ===== TOP NAV BAR ===== */
+.top-nav-bar{width:100%;background-color:#00573D;}
+.top-nav-inner{max-width:1200px;margin:0 auto;height:50px;padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:80px;}
+
+/* LINKS */
+.top-nav-link{font-family:"Owners Text", sans-serif;color:#ffffff;font-size:20px;font-weight:500;text-decoration:none;letter-spacing:0.3px;transition:opacity 0.3s ease;}
+.top-nav-link:hover{opacity:0.7;}
+.nutrition-innovation-center{background:url('//useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/dadc7c8862358877e6562bf51d7f94b3_nutiritioninnovationcente.jpeg');background-repeat:no-repeat;background-position:center center;background-size:cover;min-height:470px;display:flex;align-items:center;justify-content:center;position:relative;}
+.nutrition-innovation-center:before{content:'';position:absolute;width:100%;background:rgb(0,0,0,0.2);height:100%;}
+.inner-container-wrapper{max-width:1540px;margin:0 auto;padding:0 15px;}
+.innovation-title{max-width:680px;position:relative;}
+.innovation-title h2{font-size:80px;text-align:center;color:#a0e870;font-weight:500;line-height:1em;}
+section.new-model{background:#f1efe6;padding:80px 0;}
+.nutrition-research{max-width:1010px;margin:0 auto;text-align:center;}
+.nutrition-research h2,.disciplines-depth h2,.extend-lab-title h2{font-size:60px;color:#075c42;font-weight:500;margin-bottom:25px;}
+.nutrition-research p,.disciplines-depth p,.extend-lab-title p{color:#00573D;font-size:20px;}
+.nutrition-research p:last-child{margin:30px 0 0 0!important;}
+section.extending-science{background:#f1efe6;}
+.beyond-the-lab{display:flex;justify-content:space-between;align-items:center;padding:60px 0;}
+.beyond-the-lab .extend-lab-title{width:48%;max-width:655px;}
+.beyond-the-lab .beyond-lab-picture{width:40%;}
+.depth-disciplines{background:#f8f7f2;padding:60px 0;}
+.disciplines-depth{max-width:935px;margin:0 auto;text-align:center;}
+.speaker-profiles{display:flex;gap:80px;justify-content:center;flex-wrap:wrap;padding:80px 0 0 0;}
+.speaker-profiles .cmn-speak-bio{width:calc((100% - 340px) / 4);text-align:center;}
+.speaker-profiles .cmn-speak-bio h4{font-size:20px;color:#03593f;font-weight:600;}
+.speaker-profiles .cmn-speak-bio p{font-size:17px;line-height:16px;color:#256e57;margin-bottom:10px;}
+.examing-work{background:#a0e870;padding:80px 0;}
+.work-worth{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #559e60;padding:0 0 60px 0;}
+.examing-lft-picture{width:30%;}
+.work-worth .nic-spans{width:60%;color:#00573D;}
+.work-worth .nic-spans h2{font-size:60px;font-weight:500;margin-bottom:25px;}
+.work-worth .nic-spans p{max-width:605px;font-size:20px;}
+.counter{display:flex;column-gap:50px;margin:50px 0 0 0;}
+.counter .cmn-count a{font-size:20px;text-decoration:underline;font-weight:500;}
+.beyond-the-lab .beyond-lab-picture img,.examing-lft-picture img{width:100%;height:auto;}
+
+/* Tabs section css start */
+.research-section input[type="radio"]{position:absolute;opacity:0;pointer-events:none;}
+.tabs-wrapper{display:flex;gap:40px;max-width:1540px;margin:0 auto;padding:60px 0 0 0;}
+.content-pane{flex:0 0 58%;padding-bottom:50px;}
+.constant-title{font-size:60px;color:#00573D;margin-bottom:36px;line-height:1.15;font-weight:500;}
+.tab-content{display:none;animation:fadeUp .4s ease both;}
+a.read-paper:hover{color:#A0E870;background:#00573d;}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(12px);}
+to{opacity:1;transform:translateY(0);}
+}
+.tab-content h3{font-size:30px;font-weight:700;color:#00573d;margin-bottom:14px;}
+.tab-content p{font-size:20px;line-height:1.65;color:#00573D;max-width:710px;font-weight:400;}
+
+/* ── RIGHT: nav links (40%) ── */
+.nav-pane{flex:1;display:flex;flex-direction:column;gap:12px;padding-top:8px;}
+.nav-pane label{font-size:20px;color:#00573D;cursor:pointer;padding:8px 16px;border-radius:25px;transition:background .25s, box-shadow .25s;text-decoration:underline;text-underline-offset:3px;width:max-content;}
+.nav-pane label:hover{background:rgba(255,255,255,.35);}
+
+/* ── active state wiring ── */
+
+/* show matching content */
+#tab1:checked~.tabs-wrapper .content-pane .tab-content[data-tab="1"],#tab2:checked~.tabs-wrapper .content-pane .tab-content[data-tab="2"],#tab3:checked~.tabs-wrapper .content-pane .tab-content[data-tab="3"],#tab4:checked~.tabs-wrapper .content-pane .tab-content[data-tab="4"],#tab5:checked~.tabs-wrapper .content-pane .tab-content[data-tab="5"],#tab6:checked~.tabs-wrapper .content-pane .tab-content[data-tab="6"],#tab7:checked~.tabs-wrapper .content-pane .tab-content[data-tab="7"]{display:block;}
+
+/* highlight active label */
+#tab1:checked~.tabs-wrapper .nav-pane label[for="tab1"],#tab2:checked~.tabs-wrapper .nav-pane label[for="tab2"],#tab3:checked~.tabs-wrapper .nav-pane label[for="tab3"],#tab4:checked~.tabs-wrapper .nav-pane label[for="tab4"],#tab5:checked~.tabs-wrapper .nav-pane label[for="tab5"],#tab6:checked~.tabs-wrapper .nav-pane label[for="tab6"],#tab7:checked~.tabs-wrapper .nav-pane label[for="tab7"]{background:#ffffff;text-decoration:none;font-weight:600;}
+.research-campus{background:url('//useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/92a9d7f961133c32b8d4117f18e91d07_screenshot20170404at9.56.34pm.png');background-repeat:no-repeat;background-position:center center;background-size:cover;min-height:470px;display:flex;align-items:center;justify-content:center;text-align:center;}
+.north-carolina-campus{color:#A0E870;}
+.north-carolina-campus h2{font-size:60px;line-height:52px;font-weight:500;}
+.north-carolina-campus p{max-width:800px;padding:20px 0 0 0;font-size:20px;}
+
+/* Accordian css start */
+.accordion-wrapper{width:100%;max-width:1140px;margin:0 auto;}
+.accordion-wrapper h1{font-size:60px;color:#00573D;margin-bottom:0.4rem;letter-spacing:-0.02em;font-weight:500;}
+.accordion-wrapper>p{color:#5a6e5c;font-size:0.95rem;margin-bottom:2.2rem;font-style:italic;}
+
+/* ── Hide native checkbox ── */
+.accordion input[type="checkbox"]{display:none;}
+
+/* ── Accordion item ── */
+.accordion-item{border-bottom:1px solid #d4cfc3;}
+.accordion-item:first-child{border-top:1px solid #d4cfc3;}
+
+/* ── Label / Header ── */
+.accordion-item label{display:flex;align-items:flex-start;justify-content:space-between;gap:1.2rem;padding:1.4rem 0.6rem;cursor:pointer;transition:background 0.25s ease;border-radius:4px;}
+.accordion-item label:hover{background:rgba(26, 110, 90, 0.04);}
+.label-text{flex:1;}
+.label-text .title{font-weight:500;font-size:24px;line-height:1.4;color:#1a6e5a;transition:color 0.2s ease;font-family:'IvyPresto Headline';}
+.accordion-item label:hover .title{color:#00573D;}
+.label-meta{text-align:right;flex-shrink:0;min-width:140px;}
+.label-meta .journal{font-style:italic;font-size:0.85rem;color:#00573D;line-height:1.4;font-family:'Owners Text';}
+.label-meta .date{font-size:0.8rem;color:#00573D;margin-top:0.15rem;font-family:'Owners Text';font-style:italic;}
+
+/* ── Toggle icon ── */
+.toggle-icon{width:28px;height:28px;flex-shrink:0;border-radius:50%;border:1.5px solid #1a6e5a;display:flex;align-items:center;justify-content:center;margin-top:0.2rem;position:relative;transition:background 0.3s ease, transform 0.3s ease;}
+.toggle-icon::before,.toggle-icon::after{content:'';position:absolute;background:#00573D;border-radius:1px;transition:transform 0.3s ease, opacity 0.3s ease;}
+.toggle-icon::before{width:12px;height:1.5px;}
+.toggle-icon::after{width:1.5px;height:12px;}
+
+/* ── Content panel ── */
+.accordion-content{height:0;overflow:hidden;transition:max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),padding 0.35s ease;}
+.accordion-content .inner{padding:0 0.6rem 1.6rem 0.6rem;opacity:0;transform:translateY(-8px);transition:opacity 0.35s ease 0.1s, transform 0.35s ease 0.1s;}
+.accordion-content .inner p{line-height:1.75;color:#00573D;font-size:18px;padding:10px 0;}
+.read-paper{display:inline-block;margin-top:1.1rem;padding:0.55rem 1.6rem;background:#a0e870;color:#00573D;font-weight:600;font-size:16px;border-radius:24px;text-decoration:none;letter-spacing:0.01em;transition:background 0.2s ease, transform 0.15s ease;}
+.read-paper:hover{background:#a0e870;transform:translateY(-1px);}
+
+/* ── Checked (open) state ── */
+.accordion-item input[type="checkbox"]:checked~label .toggle-icon{background:#1a6e5a;}
+.accordion-item input[type="checkbox"]:checked~label .toggle-icon::before{background:#f0ebe1;}
+.accordion-item input[type="checkbox"]:checked~label .toggle-icon::after{transform:rotate(90deg);opacity:0;}
+.accordion-item input[type="checkbox"]:checked~.accordion-content{height:auto;}
+.accordion-item input[type="checkbox"]:checked~.accordion-content .inner{opacity:1;transform:translateY(0);}
+.research-paper-accordian{background:#f1efe6;padding:80px 0;}
+.accordion{padding:20px 0 0 0;}
+
+/* Depth Across disciplines */
+.cmn-speak-bio img{max-width:230px;margin:0 0 20px 0;height:auto;}
+@media (max-width: 1151px){
+.nutrition-innovation-center{min-height:370px;}
+.label-text .title{font-size:20px;}
+.accordion-content .inner p{font-size:16px;}
+.innovation-title h2{font-size:72px;}
+.innovation-title{max-width:625px;}
+.research-campus{min-height:370px;}
+.cmn-speak-bio img{max-width:180px;}
+.nutrition-research h2,.disciplines-depth h2,.extend-lab-title h2,.work-worth .nic-spans h2,.accordion-wrapper h1,.constant-title{font-size:52px;}
+.tabs-wrapper{gap:10px;}
+}
+@media (max-width: 992px){
+.top-nav-inner{height:40px;gap:40px;}
+.top-nav-link{font-size:18px;}
+}
+@media (max-width: 959px){
+.innovation-title{max-width:485px;}
+.innovation-title h2{font-size:60px;}
+section.new-model,.examing-work,.research-paper-accordian,.beyond-the-lab,.depth-disciplines{padding:40px 0;}
+.speaker-profiles .cmn-speak-bio{width:calc((100% - 160px) / 3);}
+.north-carolina-campus h2{font-size:42px;}
+.research-campus{min-height:370px;}
+.tabs-wrapper{flex-wrap:wrap;}
+.tabs-wrapper{flex-wrap:wrap;padding:40px 0 0 0!important;}
+.constant-title{margin-bottom:0;}
+.content-pane{flex:0 0 100%!important;padding-bottom:0;order:2;}
+nav.nav-pane{flex-direction:row!important;flex-wrap:wrap;order:1;}
+.work-worth .nic-spans h2,.accordion-wrapper h1,h2.constant-title{font-size:38px;}
+.tab-content h3{font-size:24px;}
+.cmn-speak-bio img{max-width:230px;}
+.nutrition-research h2,.disciplines-depth h2,.extend-lab-title h2,.work-worth .nic-spans h2,.accordion-wrapper h1,.constant-title{font-size:46px;}
+.nutrition-research p,.disciplines-depth p,.extend-lab-title p,.work-worth .nic-spans p,.tab-content p,.nav-pane label,.north-carolina-campus p{font-size:18px;}
+.cmn-count h2{margin-bottom:5px!important;}
+.constant-title{margin:20px 0;}
+}
+@media (max-width: 819px){
+.cmn-speak-bio img{max-width:180px;}
+.beyond-the-lab .extend-lab-title{width:50%;max-width:100%;}
+}
+@media (max-width: 767px){
+.tabs-wrapper{flex-direction:column-reverse;gap:24px;}
+.content-pane{flex:1;}
+.nav-pane{flex-direction:row;flex-wrap:wrap;gap:8px;}
+.nav-pane label{font-size:16px;padding:6px 12px;}
+.nutrition-innovation-center{min-height:300px;}
+.nutrition-research h2,.disciplines-depth h2,.extend-lab-title h2,.work-worth .nic-spans h2,.accordion-wrapper h1,.constant-title{font-size:38px;}
+.beyond-the-lab,.work-worth{flex-wrap:wrap;}
+.beyond-the-lab .extend-lab-title{width:100%;order:2;}
+.beyond-the-lab .beyond-lab-picture{width:100%;margin-bottom:20px;}
+.speaker-profiles .cmn-speak-bio{width:calc((100% - 80px) / 2);}
+.examing-lft-picture{width:100%;}
+.work-worth .nic-spans{width:100%;margin-top:20px;}
+.counter{display:flex;column-gap:50px;margin:30px 0 0 0;justify-content:center;}
+.north-carolina-campus{color:#94cf63;background:rgb(0,0,0,0.25);padding:10px;border-radius:7px;}
+.cmn-speak-bio img{max-width:210px;}
+.speaker-profiles{display:flex;gap:80px;justify-content:center;flex-wrap:wrap;padding:80px 0 0 0;}
+.north-carolina-campus h2{line-height:38px;}
+}
+@media (max-width: 600px){
+.top-nav-inner{height:auto;flex-direction:column;gap:12px;padding:12px 16px;}
+.top-nav-link{font-size:16px;}
+.label-text .title{font-size:17px;}
+.label-meta{min-width:100px;}
+.label-meta .journal{font-size:0.78rem;}
+.accordion-item label{padding:1.1rem 0.3rem;gap:0.8rem;}
+}
+@media (max-width: 599px){
+.innovation-title{max-width:355px;}
+.innovation-title h2,.work-worth .nic-spans h2,.accordion-wrapper h1{font-size:42px;}
+.speaker-profiles{padding:40px 0 0 0;gap:40px;}
+.north-carolina-campus p{padding:0 0 0 0;}
+.cmn-speak-bio img{max-width:180px;}
+}
+@media (max-width: 479px){
+.speaker-profiles .cmn-speak-bio p{line-height:20px;}
+.label-meta{min-width:unset;max-width:100px;}
+}
+@media (max-width: 424px){
+.speaker-profiles .cmn-speak-bio{width:calc((100% - 0px) / 1);}
+.cmn-speak-bio img{max-width:270px;margin:0 auto 20px 0;}
+.speaker-profiles{gap:40px;padding:40px 0 0 0;}
+}
+@media (max-width: 413px){
+.label-meta{min-width:unset;max-width:100px;}
+.nutrition-research h2,.disciplines-depth h2,.extend-lab-title h2,.work-worth .nic-spans h2,.accordion-wrapper h1,.constant-title,.nic-spans h2,h2.constant-title,.accordion-wrapper h1,.north-carolina-campus h2{font-size:34px;}
+.nutrition-research p,.disciplines-depth p,.extend-lab-title p,.work-worth .nic-spans p,.tab-content p,.north-carolina-campus p{font-size:16px;}
+.tab-content h3{font-size:20px;}
+.tabs-wrapper {padding: 20px 0 0 0 !important;}
+.work-worth {padding: 0 0 40px 0;}
+.work-worth .nic-spans h2, .nutrition-research h2, .disciplines-depth h2, .extend-lab-title h2 {margin-bottom:15px;}
+}
+@media (max-width: 389px){
+.innovation-title h2{font-size:36px!important;}
+.innovation-title{max-width:310px;}
+.north-carolina-campus h2{font-size:32px;line-height:28px;font-weight:500;}
+.counter{gap:20px;}
+.counter .cmn-count a{font-size:18px;}
+}

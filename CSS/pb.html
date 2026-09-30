@@ -1,0 +1,352 @@
+<style>
+  .Practitioner-Benefits-hero.empwoer-knowlege {
+    background-image: url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/14602/69c1225fe686a039974953-Group-603.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 470px;
+  }
+
+  .courses-grid.practitioner-cards {
+    grid-template-columns: repeat(3, 1fr) !important;
+    display: grid !important;
+  }
+
+  .sp-contact-card {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none !important;
+    transform: none !important;
+    border: none !important;
+  }
+
+  .sp-contact-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .sp-contact-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .sp-contact-body p {
+    font-size: 16px !important;
+    color: #404040;
+    line-height: 1.6;
+    margin-bottom: 20px !important;
+  }
+
+  .sp-contact-body a.btn.sp-prod-links {
+    margin-top: 0;
+  }
+   .practitioner-silder .free-course-registration.lfrt-img .lf-picture{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    height: 609px;
+    object-fit: cover !important;
+   }
+  /* .practitioner-silder .lf-picture {
+    width: 38%;
+    height: 619%;
+  } */
+
+  .benefits-link {
+    text-decoration: underline;
+    color: #6D7E44;
+  }
+
+  .clinical-research.ecom-top-bg {
+    background: #F5F5F5
+  }
+
+  .ecom-top-bg .ecom-top-text {
+    padding: 60px 55px 60px 50px;
+    width: 50%
+  }
+
+  .ecom-top-image-fill {
+    background: #fff;
+    overflow: hidden;
+    min-height: 460px
+  }
+
+  .ecom-top-image-fill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0
+  }
+
+  .ecom-bottom {
+    display: flex
+  }
+
+  .ecom-bottom .preserve-potency {
+    width: 50%;
+    padding: 45px 50px
+  }
+
+  .ecom-bottom .soil-quality-content {
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0
+  }
+
+  .ecom-card--olive {
+    background: #6D7E44 !important
+  }
+
+  .partitionar-benedites-video {
+    background-color: #00573D !important;
+    color: #fff !important;
+  }
+
+
+
+
+  .practitioner-cards .course-card {
+    padding-bottom: 20px;
+  }
+  @media(max-width:1280px) {
+      .practitioner-silder .free-course-registration.lfrt-img .lf-picture{
+
+    height: 435px;
+
+   }
+  }
+
+  @media(max-width:1024px) {
+    .courses-grid.practitioner-cards {
+      grid-template-columns: repeat(2, 1fr) !important;
+      display: grid !important;
+    }
+
+    .sp-contact-card {
+      grid-column: 1 / -1;
+    }
+
+    .sp-contact-card {
+      grid-column: span 1;
+    }
+
+    .ecom-top-image-fill {
+      background: none;
+    }
+
+    .Patient-Care .natural-health-care {
+      padding: 20px 20px 20px 40px !important;
+    }
+
+    .Practitioner-Benefits-hero .empower-wrapper h2 {
+      font-size: 35px;
+    }
+  }
+
+  @media(max-width:599px) {
+    .Practitioner-Benefits-hero .empower-wrapper h2 {
+      font-size: 26px;
+    }
+  }
+
+  @media(max-width:768px) {
+    .ecom-bottom {
+      flex-wrap: wrap
+    }
+
+    .ecom-bottom .preserve-potency {
+      width: 100%;
+      padding: 35px 25px
+    }
+
+    .ecom-top-bg .ecom-top-text {
+      padding: 30px 20px
+    }
+
+    .ecom-top-image-fill {
+      min-height: 260px
+    }
+
+    .courses-grid.practitioner-cards {
+      grid-template-columns: repeat(1, 1fr) !important;
+      display: grid !important;
+    }
+
+    .sp-contact-card {
+      grid-column: span 1;
+    }
+
+    .Patient-Care .natural-health-care {
+      order: 2;
+    }
+  }
+
+  @media screen and (max-width:959px) {
+    .ecom-top-bg .ecom-top-text {
+      padding: 40px 30px;
+      width: 100%
+    }
+
+    .ecom-top-image-fill {
+      width: 100%;
+      min-height: 320px
+    }
+  }
+
+  @media screen and (max-width:575px) {
+    .ecom-top-bg .ecom-top-text h2 {
+      font-size: 24px
+    }
+  }
+
+
+  /* Main section background + layout */
+  .scp-solutions-section.slider-section .preserve-potency.scp-solutions-layout {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* padding: 40px; */
+    box-sizing: border-box;
+    gap: 48px;
+  }
+
+  /* Left slider column */
+  .scp-solutions-section.slider-section .slider-col {
+    flex: 0 0 40%;
+    max-width: 40%;
+    box-sizing: border-box;
+  }
+
+  /* Right content column */
+  .scp-solutions-section.slider-section .content-col {
+    flex: 0 0 60%;
+    max-width: 48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Text styles */
+  .scp-solutions-section.slider-section .content-col h2,
+  .scp-solutions-section.slider-section .content-col p {
+    color: #404040;
+  }
+
+  /* Button */
+  .scp-solutions-section.slider-section .content-col .btn {
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+
+  /* Remove border radius from slider */
+  .scp-solutions-section.slider-section .oro-widget,
+  .scp-solutions-section.slider-section .oro-widget * {
+    border-radius: 0 !important;
+  }
+
+  /* Slider image */
+  .scp-solutions-section.slider-section .promo-slider__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  /* Slider text */
+  .scp-solutions-section.slider-section .promo-slider__text h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  /* Slider content positioning */
+  .img_slide_p .promo-slider__content.promo-slider__content--bottom_center {
+    width: 74%;
+    padding-top: 140px;
+  }
+
+  /* Force full height on slider chain */
+  .scp-solutions-section.slider-section .slider-col,
+  .scp-solutions-section.slider-section .img_slide_p,
+  .scp-solutions-section.slider-section .oro-widget,
+  .scp-solutions-section.slider-section .promo-slider,
+  .scp-solutions-section.slider-section .slick-list,
+  .scp-solutions-section.slider-section .slick-track,
+  .scp-solutions-section.slider-section .promo-slider__item,
+  .scp-solutions-section.slider-section .promo-slider__picture {
+    height: 100% !important;
+    align-self: center;
+  }
+
+  /* Force section height */
+  .scp-solutions-section.slider-section .preserve-potency.scp-solutions-layout {
+    min-height: 600px;
+    align-items: stretch;
+  }
+
+  /* Make image fill */
+  .scp-solutions-section.slider-section .promo-slider__picture img {
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  /* ================= RESPONSIVE ================= */
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .scp-solutions-section.slider-section .preserve-potency.scp-solutions-layout {
+      flex-wrap: wrap;
+      gap: 32px;
+      padding: 40px;
+    }
+
+    .scp-solutions-section.slider-section .slider-col,
+    .scp-solutions-section.slider-section .content-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .img_slide_p .promo-slider__content.promo-slider__content--bottom_center {
+      width: 88%;
+      padding-top: 60px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .scp-solutions-section.slider-section .preserve-potency.scp-solutions-layout {
+      flex-direction: column;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .scp-solutions-section.slider-section .content-col {
+      gap: 12px;
+    }
+
+    .scp-solutions-section.slider-section .promo-slider__text h3 {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .img_slide_p .promo-slider__content.promo-slider__content--bottom_center {
+      width: 92%;
+      padding-top: 24px;
+    }
+  }
+</style>

@@ -1,0 +1,83 @@
+<section class="full-width-screen patient-direct-banner">
+  <div class="sp-container-wrapper">
+    <picture>
+      <source srcset="/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/6994/69aaf6b08f734463703225-patient-direct-color-logo-stacked.webp" type="image/webp"/>
+      <img src="/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/6994/69aaf6b08f734463703225-patient-direct-color-logo-stacked.webp" alt="Patient Direct by Standard Process"/>
+    </picture>
+  </div>
+</section>
+<section class="full-width-screen patient-direct-faq-section">
+  <div class="sp-container-wrapper">
+    <h2 class="faq-main-title">Frequently Asked Questions
+    </h2>
+    <div id="ifaq-layout">
+      <div id="ifaq-left">
+        <div data-title="Patient_Direct_FAQs_By_Standard_Process" data-type="oro_tabbed_content" class="content-widget content-placeholder patient-accordian">
+          {{ widget("Patient_Direct_FAQs_By_Standard_Process") }}
+        </div>
+      </div>
+      <div id="ifaq-right">
+        <h2 id="ivid-title">Instructional Videos
+        </h2>
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/1iuYacFT2fc?" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <p class="video-caption">View the health care professional registration instructional video.
+          </p>
+        </div>
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/f-BvgJ6iecs?" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <p class="video-caption">View the health care professional account management video.
+          </p>
+        </div>
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/p6xSTjvpsJs?" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <p class="video-caption">View the patient registration instructional video.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.patient-direct-banner{background:#eee;}
+.patient-direct-banner .sp-container-wrapper{display:flex;justify-content:center;align-items:center;padding:40px 20px;}
+.patient-direct-banner img{max-width:576px;height:auto;display:block;}
+.patient-direct-faq-section{background:#fff;padding:40px 0 60px;}
+.faq-main-title{text-align:center;color:#222;margin-bottom:30px;display:flex;align-items:center;gap:20px;}
+.faq-main-title:before{content:"";flex:1;height:1px;background:#ccc;}
+.faq-main-title:after{content:"";flex:1;height:1px;background:#ccc;}
+#ifaq-layout{display:flex;flex-direction:row;gap:40px;align-items:flex-start;}
+#ifaq-left{width:63%;}
+#ifaq-right{flex:1;min-width:280px;max-width:340px;}
+.patient-direct-faq-section .video-item{margin-bottom:40px;}
+.patient-direct-faq-section .video-wrapper{position:relative;width:100%;padding-top:56.25%;}
+.patient-direct-faq-section .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none!important;outline:none;box-shadow:none;}
+.patient-direct-faq-section .video-caption{color:#444;margin-top:8px;margin-bottom:30px;}
+#ivid-title{margin-bottom:15px!important;}
+.patient-accordian .accordion-group__item span.accordion-group__trigger-text{text-align:left;}
+.accordion-group .collapse {
+    padding: 0px 0 30px;
+} 
+@media (max-width:991px){
+#ifaq-layout{flex-direction:column;gap:0;}
+#ifaq-left{width:100%;}
+#ifaq-right{width:100%;max-width:635px;min-width:unset;flex:unset;margin:0 auto;}
+.patient-direct-faq-section .video-item{margin-bottom:25px;}
+.patient-direct-faq-section .video-item:last-child{margin-bottom:0!important;}
+}
+@media (max-width:768px){
+.patient-direct-banner img{max-width:320px;}
+}
+@media (max-width:480px){
+.patient-direct-banner img{max-width:240px;}
+}
+@media (max-width:479px){
+p.video-caption{line-height:24px;}
+}
+</style>

@@ -1,0 +1,973 @@
+
+        /* common container css */
+        .sp-container-wrapper {max-width: 1540px;margin: 0 auto;padding: 0 15px;}
+        
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        section.full-width-screen { margin: 0 -28px; }
+        body, html {height: 100%;font-family: Arial, sans-serif;}
+        img {max-width: 100%;height: auto;display: block;margin: 0 auto;vertical-align: text-bottom;width:100%;}
+        h2 {font-size: 32px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight:400;}
+        h4 {font-size: 22px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight:400;margin: 15px 0 !important;}
+        p {font-size: 18px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight: normal;line-height: 28px;margin: 10px 0 0 0;}
+        a.btn.sp-prod-links {display: inline-block;padding: 8px 20px;background-color: #00573D; color: #fff;text-decoration: none;border-radius: 4px;font-size: 18px; margin-top: 20px; }
+        a.btn.sp-prod-links:hover { background: #6d7e44; }
+        .mrgn-tp-btm {margin: 60px 0;}
+        /* welcome to the standard process css start */
+        .care-practitioners {max-width: 1030px;margin: 0 auto;text-align: center;}
+        /* We are obessed with soil quality */
+        .preserve-potency {display: flex;background: #00573D;}
+        .soil-quality-picture {width: 40%;}
+        .soil-quality-content {width: 60%;color: #fff;margin-left: calc(970px - 770px);padding-right: 125px;
+         align-self: center;}
+         a.wht-bg-btn {display: inline-block;text-decoration: none;padding: 10px 25px;background: #fff; font-weight: 600;
+        color: #00573d;border-radius: 6px;margin-top: 20px;font-size: 18px;}
+        /* Four Card CSS start */
+        /* .supporting-cards.four-cards-inline .cmn-suprt-card { position: relative; padding-bottom: 55px; }
+        .suport-flx-cards {display: flex;gap: 20px;}
+        .suport-flx-cards .cmn-suprt-card { width:calc((100% - 60px) / 4); border:1px solid #e8e8e8; padding:10px; padding-bottom:20px; transition:all ease 0.5s; display:flex; flex-direction:column; background:#fff;}
+        .suport-flx-cards .cmn-suprt-card:hover {transform: scale(1.05);}
+        .content-box {padding: 0 10px; display:flex; flex-direction:column; flex:1;}
+        .content-box p{ margin-bottom:26px; }
+        .content-box .btn-card-action{ margin-top:auto; align-self:flex-start; } */
+        /* Video CSS */
+        .growing-practice-video { width: 100%; max-width: 960px; margin: 30px auto 20px; }
+        .growing-practice-video iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; }
+        /* Charlie DuBois President CSS */
+        .clinical-research {display: flex;background: #f4f4f4;}
+        .charlie-duo-picture{ width:50%; display:flex; align-items:center; }
+        .charlie-duo-picture .video-ratio{ width:100%; position:relative; padding-top:56.25%; }
+        .charlie-duo-picture iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+        .natural-health-care {width: 50%;align-self: center;padding-left: 90px;padding-right: 50px;}
+        .nutrition-innovation.legacy-food .clinical-research {background: unset;}
+        .nutrition-innovation.legacy-food .clinical-research .natural-health-care {padding: 0 90px 0 0;}
+
+        .standard-process-family.mrgn-tp-btm.not-ready {margin-bottom: 0;}
+
+        /* Gold Standard  Page Start */
+        .hero-section-gold-standard{ width:100%; height:470px; background-image:url('https://standardprocesscom.corewebdna.com/files/images/pages/the-gold-standard/Group 6936.webp?f=jpg'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:flex-start; position:relative; }
+        .hero-overlay{ width:100%; height:100%; display:flex; align-items:center; }
+        .hero-content{ max-width:710px; margin-left:3%; }
+        .hero-content h1{ margin:0; font-size:46px; color:#404040 !important; font-weight:700; text-shadow:0px 4px 8px rgba(0,0,0,0.35); }
+        .hero-content h2{ margin-top:10px; font-size:38px; font-style:italic; font-weight:500; color:#404040 !important; text-shadow:0px 4px 8px rgba(0,0,0,0.35); }
+        .left-image-content-section{ padding:90px 0 40px; }
+        /* .left-image-content-grid{ display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:162px; max-width:1540px; margin:auto; padding:0 15px; } */
+        .left-image-content-grid{ display:grid; align-items:center; gap:60px; max-width:1540px; margin:auto; padding:0 15px; }
+        .image-left img{ width:100%; max-width:300px; height:auto; display:block; margin:0 auto; }
+        .content-right h2{ font-size:32px; font-weight:500; color:#404040; margin-bottom:18px; }
+        .content-right.gold { text-align: center; }
+        /* .content-right p{ font-size:18px; line-height:1.6; color:#404040; text-shadow:0px 2px 6px rgba(0,0,0,0.1); max-width:80%; } */
+        .content-right p{ font-size:18px; line-height:1.6; color:#404040; text-shadow:0px 2px 6px rgba(0,0,0,0.1); }
+        .product-featured-section{ padding:70px 0; }
+        .featured-product-grid{ display:grid; grid-template-columns:1fr 1fr; gap:162px; max-width:1540px; margin:auto; padding:0 15px; align-items:center; }
+        .product-left img{ width:100%; height:auto; display:block; }
+        .product-right .tag{ color:#C2872B; font-size:18px; font-weight:700; letter-spacing:1px; margin-bottom:12px; }
+        .product-right h2{ font-size:36px; font-weight:500; color:#404040; line-height:1.3; margin-bottom:18px; margin-top:15px; }
+        .product-right .product-right-desc{ font-size:18px; line-height:1.6; color:#404040; margin-bottom:25px; max-width:90%; }
+        .btn-learn{ display:inline-block; background:#0a5832; color:#fff; font-size:16px; padding:12px 26px; border-radius:6px; font-weight:600; text-decoration:none; transition:0.25s ease; }
+        .product-section h2{ font-size:36px; font-weight:500; color:#404040; line-height:1.3; margin-bottom:18px; margin-top:15px; text-align:center; display:block; margin:0 auto 60px; }
+        .card-body h3{ font-size:22px; font-weight:600; color:#4A4A4A; margin-bottom:10px; margin-top:0; }
+        .card-body p{ font-size:15px; color:#333; line-height:1.5; margin-bottom:20px; margin-top:0; font-weight:400; }
+        /* Gold Standard  Page End */
+
+        /* Vet Gold Standard Page Start */
+        .hero-section-vet-gold-standard{ width:100%; height:470px; background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/1886/694a766358b02421087231-Vet-Gold-Standard-banner.png'); background-size:cover; background-position:center; display:flex; align-items:center; position:relative;}
+        /* Dark hero text variant */
+        .hero-content.dark h1,
+        .hero-content.dark h2{ color:#ffffff !important;}
+        /*  Veterinary Info Section  */
+        .vet-info-section{padding:70px 0;}
+        .vet-info-grid{ display:grid; grid-template-columns:1fr 1fr; gap:162px; align-items:center;}
+        .vet-info-image img{ width:100%; height:auto; display:block;}
+        .vet-info-title{ font-size:36px; font-weight:500; color:#404040; line-height:1.3; margin-bottom:18px;}
+        .vet-info-description{ font-size:18px; line-height:1.6; color:#404040; max-width:90%;}
+        /* Vet Gold Standard Page End */
+
+        /* Mediherbs For Pets Start */
+        .hero-section-vet-gold-standard.herbs-for-pets{
+        background-image:url("/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/1945/694cd4b98163e466121181-hero-image-LP.png"); background-size:cover; background-position:center; background-repeat:no-repeat;
+        }
+        .hero-section-vet-gold-standard.herbs-for-pets .hero-content h2{ font-style:normal; }
+        .mediherb-pets .image-left img{ max-width:100%; }
+        .title-strike-line{ display:flex; align-items:center; justify-content:center; gap:20px; text-align:center; margin:60px 0; }
+        .title-strike-line::before{ content:""; flex:1; height:1px; background-color:#cfcfcf; min-width:40px; }
+        .title-strike-line::after{ content:""; flex:1; height:1px; background-color:#cfcfcf; min-width:40px; }
+        .title-strike-line span{ display:inline-block; padding:0 8px; white-space:normal; }
+        .page-mediherb-pets .pets-considerations-section{ padding:80px 20px; }
+        .page-mediherb-pets .pets-considerations-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+        .page-mediherb-pets .pets-considerations-image img{ width:100%; height:auto; display:block; }
+        .page-mediherb-pets .pets-considerations-content h2{ font-size:28px; margin-bottom:16px; }
+        .page-mediherb-pets .pets-considerations-content p{ font-size:16px; line-height:1.6; margin-bottom:32px; }
+        .page-mediherb-pets .pets-considerations-cta{ display:flex; gap:24px; align-items:center; flex-wrap:nowrap; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ display:flex; align-items:center; justify-content:center; height:48px; padding:0 24px; line-height:1; margin:0; vertical-align:middle; box-sizing:border-box; }
+        .page-mediherb-pets .why-mediherb-section{ padding:80px 20px 60px; text-align:center; }
+        .page-mediherb-pets .why-mediherb-title{ font-size:36px; color:#00573d; margin-bottom:60px; }
+        .page-mediherb-pets .why-mediherb-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:40px; margin-bottom:50px; }
+        .page-mediherb-pets .why-mediherb-item{ display:flex; flex-direction:column; align-items:center; }
+        .page-mediherb-pets .why-mediherb-icon{ width:200px; height:200px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px; }
+        .page-mediherb-pets .why-mediherb-icon img{ width:200px; height:auto; }
+        .page-mediherb-pets .why-mediherb-item p{ font-size:26px; font-weight:600; color:#00573d; line-height:1.3; }
+        .page-mediherb-pets .why-mediherb-footnote{ font-size:12px; line-height:1.5; color:#6b6b6b; max-width:1100px; margin:0 auto; }
+        /* Mediherbs For Pets End */
+        
+        /* Clinical Studies Start */
+        .clinical-studies-page .hero-clinical-studies{
+        width:100%; height:470px; background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3654/695fa4b129f23781407131-rd-landing-page-hero.png'); background-size:cover; background-position:center; display:flex; align-items:center; }
+        .clinical-studies-page .hero-overlay{ height:100%; display:flex; align-items:center; }
+        .clinical-studies-page .hero-content{ max-width:720px; margin-left:15%; }
+        .left-image-content-section.clinical-studies{ overflow-x:hidden; }
+        .clinical-studies-layout{ display:grid; grid-template-columns:55% 45%; align-items:center; }
+        .clinical-studies-image-left{ margin:0; }
+        .clinical-studies-image-left img{ width:100%; height:100%; max-height:620px; object-fit:cover; display:block; }
+        .clinical-studies-content{ max-width:560px; padding-left:40px; }
+        .clinical-studies-content h2{ font-size:28px; line-height:1.35; margin-bottom:16px; }
+        .clinical-studies-content p{ font-size:16px; line-height:1.6; margin-bottom:28px; }
+        ul.clinical-studies-links { padding: 0; }
+        .clinical-studies-links{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:18px; }
+        .clinical-studies-links .links-row{ display:flex; gap:32px; }
+        .clinical-studies-links .links-row.two, .clinical-studies-links .links-row.three{ justify-content:flex-start; }
+        .clinical-studies-links a{ font-size:15px; font-weight:600; color:#00573d; line-height:1.4; text-decoration:none; white-space:nowrap; }
+        .clinical-studies-links a:hover{ text-decoration:underline; }
+        /* .clinical-studies-cards .suport-flx-cards{ justify-content:center; } */
+        .clinical-studies-cards .suport-flx-cards{ display: flex; justify-content: center; gap: 20px; }
+        /* .clinical-studies-cards .suport-flx-cards .cmn-suprt-card{ width:calc((100% - 40px) / 3); max-width:360px; } */
+        .clinical-studies-cards .suport-flx-cards .cmn-suprt-card{ width: calc((100% - 40px) / 3); max-width: 360px; display: flex; flex-direction: column; }
+        .clinical-studies-cards .cmn-suprt-card .content-box p { font-size: 16px; line-height: 1.5; }
+        .suport-flx-cards.clinical-studies { justify-content: center;}
+
+
+        .investigator-studies p, .investigator-studies ul{ font-size:18px; line-height:1.6; color:#000; }
+        .investigator-studies ul{ margin:0 0 20px 20px; padding:0; } 
+        .product-featured-section .black-link{color:#000; text-decoration:underline;}
+        .investigator-studies .black-link{ color:#000; text-decoration:underline; }
+        .scientific-experts .expert-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:30px; margin-top:40px; }
+        .scientific-experts .expert-card{ text-align:center; }
+        .scientific-experts .expert-card img{ display:block; margin:0 auto 15px auto; width:100%; max-width:180px; border-radius:50%; }
+        .scientific-experts .expert-card h4{ font-size:18px; margin-bottom:5px !important; color:#000; font-weight: 500; }
+        .scientific-experts .expert-card p{ font-size:16px; color:#333; line-height:1.4; }
+        section.collaborators-section.logo-block { background: #f4f4f4; padding-top: 40px; padding-bottom: 30px; margin-top: 80px;}
+        .collaborators-section h2{ text-align:center; margin-bottom:30px; }
+        .collaborators-section .logo-grid{ display:grid; grid-template-columns:repeat(5, 1fr); gap:30px; margin-top:40px; }
+        .collaborators-section .logo-item{ display:flex; justify-content:center; align-items:center; }
+        .collaborators-section .logo-item img{ max-width:160px; width:100%; height:auto; object-fit:contain; }
+        .collaborators-section .logo-row-centered{ grid-column:1 / -1; display:flex; justify-content:center; gap:30px; margin-top:30px; }
+        /* Clinical Studies End */
+
+        /* About Us Page Start */
+        /* About Us – Hero */
+        .hero-section-about-us{ background-image:url('/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/1921/694a900cb0417646362577-standard-process-employees-working-in-manufacturing-plant.webp'); background-size:cover; background-position:center; background-repeat:no-repeat; min-height:470px; display:flex; align-items:center; justify-content:center; text-align:center; padding:60px 20px; }
+        .hero-section-about-us .hero-title{ font-size:48px; font-weight:700; color:#fff; line-height:1.05; }
+        /* About – Content Sections */
+        .intro,.image-text,.future{ display:flex; flex-wrap:wrap; gap:40px; padding:60px 20px; align-items:center; }
+        .intro-left,.image-text .content,.future-text{ flex:1 1 500px; max-width:1200px; }
+        .intro-right,.image-text .img-wrap,.future .img{ flex:1 1 400px; max-width:600px; }
+        .intro-left img,.image-text img,.future img{ width:100%; height:auto; display:block; }
+        .intro-left .section-title,
+        .image-text .section-title,
+        .future-text .section-title{ font-size:36px; font-weight:600; margin-bottom:20px; }
+        .intro-left .section-copy,.image-text .section-copy,.future-text .section-copy{ font-size:18px; line-height:1.7; }
+        /* Quote Section */
+        .quote{ padding:60px 20px; text-align:center; }
+        .quote-text{ font-size:24px; line-height:1.6; font-style:italic; color:#cca437; margin-bottom:20px; }
+        .quote-author{ font-size:18px; font-weight:600; color:#cca437; }
+        /*  Video Section */
+        .video-section{ padding:60px 20px; }
+        .video-section .video-wrap{ max-width:1540px; margin:0 auto; }
+        /* Profile Section */
+        .profile-section{ padding:60px 20px; }
+        .sp-container-wrapper.profile-inner{ display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center; }
+        .profile-bio{ padding-left:86px; max-width:800px; }
+        .profile-bio h2{ font-size:36px; font-weight:600; margin-bottom:20px; }
+        .profile-bio p{ font-size:18px; line-height:1.7; }
+        .profile-photo{ width:100%; height:auto; display:block; }
+        /* Values Section */
+        .values-section{ padding:60px 20px; }
+        .values-grid{ display:flex; flex-wrap:wrap; gap:20px; }
+        .value-card{ flex:1 1 calc(20% - 16px); min-width:180px; }
+        .value-card h2{ font-size:22px; font-weight:700; margin-bottom:10px; }
+        .value-card p{ font-size:16px; line-height:1.6; }
+        /* About Us Page End */
+
+        /* WFSS Page CSS start */
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{padding-right:100px !important;}
+        .next-level-process img, .benefit-item img{width:auto !important;}
+        section.feed-your-mind.full-width-section .sp-container-wrapper{padding-right:100px !important;}
+        .free-course-registration.lfrt-img .next-level-process{max-width:770px;}
+        h4.qualify-subheading.top-mrg-space{margin-top:10px;}
+        .feed-your-practice h2{font-size:30px;font-weight:500;margin:10px 0 0 0;  }
+        .feed-your-practice p.practice-description{font-size:18px;font-weight:400;margin:20px  0; }
+        .feed-your-practice a.link{display:inline-block;text-decoration:underline;color:#ffffff;font-size:18px;font-weight:500;margin:0 0 20px 0;  }
+        .free-course-registration.lfrt-img{display:flex;align-items:center;background-color:#bd5530; }
+        .free-course-registration.lfrt-img .lf-picture{width:45%;position:relative;overflow:hidden;height:500px;  }
+        .free-course-registration.lfrt-img .sp-container-wrapper{margin:0 !important;width:55%;padding-left: 30px;padding-right: 15px; }
+        .free-course-registration.lfrt-img .lf-picture img{position:absolute;object-fit:cover;height:100%;width:100%;max-width:100%;  }
+        .next-level-process h2{font-size:32px;color:#ffffff;font-weight:500;  }
+        .next-level-process a.link{display:inline-block;text-decoration:none;background:#ffffff;padding:8px 20px;font-size:16px;border-radius:8px;font-weight:500;color:#00573d;margin-top:20px;  }
+        .who-qualify{text-align:center;}
+        .who-qualify h2{font-size:32px;font-weight:500; }
+        .who-qualify p{font-size:18px;font-weight:400;  }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{margin:0 !important;width:55%;display:flex;justify-content:end;  }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper .next-level-process{max-width:750px;}
+        .free-course-registration.lfrt-img.rght-img{background-color:#00573d !important;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process{color:#ffffff;  }
+        .free-course-registration.lfrt-img.rght-img .next-level-process h2{margin:10px 0; }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper .next-level-process p.practice-description{font-size:18px;font-weight:400;  }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper .next-level-process a.pro-requirment{text-decoration:none;display:inline-block;margin:0 0 20px 0;font-size:18px;font-weight:500;color:#00573D;background:#ffffff;padding:8px 20px;border-radius:8px;  }
+        .wfss-tag img{max-width:320px; }
+        .wfss-benefits-section{padding:60px 20px;text-align:center;}
+        .wfss-benefits-header h2{font-size:32px;color:#404040;margin-bottom:20px;font-weight: 500;}
+        .benefits-description{font-size:17px;line-height:1.6;color:#333;}
+        .wfss-benefits-grid{display:grid;grid-template-columns:repeat(4, 1fr);gap:40px;padding:60px 20px;justify-items:center;  }
+        .benefit-title{font-size:24px;font-weight:500;color:#404040;margin-bottom:10px;  }
+        .benefit-text{font-size:16px;color:#444;line-height:1.6;max-width:280px;margin:0 auto;  }
+        .benefit-item{text-align:center;display:flex;flex-direction:column;align-items:center;  }
+        .benefit-icon{max-width:100%;height:auto;margin-bottom:15px;  }
+        .courses-header h2{font-size:32px;text-align:center;max-width:1120px;margin:auto;color:#404040;margin-bottom:40px !important;font-weight: 500;}
+        .courses-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:35px;  }
+        .course-card{background:#fff;border-radius:10px;border:1px solid #e0e0e0;overflow:hidden;transition:all ease 0.5s;position: relative;padding-bottom: 55px;  }
+        a.btn.sp-prod-links.btn-card-action.inline-btn { position: absolute; bottom: 15px; }
+        .course-card:hover{transform:scale(1.03);box-shadow:0 8px 18px rgba(0,0,0,.15); }
+        .course-img{width:100%;height:auto;}
+        .course-body{padding:20px 22px;}
+        .course-body h3{font-size:20px;font-weight:600;color:#404040;margin-bottom:12px;line-height:1.3;}
+        .course-body p{font-size:16px;line-height:1.6;color:#444;}
+        .cta-center{text-align:center;margin:40px auto;}
+        .cta-btn{background-color:#00573d;border-color:#00573d;color:#fff;padding:12px 32px;border-radius:6px;font-weight:600;font-size:18px;text-decoration:none;display:inline-block;transition:.3s ease;  }
+        .cta-btn:hover{background-color:#6c7e44;border-color:#6c7e44;color:#fff !important;transform:scale(1.06);  }
+        .wfss-qualifies-section{padding:60px 20px;margin:60px auto 0 auto; }
+        .qualifies-container{display:grid;grid-template-columns:0.8fr 0.8fr;gap:40px;align-items:start;  }
+        .qualify-block{margin-bottom:35px; }
+        .qualify-heading{font-size:32px;font-weight:600;color:#404040;margin-bottom:10px;  }
+        .qualify-subheading{font-size:18px;color:#444;font-weight:600;margin-bottom:12px; }
+        .qualify-list{margin:0;padding-left:20px;font-size:16px;color:#444;line-height:1.6; }
+        .qualifies-image{background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/1906/694a7ca28c9be826182969-shutterstock_1984165313_MC-2x.png');background-repeat:no-repeat;background-position:center center;background-size:cover;min-height:100%;  }
+        .wfss-benefits-section, .wfss-courses-section, .wfss-qualifies-section {width:100%;}
+        /* WFSS Page CSS end */
+
+        /* Clinical Knowledge hub css start */
+        .empwoer-knowlege { background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3718/6966262f4225a302575588-knowlege-empowers-top-banner.png'); background-size:cover; background-position:center center; display:flex; align-items:center; justify-content:flex-start;min-height: 470px;} 
+        .empower-wrapper {text-align: center;}
+        .empower-wrapper h2 {font-size: 52px;font-weight: 500;color: #ffffff;text-shadow: 0 3px 15px rgba(0, 0, 0, .4);}
+        section.level-process.full-width-section.full-width-screen.your-practice .free-course-registration.lfrt-img {background-color: unset;}
+        section.level-process.full-width-section.full-width-screen.your-practice h2, section.full-width-screen.process-difference .obsessed-soli-quality .soil-quality-content h2, section.full-width-screen.process-difference .obsessed-soli-quality .soil-quality-content p {color: #404040;}
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process {padding-left: 60px;}
+        section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 45%;}
+        section.level-process.full-width-section.full-width-screen.your-practice, .protocol-support.additinal-clinical, .protocol-support.meet-our-expert {margin-top: 60px;}
+        section.eduction-event, .patient-resources {margin-top: 60px;}
+        a.btn.view-our-wide {margin: 40px 0 0 0;}
+        section.full-width-screen.process-difference .preserve-potency { background: unset;margin: 60px 0;}
+        .education-eperts {display: flex;flex-wrap: wrap;gap: 60px;}
+        .education-eperts .cmn-edu-exprt {width: calc((100% - 180px) / 4);text-align: center;}
+        .education-eperts .cmn-edu-exprt h3 {margin: 15px 0 0 0;}
+        .cmn-edu-exprt img {max-width: 200px;margin: 0 auto;}
+        section.level-process.full-width-section.full-width-screen.your-practice.future-healthcare .next-level-process.collaborators-section img {max-width: 100px;}
+        section.level-process.full-width-section.full-width-screen.your-practice.future-healthcare .next-level-process.collaborators-section h2 {text-align: left !important;}
+        section.level-process.full-width-section.full-width-screen.your-practice.future-healthcare .next-level-process.collaborators-section h2 {margin-bottom: 5px;
+        }
+        /* Clinical Knowledge hub css end */
+
+        /* Health Interests Page Start */
+
+        
+        
+        /*  Bone, Joint & Muscle Supplements Start */
+        .health-support-section.page-bone{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3212/69577da085f11744150777-Alfalfa-Flower-Closeup.png') center center / cover no-repeat !important; }
+        .page-bone .orange-section , .page-bone .support-box { background-color:#7F6B57; }
+        /*  Bone, Joint & Muscle Supplements End */
+        
+        /*  Brain and Health Supplements Start */
+        .health-support-section.page-brain{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3232/695784c750538251431001-PeaPod-closeup.png') center center / cover no-repeat !important; }
+        .page-brain .orange-section , .page-brain .support-box { background-color:#9A2167; }
+        /*  Brain and Health Supplements End */
+
+        /*  Children's Supplements Start */
+        .health-support-section.page-children{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3261/69578a396da9c695570470-Atriplex-Closeup.png') center center / cover no-repeat !important; }
+        .page-children .orange-section , .page-children .support-box { background-color:#5F2467; }
+        .single-product .center-product{ display:flex; justify-content:center; }
+        /*  Children's Supplements End */
+
+        /* Sleep, Stress and Mood Supplements Start */
+        .health-support-section.page-sleep{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/2993/6953949701193783850342-Alfalfa-Closeup.png') center center / cover no-repeat !important; }
+        .orange-section.page-sleep , .support-box.page-sleep { background:#C3882B; }
+        /* Sleep, Stress and Mood Supplements End */
+
+        /* Vitamin & Mineral Supplements Start */
+        .health-support-section.page-vitamins { background: url('/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/3317/695789a6ab92d594178506-vitamins-greenbg.webp') center center / cover no-repeat !important; }
+        .page-vitamins .orange-section , .page-vitamins .support-box { background-color: #6e7e44; }
+        /* Vitamin & Mineral Supplements End */
+
+        /* Blood Sugar and Metabolism Start */
+         .health-support-section.blood-sugar{ background:url('/media/cache/attachment/filter/wysiwyg_original/1ce6569ddaa67bc2162be5030a1ac716/3622/6957785425b69869204150-healthy-glucose-level.jpg') center center / cover no-repeat !important; }
+         section.sleep-stress-hero.full-width-screen.womens-health-supplements .orange-section.bit-color, section.health-support-section.full-width-screen.health-supplement.blood-sugar article.support-box{ background-color:#951A38; }
+        /* Blood Sugar and Metabolism End */
+         
+        /* Detox and Liver Support Start */
+         .health-support-section.detox{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3620/69578cc395f36196585487-detox-liver-targeted.png') center center / cover no-repeat !important; }
+         section.sleep-stress-hero.full-width-screen.womens-health-supplements.detox-liver .orange-section.bit-color, section.health-support-section.full-width-screen.health-supplement.detox.support-supplements article.support-box{ background-color:#A89236; }
+        /* Detox and Liver Support End */
+
+        /* Omega-3s and Fish Oils Start */
+        .health-support-section.omega-vitamin{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3381/695b9b0f6245e479788279-omega-important.png') center center / cover no-repeat !important; }
+        .omega-vitamin .orange-section, .omega-vitamin .support-box{ background-color:#386D88; }
+        /* Omega-3s and Fish Oils End */
+
+        /* Fitness Supplements Start */
+        .health-support-section.fintness-supplements{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3448/695ba4703bd24677665020-protein-support.png') center center / cover no-repeat !important; }
+        .fintness-supplements .orange-section, .fintness-supplements .support-box{ background-color:#285781; }
+        /* Fitness Supplements End */
+
+        /* Wellness Supplements Start */
+        .health-support-section.page-wellness{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3463/695ba74051e19363014435-Kale_Closeup.png') center center / cover no-repeat !important; }
+        .orange-section.page-wellness , .support-box.page-wellness { background:#0A5640; }
+        .suport-flx-cards.wellness-center { justify-content: center; }
+        /* Wellness Supplements End */
+        
+        /* Heart Health Supplements Start */
+        .health-support-section.heart-circulation{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3488/695bac0913a33693647003-blood-heart-nutrients.png') center center / cover no-repeat !important; }
+        .heart-circulation .orange-section, .heart-circulation .support-box{ background-color:#BA2031; }
+        /* Heart Health Supplements End */
+        
+        /* Healthy Aging Supplements Start */
+        .health-support-section.page-aging{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3511/695bb45800701615735956-Broccoli-Closeup.png') center center / cover no-repeat !important; }
+        .orange-section.page-aging, .support-box.page-aging{ background:#4D4184 !important; }
+        /* Healthy Aging Supplements End */
+
+        /* Immune System Start */
+        .health-support-section.immune-systems{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3618/695bda00f127c839756282-soil-leaf-root.png') center center / cover no-repeat !important; }
+        .immune-systems .orange-section, .immune-systems .support-box{ background-color:#006D68; }
+        /* Immune System End */
+
+        /*  Men's Health Supplements Start */
+        .health-support-section.page-men{ background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3149/69577170b3cf1927658128-PeaVine_Closeup.png') !important; background-size:cover; background-position:center; background-repeat:no-repeat; }
+        .page-men .orange-section , .page-men .support-box { background-color:#736F6B; }
+        /*  Men's Health Supplements End */
+        
+        /*  Women's Health Supplements Start */
+        .health-support-section.womens-supplements{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3621/69575f0f9964a331548671-coriender.png') center center / cover no-repeat !important; }
+        section.sleep-stress-hero.full-width-screen.womens-health-supplements .orange-section, section.health-support-section.full-width-screen.health-supplement article.support-box{ background-color:#BF5530; }
+        /*  Women's Health Supplements End */
+
+        /* Digestive Health Supplements Start */
+        .health-support-section.page-digestive{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3313/69579545d4d28021072425-Buckwheat_Closeup.png') center center / cover no-repeat !important; }
+        .page-digestive .orange-section , .page-digestive .support-box { background-color:#9D5B26; }
+        /* Digestive Health Supplements End */
+        
+        /* Health Interests Page End */
+        
+        /* Animal Health Page Start */
+        /* .health-support-section.page-animal{background:url('/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/3567/695bbf29a78cf638154055-Artboard.webp') center center / cover no-repeat !important;}
+        .orange-section.page-animal{background:#6C7E44;}
+        .support-box.page-animal{background:#3F5D3A !important;}
+        .support-box.page-animal:nth-child(1){background:#BD5530;}
+        .support-box.page-animal:nth-child(2){background:#6C7E44;}
+        .support-box.page-animal:nth-child(3){background:#00573D;} */
+        /* Animal Health Page End */
+
+        /* Program Page Start */
+       .metabolic-reset-hero .hero-section-vet-gold-standard{ background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3661/695faaa2cc625410180467-Metabolic-Reset-Programs-hero-image.png') center center / cover no-repeat !important; padding:30px 0; }
+       .green-title{ color:#00573D; font-weight:600; }
+       .product-featured-section.purification-featured-override{ padding:0 !important; }
+        /* Program Page End */
+        
+        /* Body Purification Page Start */
+        /* .qualifies-image-purification{ background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3691/69612e2cf00b7164827347-young-woman-s-hand-with-a-red-fruit-smoothie.png'); background-repeat:no-repeat; background-position:center; background-size:cover; min-height:400px; width:100%; }
+        .page-body-purification .purification-benefit{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+        .wfss-benefits-section.purification-benefits .purification-benefit .benefit-icon + .benefit-title{ margin-top:20px; }
+        .wfss-benefits-section.purification-benefits .wfss-benefits-grid.purification-grid{ grid-template-columns:repeat(3, 1fr) !important; }
+        .page-body-purification .customize-subheading-pink{ color:#FF00D8; }
+        .page-body-purification .customize-registration{ background-color:transparent !important; } */
+        .qualifies-image-purification{background-image:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/3691/69612e2cf00b7164827347-young-woman-s-hand-with-a-red-fruit-smoothie.png');background-repeat:no-repeat;background-position:center;background-size:cover;min-height:400px;width:100%;}
+        .page-body-purification .purification-benefit{display:flex;flex-direction:column;align-items:center;text-align:center;}
+        .wfss-benefits-section.purification-benefits .purification-benefit .benefit-icon + .benefit-title{margin-top:20px;}
+        .wfss-benefits-section.purification-benefits .wfss-benefits-grid.purification-grid{grid-template-columns:repeat(3, 1fr) !important;}
+        .page-body-purification .customize-subheading-pink{color:#FF00D8;font-size:18px;font-weight:600;margin-bottom:20px;}
+        .page-body-purification.customize-your-program .preserve-potency{display:flex;flex-direction:row;align-items:flex-start;gap:40px;}
+        .page-body-purification .customize-kit-list{list-style:disc;padding-left:20px;font-size:16px;line-height:1.6;}
+        .page-body-purification .customize-kit-list a{color:#00573d;text-decoration:underline;transition:color 0.3s ease;}
+        .page-body-purification .customize-kit-list a:hover{color:#FF00D8;}
+        .page-body-purification.customize-your-program .preserve-potency{background:transparent !important;}
+        .testimonial-flip-grid{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:40px;padding:60px 20px;justify-items:center;}
+        .testimonial-flip-item{display:flex;flex-direction:column;align-items:center;width:100%;}
+        .flip-card{width:100%;max-width:340px;aspect-ratio:17 / 18;perspective:1200px;cursor:pointer;}
+        .flip-card-inner{position:relative;width:100%;height:100%;transition:transform 0.6s ease;transform-style:preserve-3d;}
+        .flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner{transform:rotateY(180deg);}
+        .flip-card-front{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+        .flip-card-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+        .flip-card-front img{width:100%;height:100%;object-fit:cover;}
+        .flip-card-back{background-color:#00573D;color:#fff;padding:24px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.5;font-size:clamp(0.95rem, 2vw, 1.1rem);transform:rotateY(180deg);}
+        .testimonial-name{margin-top:16px !important;font-size:16px;font-weight:700;text-align:center;}
+        .testimonial-name span{display:block;margin-top:4px;}
+        .page-body-purification.customize-your-program .soil-quality-picture{flex-shrink:0;}
+        .page-body-purification.customize-your-program .soil-quality-picture img{max-width:100%;height:auto;display:block;}
+        section.wfss-benefits-section.purification-benefits.program-works{padding:0;}
+        .standard-process-family.mrgn-tp-btm.metabolic-reset-info.program-page-section.needs-perference{margin-top:0;}
+        .standard-process-family.mrgn-tp-btm.metabolic-reset-info.program-page-section.hear-what{margin-bottom:0;}
+        .puri-key-resource{width:100%;display:flex;gap:40px;}
+        .column{ flex:1;}
+        .purification-key-resources h2{font-size:24px;margin-bottom:25px;font-weight:600;}
+        details{background-color:#f8f9fa;margin-bottom:8px;border-radius:4px;overflow:hidden;transition:background 0.2s;}
+        details:hover{background-color:#f0f0f0;}
+        summary{list-style:none;padding:15px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:500;outline:none;}
+        summary::after{content:'';width:10px;height:10px;border-right:2px solid #666;border-bottom:2px solid #666;transform:rotate(45deg);margin-right:5px;transition:transform 0.3s;}
+        details[open] summary::after{transform:rotate(-135deg);}
+        .content{padding:15px 20px;font-size:15px;line-height:1.5;background:#fff;border-top:1px solid var(--border-color);}
+        .resource-list{list-style:none;padding:0;margin:0;}
+        .resource-item{background-color:#f8f9fa;margin-bottom:8px;border-radius:4px;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:500;cursor:pointer;transition:background 0.2s;}
+        .resource-item:hover{background-color:#f0f0f0;}
+        .view-icon-box{display:flex;flex-direction:column;align-items:center;color:#666;font-size:10px;text-transform:capitalize;}
+        .view-icon-box svg{width:22px;height:22px;fill:#666;margin-bottom:-2px;}
+        /* Body Purification Page End */
+        
+        /* Detox Cleanse Supplements Page Start */
+         section.wfss-benefits-section.purification-benefits.program-works{padding-top:0;}
+        .standard-process-family.mrgn-tp-btm.viemo-video-section{margin-top:0;}
+        .standard-process-family.mrgn-tp-btm.metabolic-reset-info.program-page-section.feel-was-big{margin-bottom:0;}
+        .qualifies-image-purification-init{background-image:url('/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/3750/69664867ab702163038234-program-image-detox.webp');background-repeat:no-repeat;background-position:center;background-size:cover;min-height:400px;width:100%;}
+        .program-subtitle{font-size:22px;font-weight:500;margin-bottom:12px;}
+        .program-buttons{display:flex;gap:16px;flex-wrap:wrap;}
+        .program-buttons .wht-bg-btn{margin-top:0 !important;}
+        /* Detox Cleanse Supplements Page End */
+        
+        /*  inSITE MAP Policy - API Page Start */
+        .minimum-adver-price{margin:50px 0 0 0 !important;}
+        .inc-minmum-price ul{margin-left:30px;}
+        .inc-minmum-price ul li{font-size:18px; list-style:none;}
+        .inc-minmum-price ol li{list-style:lower-alpha;font-size:18px;margin-bottom:20px;}
+        .inc-minmum-price ol{margin-left:30px;}
+        .roman-list{counter-reset:roman;margin-left:30px;}
+        .roman-list li{list-style:none;counter-increment:roman;font-size:18px;margin-bottom:8px;}
+        .roman-list li::before{content:counter(roman, lower-roman) ". ";margin-right:5px;}
+        /*  inSITE MAP Policy - API Page End */
+
+
+
+        /* About-Us-Pages - Policies Start */
+        .inc-minmum-price h1 { font-size: 32px; line-height: 1.2; margin-bottom: 20px; }
+        .inc-minmum-price a, .association-list a, .strong-link, .link { text-decoration: none; }
+        .inc-minmum-price a:hover, .association-list a:hover, .strong-link:hover, .link:hover { color: #00432f;}
+        /* About-Us-Pages - Policies End*/
+        
+        /* Education On Demand Page - Webinars Start*/
+        /* Content block - css */
+        /* Webinar Tab - css for hover and active tab Start */
+        .webinar-tab-styles .webinar-tabs.widget-nav-offset{  scroll-margin-top:60px;} /* margin-top:50px; */
+        .webinar-tab-styles .webinar-tabs.widget-nav-offset a[role="tab"]{ text-decoration:none; color:#333; padding:10px 16px; display:inline-block; border-radius:4px; transition:background-color 0.2s ease, color 0.2s ease;}
+        .webinar-tab-styles .webinar-tabs.widget-nav-offset a[role="tab"]:hover, .webinar-tab-styles .webinar-tabs.widget-nav-offset a[role="tab"]:focus{ background-color:rgba(0, 87, 61, 0.1); color:#00573d;}
+        .webinar-tab-styles .webinar-tabs.widget-nav-offset a[role="tab"][aria-selected="true"]{ background-color:#e6f3ee; color:#00573d; font-weight:500; border-bottom:2px solid #00573d;}
+        .webinar-tab-styles .webinar-tabs .nav-tabs .nav-item:not(:first-of-type)::before{ visibility:hidden !important; margin: 0 12px !important;}
+        .education-on-demand-page .events-page-banner{background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url('/media/cache/attachment/filter/wysiwyg_original/1ce6569ddaa67bc2162be5030a1ac716/7074/69b014670ed1a727338636-elevate-heroimage-eod.jpg') center/cover no-repeat;}
+        .education-on-demand-page .education-widget-section{padding:40px 0 40px;}
+        .education-on-demand-page .webinar-tab-styles{margin-top:10px;}
+        .git-section{ display:grid; grid-template-columns:2fr 2fr 1fr; gap:1.5rem; width:100%; padding:25px 20px; box-sizing:border-box; align-items:center;}
+        .git-left iframe{ width:100%; aspect-ratio:16 / 9; border:none; display:block;}
+        .git-middle{display:flex;flex-direction:column;gap:1rem;}
+        .main-title{margin:0;font-size:1.85rem;line-height:1.2;font-weight:700;font-family:Roboto, Helvetica, Arial, sans-serif;}
+        .lead{margin:0;color:#333;line-height:1.6;font-size:1rem;font-family:Roboto, Helvetica, Arial, sans-serif;}
+        .git-profile{display:flex;gap:1rem;align-items:flex-start;}
+        .profile-img{flex:0 0 auto;background:#f5f5f5;display:flex;align-items:center;justify-content:center;max-width:140px;max-height:140px;}
+        .profile-img img{max-width:100px;max-height:160px;object-fit:contain;}
+        .profile-info{flex:1;}
+        .profile-name{margin:0 0 0.5rem 0;color:#0c5843;font-size:1.125rem;font-weight:700;}
+        .profile-bio{margin:0;padding-left:0;color:#333;line-height:1.6;font-size:1rem;overflow:hidden;transition:max-height 0.4s ease;max-height:4.8em;}
+        .read-toggle{display:none;}
+        .read-toggle:not(:checked) + .profile-bio + .read-label::after{content:"Read more ▼";}
+        .read-toggle:checked + .profile-bio + .read-label::after{content:"Read less ▲";}
+        .read-toggle:checked + .profile-bio{max-height:1000px;}
+        .read-label{display:inline-block;color:#0c5843;font-weight:600;cursor:pointer;margin-top:0.6rem;font-size:0.95rem;}
+        .git-right .btn-container{background:#f4f4f4;padding:30px;}
+        .git-right{display:flex;flex-direction:column;gap:1rem;}
+        .btn-container{display:flex;flex-direction:column;gap:0.75rem;margin:0 auto;min-height: 320px;}
+        .download-btn{background-color:#ffffff;color:#00573d;border:1px solid #00573d;padding:0.7rem 1.2rem;border-radius:6px;cursor:pointer;font-weight:600;font-size:0.95rem;transition:all 0.3s ease;text-align:center;display:inline-block;text-decoration:none;width:fit-content;}
+        .download-btn:hover{background-color:#e8f3ef;text-decoration:none;}
+        .section-divider{border:0;border-top:1px solid #ddd;margin:40px 0;}
+        .git-section .git-right .hide-btn{display:none !important;}
+         hr.section-divider.last-hr-hide{display: none !important;}
+        /* Education On Demand Page - Webinars End*/
+    
+        /* Events Page Css Start */
+        .events-page-banner{height:470px;background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url('/media/cache/attachment/filter/wysiwyg_original/1ce6569ddaa67bc2162be5030a1ac716/7118/69b0548928850881035223-elevate-heroimage-events.jpg') center/cover no-repeat;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 20px;}
+        .events-page-banner-inner{max-width:700px;}
+        .events-page-banner-inner h1{font-size:32px;margin-bottom:12px;font-weight:700;}
+       .events-widget-wrapper{padding:30px 0 40px;}
+        .content-placeholder .events-section,.content-widget .events-section {margin: 30px 0;}
+        .content-placeholder .events-section-divider,.content-widget .events-section-divider {margin: 20px 0 16px;border: none;border-top: 1px solid #ddd;}
+        .content-placeholder .events-section-grid,.content-widget .events-section-grid {display: grid;grid-template-columns: 1fr;}
+        .content-placeholder .events-section-col,.content-widget .events-section-col {padding: 8px 0;}
+        .content-placeholder .events-section-title,.content-widget .events-section-title {margin: 0 0 12px; font-family: Roboto, Helvetica, Arial, sans-serif;font-weight: 400;line-height: 1.2;font-size: clamp(1.5em, 4vw, 2.1em); color: #333;}
+        .content-placeholder .events-section-content,.content-widget .events-section-content {margin-top: 0;}
+        .content-placeholder .events-section-spacing,.content-widget .events-section-spacing {margin-top: 24px;}
+        /* events block css start */
+        /* .events-grid{display:grid;grid-template-columns:repeat(4, 1fr);gap:24px;align-items:stretch;} */
+        .events-grid{display:flex;flex-wrap:wrap;gap:24px;align-items:stretch;}
+        .events-grid .content-block .cms-wrapper{height:100%;}
+        .events-grid > .content-block{flex:0 0 calc(25% - 18px);display:flex;align-items:stretch;}
+        .event-card{background:#fff;border:1px solid #e2e2e2;border-radius:6px;overflow:hidden;position:relative;transition:transform .2s ease, box-shadow .2s ease;display:flex;flex-direction:column;height:100%;}
+        .event-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.08);}
+        .corner-tag{position:absolute;top:0;right:0;width:70px;z-index:3;pointer-events:none;}
+        .event-image img{width:100%;height:180px;object-fit:cover;display:block;}
+        .event-body{padding:16px;padding-right:50px;flex:1;display:flex;flex-direction:column;}
+        .event-body h3{font-size:16px;line-height:1.35;font-weight:600;margin:0 0 8px;min-height:44px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+        .event-meta{margin:0 0 12px;display:flex;flex-direction:column;gap:4px;min-height:60px;}
+        .event-date{font-size:13px;color:#555;margin:0;}
+        .event-location{font-size:13px;color:#555;margin:0;}
+        .credit-text{margin:0;font-size:13px;font-weight:700;color:#00573d;}
+        .event-summary{font-size:14px;color:#333;margin:0 0 14px;flex-grow:1; display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+        .event-body .btn{margin-top:auto;align-self:flex-start;}
+
+        /* events block css end */
+       
+        /* Events Page Css End */
+
+        /* Responsive CSS Start */
+        @media screen and (max-width:1899px) {
+         /* .soil-quality-content {margin-left: calc(800px - 750px);} */
+         .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{padding-right:50px !important;}  
+         section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 51%;} 
+        }
+        @media (max-width: 1884px) and (min-width: 1860px){
+        .soil-quality-content {margin-left: calc(947px - 750px);}
+        }
+        @media (max-width: 1859px) and (min-width: 1830px){
+        .soil-quality-content {margin-left: calc(915px - 750px);}
+        }
+        @media (max-width: 1829px) and (min-width: 1800px){
+        .soil-quality-content {margin-left: calc(895px - 750px);}
+        }
+        @media (max-width: 1799px) and (min-width: 1700px){
+        .soil-quality-content {margin-left: calc(845px - 750px);}
+        }
+        @media (max-width: 1699px) and (min-width: 1600px){
+        .soil-quality-content {margin-left: calc(815px - 750px);}
+        }
+        @media screen and (max-width:1599px) {
+        .soil-quality-content {margin-left: 28px !important;padding:30px 30px 30px 15px;}  
+        .soil-quality-picture {position: relative;overflow: hidden;} 
+        .soil-quality-picture img {position: absolute;height: 100%;object-fit: cover;} 
+        section.feed-your-mind.full-width-section .sp-container-wrapper{padding-right:30px !important; }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{padding-right:15px !important;}
+        .soil-quality-picture.purification-program-img img { position: relative;}
+        }
+
+        @media screen and (max-width: 1439px) {
+        section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 55%;}  
+        }
+
+        @media screen and (max-width:1400px) { .clinical-studies-links .links-row { flex-wrap:wrap; gap:16px; } .clinical-studies-links a { white-space:normal; } }
+
+        @media screen and (max-width:1359px) {
+        .soil-quality-content {padding-top: 20px;padding-bottom: 20px;}
+        .left-image-content-grid {gap: 50px;} 
+
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process { padding-left: 15px; }
+        } 
+
+        @media screen and (max-width:1279px) {
+         .qualifies-image {background-position: 70% 100%;} 
+         .page-mediherb-pets .pets-considerations-cta .btn {font-size: 15px;}
+
+         /* body purifiaction */
+          .standard-process-family.mrgn-tp-btm.metabolic-reset-info.program-page-section.hear-what{margin-top:0;}
+        }
+
+        @media (max-width: 1223px) and (min-width: 1200px){
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process { padding-left: 0px;}        
+        }
+
+        @media (max-width: 1200px){
+        .events-grid{grid-template-columns:repeat(3, 1fr);}
+        }
+
+        @media (max-width: 1199px) {
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(3, 1fr); }
+        .collaborators-section .logo-item img{ max-width:140px; }
+        .collaborators-section .logo-row-centered{ display:contents; gap:0; margin-top:0; }
+        }
+
+        @media screen and (max-width:1151px) {
+        .mrgn-tp-btm {margin: 40px 0;} 
+        p {font-size: 16px;} 
+        h4 {font-size: 22px;}  
+        .natural-health-care {padding-left: 50px;padding-right: 15px;}
+        .nutrition-innovation.legacy-food .natural-health-care {padding-right: 50px !important;}
+        .nutrition-innovation.legacy-food .natural-health-care br {display: none;}
+        a.wht-bg-btn {font-size: 16px;}
+        a.btn.sp-prod-links {font-size: 16px;}
+        .hero-content img{ width:20%; }
+        .hero-content h1{ font-size:38px !important; max-width:745px; }
+        .wfss-qualifies-section{padding:0;}
+        .wfss-benefits-section{padding:60px 0px;}
+        .next-level-process{padding-left:40px;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process{padding:0 15px !important;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process h2{font-size:27px !important;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process a.pro-requirment, .free-course-registration.lfrt-img.rght-img .next-level-process p.practice-description{font-size:16px !important; }
+        .free-course-registration.lfrt-img .next-level-process{padding-right:20px;}
+        section.wfss-qualifies-section.wellness-coaching{margin-bottom:60px !important; }
+        .page-mediherb-pets .pets-considerations-cta .btn {font-size: 14px;}
+        .content-right p {max-width: 100%;}
+        .page-mediherb-pets .why-mediherb-grid {gap: 20px;}
+
+        .inc-minmum-price h1 { font-size: 30px; }
+        .inc-minmum-price ul li, .roman-list li{font-size:16px;}
+        .inc-minmum-price ol li{font-size:16px;}
+        }
+
+        @media (max-width: 1024px) {
+        .growing-practice-video { max-width: 100%; }
+        .hero-content{ margin-left:0; }
+        .hero-content h1{ font-size:32px; }
+        .hero-content h2{ font-size:24px; }
+        .left-image-content-section{ padding:60px 0 30px; }
+        .left-image-content-grid{ gap:50px; }
+        .product-featured-section{ padding:30px 0 60px; }
+        .featured-product-grid{ gap:50px; }
+        .product-right h2{ font-size:30px; }
+        .product-right .product-right-desc{ font-size:17px; }
+        .vet-info-section{ padding:30px 0 60px; }
+        .vet-info-grid{ gap:50px; }
+        .vet-info-title{ font-size:30px; }
+        .vet-info-description{ font-size:17px; }
+        .intro,.image-text,.future,.profile-section,.values-section,.quote,.video-section{ padding:40px 20px; }
+        .sp-container-wrapper.profile-inner{ grid-template-columns:1fr; text-align:center; }
+        .profile-bio{ padding-left:0; max-width:100%; }
+        .hero-section-about-us .hero-title{ font-size:42px; }
+        .value-card{ flex:1 1 calc(45% - 20px); }
+
+        /* content block education on demand */
+        .git-section{grid-template-columns:1fr;gap:2rem;padding:25px 15px; }
+        .git-profile{flex-direction:row;align-items:center; }
+        .profile-img, .profile-img img{max-width:120px;max-height:120px; }
+        .profile-bio{text-align:justify; }
+        .btn-container{flex-direction:row;flex-wrap:wrap;justify-content:center;min-height: auto !important; }
+
+        /* body purification */
+        .testimonial-flip-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+        .testimonial-flip-item:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center;}
+        .flip-card{max-width:320px;}
+        }
+
+        @media screen and (max-width: 1023px) {
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process {padding-left: 25px;} 
+        .collaborators-section .logo-grid {gap: 5px;}
+        }
+
+        @media (min-width: 992px){
+        .desktop-break{ display:inline; }
+        .support-icon{ width:120px; height:120px; } }
+
+         @media (max-width: 991px) and (min-width: 576px){
+        .wfss-benefits-grid{display:flex;justify-items:center; }
+        .courses-grid{display:flex;justify-content:center;gap:35px; }
+        .qualifies-container{grid-template-columns:1fr;}
+        .qualifies-image{min-height:380px;background-position: center center;}
+        .qualify-heading{font-size:26px;}
+
+        .page-mediherb-pets .mediherb-pets-hero{ min-height:380px; padding:60px 20px; }
+        .page-mediherb-pets .pets-considerations-grid{ grid-template-columns:1fr; gap:40px; }
+        .page-mediherb-pets .pets-considerations-cta{ flex-direction:column; align-items:flex-start; gap:16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ height:48px; padding:0 24px; line-height:48px; }
+        .page-mediherb-pets .why-mediherb-grid{ grid-template-columns:repeat(2, 1fr); gap:32px; }
+
+        section.product-featured-section.metabolic-reset-program.program-page-section { padding: 20px 0 !important; margin-top: 20px !important; }
+
+        /* event page */
+        .events-page-banner{height:400px;}
+        .events-page-banner-inner h1{font-size:28px;}
+        /* .events-grid{grid-template-columns:repeat(2, 1fr);} */
+        .events-grid > .content-block{flex:0 0 calc(50% - 12px);}
+        }
+
+        @media screen and (max-width:991px) {
+        h2 {font-size: 30px;} 
+        h4 {font-size: 20px;} 
+        .benefit-title{font-size:20px;}
+        .benefit-text{font-size:16px;}
+        .courses-grid{grid-template-columns:repeat(2, 1fr);}
+        .course-body h3{font-size:20px;}
+        .course-body p{font-size:16px;}
+        .wfss-qualifies-section{padding:0;}
+        section.level-process{margin-top:40px;}  
+        
+        .clinical-studies-layout{ grid-template-columns:1fr; gap:32px; }
+        .clinical-studies-image-left img{ width:100%; max-height:none; aspect-ratio:16 / 9; }
+        .clinical-studies-content{ max-width:100%; text-align:center; padding:0 20px; }
+        .clinical-studies-links .links-row{ justify-content:center !important; flex-wrap:wrap; gap:16px; }
+        .clinical-studies-links a{ white-space:normal; }
+        .scientific-experts .expert-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(3, 1fr); }
+        .collaborators-section .logo-row-centered{ grid-column:1 / -1; justify-content:center; }
+        .collaborators-section .logo-item img{ max-width:140px; }
+        section.wfss-courses-section.patient-resources .courses-grid {display: grid;} 
+
+        .orange-section .orange-content{ flex-direction:column; text-align:center; gap:0px; }
+        .orange-section .icon-logo{ max-width:75px; }
+        .orange-section .orange-left h2{ font-size:24px; }
+        .orange-section .orange-right p{ font-size:16px; }
+        .health-support-container{ margin:0 auto; padding:0 20px; }
+        .support-box{ padding:28px 32px; }
+        .support-icon{ width:100px; height:100px; }
+        .support-text h3{ font-size:20px; }
+        .support-text p{ font-size:16px; }
+        .supporting-cards.clinical-studies-four.health-interest{ margin-top:40px; }
+        .health-support-section{ margin-top:40px !important; }
+        .orange-section .orange-left h2{ margin-bottom:5px; }
+        .sleep-stress-hero .hero-banner img{ object-fit:cover; height:240px; }
+
+        /* event page card */
+        .event-body h3{min-height:38px;}
+        .event-meta{min-height:52px;}
+        }
+
+        @media screen and (max-width:959px) {
+        .suport-flx-cards {flex-wrap: wrap;} 
+        .suport-flx-cards .cmn-suprt-card {width: calc((100% - 20px) / 2);}  
+        .charlie-duo-picture {align-self: center;}  
+        .courses-grid{display:grid;}
+        .free-course-registration.lfrt-img.rght-img{flex-wrap:wrap;}
+        .free-course-registration.lfrt-img{flex-wrap:wrap;}
+        .free-course-registration.lfrt-img.rght-img .lf-picture{width:100% !important; order:1 !important; }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper .next-level-process{ max-width:100% !important;padding:30px 15px !important;}
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{width:100% !important;order:2;}
+        .free-course-registration.lfrt-img .lf-picture{width:100% !important;}
+        .free-course-registration.lfrt-img .sp-container-wrapper{width:100%;}
+        .free-course-registration.lfrt-img .next-level-process{padding:30px 15px !important;}
+        section.feed-your-mind.full-width-section .sp-container-wrapper{padding-right:unset !important;}
+        .wfss-benefits-section {padding: 30px 0 0 0;}
+        .natural-health-care {padding-left: 30px;}
+        section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 100%;}  
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process {max-width: 100%;}
+        section.level-process.full-width-section.full-width-screen.your-practice {margin-top: 40px !important;}
+        section.eduction-event, section.protocol-support.additinal-clinical, section.wfss-courses-section.patient-resources {margin-top: 25px !important;}
+        /*  inSITE MAP Policy - API */
+        .roman-list, .inc-minmum-price ul{margin-left:10px;}
+        .inc-minmum-price ol{margin-left:10px;}
+        }
+        @media (max-width: 900px){
+        .puri-key-resource{flex-direction:column;}
+        }
+
+        @media screen and (max-width:819px) {
+         .natural-health-care {padding-left: 30px;}
+         .nutrition-innovation.legacy-food .natural-health-care {padding-right: 30px !important;} 
+         p {font-size: 15px;} 
+        
+         /*  inSITE MAP Policy - API */
+        .inc-minmum-price h1 { font-size: 28px; }
+        .inc-minmum-price ul li, .roman-list li{font-size:15px;}
+        .inc-minmum-price ol li{font-size:15px;}
+        .minimum-adver-price{margin:30px 0 0 0 !important;}
+        }
+
+         @media (max-width: 799px){
+        .hero-content img{ width:18%; }
+        .hero-content h1{ font-size:32px !important; }
+        .wfss-benefits-section{padding:30px 0 !important;}
+        .courses-header h2{font-size:26px !important; }
+        .wfss-benefits-grid{padding-bottom:20px !important;}
+        .qualify-block{margin-bottom:0px !important;}
+        section.wfss-qualifies-section{margin-bottom:30px !important;}
+        .free-course-registration.lfrt-img .next-level-process h2{font-size:26px !important;}
+        .qualify-block:last-child{margin-top:25px;}
+        .wfss-benefits-grid{flex-wrap:wrap;justify-content:space-between;gap:20px !important;}
+        .benefit-item{width:48%;}
+
+        /* body purification */
+        section.wfss-benefits-section.purification-benefits.program-works .benefit-item.purification-benefit img{width:60% !important;}
+        section.wfss-benefits-section.purification-benefits.program-works .wfss-benefits-grid.purification-grid{justify-content:center;}
+        .wfss-qualifies-section.wellness-coaching.happy-person{margin-bottom:10px !important;}
+        /* detox */
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start{margin-bottom:10px !important;}
+        }
+
+        @media (max-width: 768px){
+        .hero-content{ max-width:90%; margin-left:0; padding:18px; }
+        .hero-content h1{ font-size:28px; }
+        .hero-content h2{ font-size:20px; }
+        .left-image-content-section{ padding:30px 0 30px; }
+        .left-image-content-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .image-left img{ margin:0 auto; }
+        .content-right h2{ font-size:28px; }
+        .content-right p{ font-size:16px; max-width:100%; }
+        .product-featured-section{ padding:30px 0 10px; }
+        .featured-product-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .product-right .product-right-desc{ max-width:100%; margin:auto; margin-bottom:25px; }
+        .btn-learn{ margin:auto; }
+        .vet-info-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .vet-info-description{ max-width:100%; margin:0 auto 25px; }
+        .intro,.image-text,.future,.profile-section,.values-section,.quote,.video-section{ padding:30px 15px; }
+        .value-card{ flex:1 1 100%; text-align:center; }
+        .hero-section-about-us .hero-title{ font-size:36px; }
+        .courses-grid{grid-template-columns:1fr 1fr;}
+
+        .page-mediherb-pets .left-image-content-grid{ grid-template-columns:1fr; text-align:center; }
+        .page-mediherb-pets .pets-considerations-cta{ display:flex; flex-direction:column; align-items:center; gap:16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ height:48px; line-height:48px; width:auto; text-align:center; }
+        .title-strike-line{ flex-direction:column; gap:16px; }
+        .title-strike-line::before{ width:100%; max-width:120px; }
+        .title-strike-line::after{ width:100%; max-width:120px; }
+
+        /* Widget Tab responsive */
+        .webinar-tab-styles .webinar-tabs a[role="tab"]{ display:block; padding:12px 0; border-bottom:none;}
+        .webinar-tab-styles .webinar-tabs .nav-tabs .nav-item:not(:first-of-type)::before{ display:none !important;}
+        .webinar-tab-styles .webinar-tabs hr{ display:none; }
+        .webinar-tab-styles .webinar-tabs a[role="tab"][aria-selected="true"]{ border-bottom:2px solid #00573d; width:fit-content;}
+
+        /* Events Page */
+         /* .content-placeholder .events-section-grid,.content-widget .events-section-grid {grid-template-columns: 1fr;} */
+        }
+
+        @media screen and (max-width:767px) {
+        .preserve-potency, .clinical-research {flex-wrap: wrap;}
+        .soil-quality-content {width: 100%;order: 2;}
+        .soil-quality-picture, .charlie-duo-picture, .natural-health-care {width: 100%;}
+        .care-practitioners {text-align: center;} 
+        .growing-practice-video { margin: 20px auto 16px; }
+        .natural-health-care {padding: 20px 15px;}
+        .nutrition-innovation.legacy-food .natural-health-care {order: 2;padding: 20px 0  0 0 !important;}
+        .wfss-benefits-grid{display:grid;grid-template-columns:repeat(2, 1fr);}
+        .courses-grid{display:grid !important;grid-template-columns:repeat(2, 1fr) !important;justify-items:center !important;gap:30px; }
+        .benefit-item{width:100%;}
+
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-item img{ max-width:120px; }
+        .collaborators-section .logo-row-centered{ display:contents; gap:0; margin-top:0; }
+        .soil-quality-picture img {position:unset;height: auto;}
+        section.full-width-screen.process-difference .preserve-potency {margin: 20px 0 !important;}
+
+        .health-support-container{ gap:20px; }
+        .support-box{ padding:24px; }
+        .support-top{ flex-direction:column; align-items:center; text-align:center; gap:0px; }
+        .support-icon{ width:80px; height:80px; margin-bottom:12px !important; }
+        .support-text h3{ font-size:20px; }
+        .support-text p{ font-size:16px; }
+
+        /* body purification */
+        .page-body-purification.customize-your-program .preserve-potency{flex-direction:column;text-align:center;}
+        .page-body-purification.customize-your-program .soil-quality-content{text-align:left;margin-top:20px;}
+        section.wfss-benefits-section.purification-benefits.program-works .wfss-benefits-grid.purification-grid{display:flex;}
+        section.full-width-screen.page-body-purification.customize-your-program .soil-quality-content{padding-top:0;margin-top:0 !important;}
+        }
+
+        /* content block education on demand */
+        @media (max-width: 700px){
+        .git-profile{flex-direction:column;align-items:center;text-align:center; }
+        .profile-img, .profile-img img{max-width:100px;max-height:100px; }
+        .main-title{font-size:1.6rem; }
+        .lead{font-size:0.95rem; }
+        .btn-container{flex-direction:column;align-items:center; }
+        .download-btn{width:auto; }
+        }
+        @media (max-width: 640px){
+        .testimonial-flip-grid{grid-template-columns:1fr;gap:32px;}
+        .flip-card{max-width:300px;}
+        }
+        
+        @media screen and (max-width:599px) {
+        .mrgn-tp-btm {margin: 30px 0;}
+        h2 {font-size: 26px;}   
+        .free-course-registration.lfrt-img .lf-picture {height: 350px;}
+        .empower-wrapper h2 {font-size: 26px;}
+
+        .sleep-stress-hero .hero-banner img{ object-fit:cover; height:200px; }
+        }
+
+        @media (max-width: 576px){
+        .wfss-benefits-grid{grid-template-columns:1fr; }
+        .benefit-icon{width:110px;}
+        .benefit-title{font-size:18px;}
+        .benefit-text{font-size:15px;line-height:1.55;}
+        .courses-grid{grid-template-columns:1fr !important;}
+        .course-body h3{font-size:18px;}
+        .course-body p{font-size:15px;line-height:1.55;}
+        .qualifies-container{grid-template-columns:1fr;}
+        .qualify-heading{font-size:24px;}
+        .qualify-subheading{font-size:15px;line-height:1.55;}
+        .qualify-list{font-size:15px;line-height:1.55;}
+        .qualifies-image{min-height:380px;}
+        /* education on demand */
+        .education-on-demand-page .education-widget-section{padding:30px 0;}
+        /* event page */
+        .events-page-banner{height:auto;padding:60px 20px;}
+        .events-page-banner-inner h1{font-size:22px;}
+        /* .events-grid{grid-template-columns:1fr;} */
+        
+        .event-body{padding-right:16px;}
+        .event-meta{min-height:auto;}
+        /* .event-summary, .event-body h3{min-height:auto;} */
+        .event-body h3 {-webkit-line-clamp:2;}
+        .event-summary {-webkit-line-clamp:4;}
+        /* .content-block > div {width: 100%;} */
+        }
+
+        @media screen and (max-width:575px){
+        .suport-flx-cards .cmn-suprt-card{ width:100%; }
+        .page-mediherb-pets .mediherb-pets-hero{ min-height:300px; padding:40px 20px; }
+        .page-mediherb-pets .mediherb-pets-hero-title{ font-size:26px; }
+        .page-mediherb-pets .mediherb-pets-hero-desc{ font-size:16px; }
+        .page-mediherb-pets .why-mediherb-grid{ grid-template-columns:1fr; }
+        .page-mediherb-pets .why-mediherb-title{ font-size:26px; margin-bottom:40px; }
+        .page-mediherb-pets .why-mediherb-icon{ width:120px; height:120px; }
+        .page-mediherb-pets .pets-considerations-cta{ display:block; text-align:center; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ display:block; width:100%; max-width:320px; height:48px; line-height:48px; margin:0 auto 16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn:last-child{ margin-bottom:0; }
+
+        .scientific-experts .expert-grid{ grid-template-columns:1fr; }
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-row-centered{ flex-direction:column; align-items:center; gap:20px; }
+        .collaborators-section .logo-item img{ max-width:120px; }
+
+        .orange-section{ padding:25px 15px; }
+        .orange-section .icon-logo{ max-width:60px; }
+        .orange-section .orange-left h2{ font-size:20px; }
+        .orange-section .orange-right p{ font-size:14px; }
+
+        .events-grid > .content-block{flex:0 0 100%;}
+        }
+
+        @media (max-width: 560px){
+        .clinical-studies-content h2{ font-size:24px; }
+        .clinical-studies-links .links-row{ flex-direction:column; align-items:center; gap:12px; }
+        }
+
+        @media (max-width: 480px){
+        .hero-content h1{ font-size:24px; }
+        .hero-content h2{ font-size:18px; }
+        .hero-section-about-us .hero-title{font-size:28px; }
+        .value-card h2{ font-size:16px; }
+        .value-card p{ font-size:14px; }
+        .course-body h3{font-size:18px;}
+        .course-body p{font-size:15px;}
+        .qualify-heading{font-size:22px;}
+
+        .health-support-section{ padding:35px 0px; }
+        .support-box{ padding:20px; }
+        .support-icon{ width:80px; height:80px; }
+        .support-text h3{ font-size:18px; }
+        .support-text p{ font-size:14px; }
+
+        /* content block education on demand */
+        .main-title{font-size:1.4rem;}
+        .profile-img, .profile-img img{max-width:80px;max-height:80px;}
+        }
+
+        @media screen and (max-width:479px) { .inc-minmum-price h1 { font-size: 24px; } 
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start{margin-top:30px;}
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start .qualifies-container{gap:20px;}
+        section.testimonial-flip-section.grn-flip-cards .testimonial-flip-grid{padding:30px 0 !important;}
+        /*  inSITE MAP Policy - API */
+        .roman-list, .inc-minmum-price ul{margin-left:0;padding-left:10px;}
+        .inc-minmum-price ol{margin-left:0;padding-left:10px;}
+        }
+
+        @media screen and (max-width:424px) {
+         h2 {font-size: 24px;}   
+        }
+
+        @media (max-width: 413px){
+        .free-course-registration.lfrt-img .next-level-process h2, .courses-header h2, section.wfss-benefits-section .wfss-benefits-header h2{font-size:22px !important;}
+        .next-level-process a.link{font-size:14px !important;}
+        .who-qualify p{font-size:16px !important;}
+        }
+
+        @media screen and (max-width:389px) {
+         h2 {font-size: 22px;} 
+         .hero-content h1{ font-size:32px; }  
+        }

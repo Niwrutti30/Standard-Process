@@ -1,0 +1,66 @@
+<style>
+  /* ===== 1. HERO ===== */
+.empwoer-knowlege.Restrictions-hero{background:url('/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/12801/69bc22fc08a81157888455-Group-814.png') center/cover no-repeat;display:flex;align-items:center}
+
+/* ===== 2. INTRO ===== */
+.sp-dietary-intro{background:#6D7E44;padding:60px 20px}.sp-dietary-intro h2,.sp-dietary-intro p{color:#fff}
+
+/* ===== 3. GRID ===== */
+.patient-resources .courses-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+
+/* ===== 4. CARD ===== */
+.course-card{background:#fff;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #eee;transition:.3s}
+.course-card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.course-img{width:100%;height:180px;object-fit:cover}
+.course-body{padding:18px;display:flex;flex-direction:column;flex-grow:1}
+.patient-resources .course-card .link{color:#6D7E44;text-decoration:underline;font-size:15px;margin-top:auto;display:inline-block;padding-top:12px}
+.patient-resources .course-card .link:hover{color:#00432f}
+
+/* ===== 5. DIETARY FIX ===== */
+.dietary-cards .course-card{padding-bottom:20px}
+.dietary-cards .course-body{display:flex;flex-direction:column;flex:1}
+.dietary-cards .course-body p{flex:1}
+
+/* ===== 6. GRAINS SECTION ===== */
+.sp-grains-section{padding:60px 0 70px;overflow:hidden}
+.sp-grains-inner{position:relative;max-width:1140px;margin:auto;padding:0 20px}
+.sp-grains-box{background:#C3882C;padding:50px 40px 100px;width:90%;margin:auto;position:relative;z-index:1;clip-path:polygon(0 0,calc(100% - 60px) 0,100% 60px,100% 100%,0 100%)}
+.sp-grains-box h2,.sp-grains-box p{color:#fff;max-width:680px}
+
+/* ===== 7. GRAINS LAYOUT (IMPORTANT - ORIGINAL BEHAVIOR) ===== */
+.sp-grains-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:-80px;gap:40px;position:relative;z-index:3}
+.sp-grains-photo{width:48%;flex:0 0 48%;position:relative;z-index:3}
+.sp-grains-photo img{width:100%;border-radius:4px;display:block;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+.sp-grains-research{width:45%;flex:0 0 45%;position:relative;z-index:4}
+
+/* ===== 8. DECORATIONS ===== */
+.sp-botanical-right{position:absolute;right:-109px;top:0;width:400px;pointer-events:none;z-index:1}
+.sp-botanical-left{position:absolute;left:-179px;bottom:-152px;width:560px;pointer-events:none;z-index:1}
+.sp-botanical-right img,.sp-botanical-left img{width:100%;display:block}
+
+/* ===== 9. RESPONSIVE ===== */
+@media(max-width:1150px){.patient-resources .courses-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:991px){.patient-resources .courses-grid{grid-template-columns:repeat(2,1fr)}.course-img{height:200px}}
+@media(max-width:576px){.patient-resources .courses-grid{grid-template-columns:1fr}.course-img{height:245px}}
+
+@media(max-width:1024px){
+.sp-grains-box{padding:40px 40px 80px;clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,0 100%)}
+.sp-grains-bottom{flex-direction:column;margin-top:-60px;gap:24px;align-items:center}
+.sp-grains-photo{width:70%!important;flex:0 0 100%}
+.sp-grains-research{width:70%!important;flex:0 0 100%;padding-top:20px;text-align:center}
+.sp-botanical-left,.sp-botanical-right{display:none}
+}
+
+@media(max-width:768px){
+.sp-grains-box{width:100%;padding:40px 20px 80px;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}
+.sp-grains-bottom{flex-direction:column;margin-top:-60px}
+.sp-grains-photo{width:70%!important}
+.sp-grains-research{width:100%!important;text-align:center}
+}
+
+@media(max-width:480px){
+.sp-grains-section{padding:40px 0 60px}
+.sp-grains-box{padding:30px 20px 60px;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}
+.sp-grains-bottom{margin-top:-40px;gap:20px}
+}
+</style>

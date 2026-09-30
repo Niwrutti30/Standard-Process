@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Approach</title>
+    <!-- prettier-ignore -->
+    <style>
+/* 1. Global Resets & Layout */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;background-color:#F1EFE6;color:#00573D;}
+.container{max-width:1540px;width:100%;margin:0 auto;padding:0 40px;}
+.responsive-img{max-width:100%;height:auto;display:block;}
+.text-center{text-align:center;}
+.section-space{margin:60px 0;}
+.bg-light-green{background-color:#A0E870;}
+
+/* 2. Typography */
+.text-dark-green{color:#00573D;}
+.text-serif{font-family:'Playfair Display', 'Georgia', serif;font-weight:500;}
+.text-sans{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;line-height:1.6;}
+
+/* 3. Section 1: Hero Settings */
+.hero-section{padding:90px 0 100px 0;}
+h1.hero-title{font-size:54px;margin-bottom:30px;}
+.hero-subtitle{font-size:18px;max-width:900px;margin:0 auto 60px auto;}
+.icon-grid{display:flex;justify-content:center;gap:150px;align-items:center;max-width:900px;margin:0 auto;}
+.icon-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;}
+.icon-item img{height:160px;width:auto;}
+.icon-text{font-size:16px;font-weight:600;}
+
+/* 4. Section Banners */
+.banner-section{background-size:cover;background-position:center;background-repeat:no-repeat;width:100%;height:600px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+.food-banner{background-image:url('Whole Food banner.png');}
+.systems-banner{background-image:url('Whole Systems banner.png');}
+.health-banner{background-image:url('Whole Health banner.png');}
+.banner-icon{margin-bottom:20px;background-color:#A0E870;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat;-webkit-mask-position:bottom;mask-size:contain;mask-repeat:no-repeat;mask-position:bottom;}
+.food-icon{width:60px;height:90px;-webkit-mask-image:url('Whole Food.png');mask-image:url('Whole Food.png');}
+.systems-icon{width:130px;height:90px;-webkit-mask-image:url('Whole Systems.png');mask-image:url('Whole Systems.png');}
+.health-icon{width:60px;height:90px;-webkit-mask-image:url('Whole Health.png');mask-image:url('Whole Health.png');}
+.banner-title{font-size:104px;color:#A0E870;font-family:'Playfair Display', 'Georgia', serif;font-weight:500;margin:0;}
+
+/* 5. Section 3: Soil Intro */
+.soil-intro-title{font-size:64px;color:#00573D;line-height:1.1;max-width:1005px;margin:0 0 50px 0;}
+.two-col-text{display:flex;gap:60px;align-items:flex-start;}
+.two-col-text .flex-1{flex:1;}
+
+/* 6. Base Media Layouts & Forms */
+.quote-layout{display:flex;align-items:center;gap:100px;}
+.quote-layout .flex-1{flex:1;}
+.large-quote{font-size:54px;color:#00573D;line-height:1.1;max-width:550px;}
+.quote-p{font-size:18px;line-height:1.6;}
+.two-col-img-grid{display:flex;gap:20px;justify-content:space-between;}
+.two-col-img-grid .flex-1{flex:1;}
+.two-col-img-grid .flex-1 img{width:100%;height:auto;display:block;}
+.pull-quote-centered{font-size:34px;color:#00573D;text-align:center;max-width:920px;margin:0 auto;line-height:1.2;}
+
+
+
+/* 7. Breakpoints: Tab (1151px) */
+@media(max-width:1151px){
+.section-space{margin:40px 0;}
+.hero-section{padding:60px 0;}
+.icon-grid{gap:60px;max-width:100%;}
+.soil-intro-title{font-size:48px;max-width:100%;}
+.two-col-text{flex-direction:column;gap:30px;}
+.quote-layout{flex-direction:column;gap:40px;align-items:flex-start;}
+h1.hero-title{font-size:48px;}
+.banner-title{font-size:80px;}
+.banner-section{height:450px;}
+.large-quote{font-size:46px;max-width:100%;}
+.pull-quote-centered{font-size:28px;max-width:100%;}
+}
+
+/* 8. Breakpoints: Mobile (767px) */
+@media(max-width:767px){
+.section-space{margin:30px 0;}
+.icon-grid{flex-direction:row;gap:20px;}
+h1.hero-title{font-size:36px;}
+.hero-subtitle{font-size:16px;}
+.banner-section{height:350px;}
+.banner-title{font-size:56px;}
+.soil-intro-title{font-size:38px;margin-bottom:30px;}
+.text-sans{font-size:16px;}
+.large-quote{font-size:36px;}
+.container{padding:0 20px;}
+.icon-item img{height:60px;}
+.icon-text{font-size:12px;}
+.quote-layout{gap:20px;}
+.two-col-img-grid{flex-direction:column;}
+.pull-quote-centered{font-size:24px;}
+}
+
+/* 9. Breakpoints: Small Mobile (400px) */
+@media(max-width:400px){
+.banner-title{font-size:46px;}
+.soil-intro-title{font-size:32px;}
+.large-quote{font-size:30px;}
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Section 1: Hero Approach -->
+    <section class="hero-section bg-light-green">
+        <div class="container text-center">
+            <h1 class="text-serif text-dark-green hero-title">Our approach</h1>
+            <p class="text-sans text-dark-green hero-subtitle">Health does not happen in pieces. It unfolds through
+                relationships, feedback loops and biological intelligence. Our approach reflects that reality. We grow,
+                study and formulate with a systems lens, connecting soil to supplement and supplement to physiology.</p>
+
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <img src="Whole Food.png" alt="Whole Food Icon" class="responsive-img">
+                    <span class="text-sans text-dark-green icon-text">Whole Food</span>
+                </div>
+                <div class="icon-item">
+                    <img src="Whole Systems.png" alt="Whole Systems Icon" class="responsive-img">
+                    <span class="text-sans text-dark-green icon-text">Whole Systems</span>
+                </div>
+                <div class="icon-item">
+                    <img src="Whole Health.png" alt="Whole Health Icon" class="responsive-img">
+                    <span class="text-sans text-dark-green icon-text">Whole Health</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Whole Food Banner -->
+    <section class="banner-section food-banner">
+        <div class="banner-icon food-icon" role="img" aria-label="Whole Food Overlay Icon"></div>
+        <h2 class="banner-title">Whole Food</h2>
+    </section>
+
+    <!-- Section 3: Soil Nutrition Intro -->
+    <section class="section-space">
+        <div class="container">
+            <h2 class="text-serif soil-intro-title">Nutrition begins long before formulation. It begins in living soil.
+            </h2>
+            <div class="two-col-text">
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">We prioritize nutrient density because depletion has become the
+                        norm. Crops are selected for biological richness rather than commodity yield, and soil health,
+                        seed selection and harvest timing shape the inherent nutrient complexity of every ingredient.
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">Farming, for us, is not about erosion of the land but its
+                        enrichment. Regenerative practices build organic matter, support microbial life and strengthen
+                        long-term soil vitality rather than extracting short-term output.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4: Tractor Image -->
+    <section class="full-img-container">
+        <div class="container">
+            <img src="Compost_Turning.png" alt="Tractor Turning Compost" class="responsive-img" style="width: 100%;">
+        </div>
+    </section>
+    <!-- Section 5: Quote Layout -->
+    <section class="section-space">
+        <div class="container">
+            <div class="quote-layout">
+                <div class="flex-1">
+                    <h2 class="text-serif large-quote">“Whole food matrices preserve nutrient relationships.”</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green quote-p">That same thinking carries forward throughout our
+                        entire process. We focus on regeneration instead of degradation, and on traceability instead of
+                        ambiguity. From controlled growing conditions to documented sourcing and multi-stage testing,
+                        nutrient integrity is protected from field to finished supplement. When whole food nutrition is
+                        preserved at the source, practitioners can work with inputs grounded in nature’s design rather
+                        than reconstructed approximations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6: Dual Image Grid -->
+    <section class="section-space">
+        <div class="container">
+            <div class="two-col-img-grid">
+                <div class="flex-1">
+                    <img src="BrusselsSprouts_Weeding_IMG_4587.png" alt="Brussels Sprouts Weeding"
+                        class="responsive-img">
+                </div>
+                <div class="flex-1">
+                    <img src="Brussels-Sprout-Field-5567.png" alt="Brussels Sprout Field" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 7: Centered Pull Quote -->
+    <section class="section-space">
+        <div class="container">
+            <h2 class="text-serif pull-quote-centered">“When whole food nutrition is preserved at the source,
+                practitioners can work with inputs grounded in nature’s design rather than reconstructed
+                approximations.”</h2>
+        </div>
+    </section>
+
+    <!-- Section 8: Whole Systems Banner -->
+    <section class="banner-section systems-banner">
+        <div class="banner-icon systems-icon" role="img" aria-label="Whole Systems Overlay Icon"></div>
+        <h2 class="banner-title">Whole Systems</h2>
+    </section>
+    <!-- Section 9: Networks & Biology Intro -->
+    <section class="section-space">
+        <div class="container">
+            <h2 class="text-serif soil-intro-title">Biology operates through networks, not isolated pathways</h2>
+            <div class="two-col-text">
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">Our formulations reflect that reality. Rather than reducing
+                        nutrition to single compounds, we preserve complete whole food matrices so nutrients, cofactors
+                        and phytoactives remain in coordinated relationship.</p>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">Processing is approached with the same discipline. Integrity
+                        matters more than convenience. Gentle methods are designed to protect vitality and maintain
+                        nutrient complexity rather than denature or fragment what nature assembled.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 10: Manufacturing Image -->
+    <section class="full-img-container">
+        <div class="container">
+            <img src="MainProcess_242.png" alt="Manufacturing Main Process" class="responsive-img" style="width: 100%;">
+        </div>
+    </section>
+    <!-- Section 11: Whole Health Quote Endcap -->
+    <section class="section-space">
+        <div class="container">
+            <div class="quote-layout">
+                <div class="flex-1">
+                    <h2 class="text-serif large-quote">“Whole health requires coherence across systems.”</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green quote-p">At the same time, consistency cannot be left to chance.
+                        Natural variability is actively managed through defined specifications, controlled manufacturing
+                        and rigorous testing. The goal is not to simplify complexity, but to steward it responsibly,
+                        delivering reliable whole food-based supplements designed for real-world application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 12: Dual Image Grid 2 -->
+    <section class="section-space">
+        <div class="container">
+            <div class="two-col-img-grid">
+                <div class="flex-1">
+                    <img src="SP_QC_281.png" alt="Lab Quality Control" class="responsive-img">
+                </div>
+                <div class="flex-1">
+                    <img src="20241115-standardprocess-3669.png" alt="Standard Process Analyst" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 13: Centered Pull Quote 2 -->
+    <section class="section-space">
+        <div class="container">
+            <h2 class="text-serif pull-quote-centered">“Rather than reducing nutrition to single compounds, we preserve
+                whole food matrices so nutrients, cofactors and phytoactives remain in coordinated relationship.”</h2>
+        </div>
+    </section>
+    <!-- Section 14: Whole Health Banner -->
+    <section class="banner-section health-banner">
+        <div class="banner-icon health-icon" role="img" aria-label="Whole Health Overlay Icon"></div>
+        <h2 class="banner-title">Whole Health</h2>
+    </section>
+    <!-- Section 15: Clinical Care Intro -->
+    <section class="section-space">
+        <div class="container">
+            <h2 class="text-serif soil-intro-title">Clinical care that supports systems, not symptoms</h2>
+            <div class="two-col-text">
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">Systems over symptoms means designing nutrient-dense, whole
+                        food-based supplements that align with how physiology functions in the real world. Rather than
+                        targeting isolated mechanisms, our formulations are structured to support interconnected
+                        biological processes.</p>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green">Bioavailability is treated as a matter of recognition and
+                        utilization, not simply dosage. Our whole food complexes are delivered in forms the body can
+                        absorb and use without synthetic reconstruction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 16: Pexels Image -->
+    <section class="full-img-container">
+        <div class="container">
+            <img src="pexels-thirdman-6958499.png" alt="Woman drinking whole food smoothie" class="responsive-img"
+                style="width: 100%;">
+        </div>
+    </section>
+    <!-- Section 17: Whole Health Endcap -->
+    <section class="section-space">
+        <div class="container">
+            <div class="quote-layout">
+                <div class="flex-1">
+                    <h2 class="text-serif large-quote">“Whole health requires coherence across systems.”</h2>
+                </div>
+                <div class="flex-1">
+                    <p class="text-sans text-dark-green quote-p">And this approach does not stop at formulation.
+                        Collaboration across agriculture, research and clinical education ensures practitioners receive
+                        integration rather than fragmentation, and guidance rather than overload. Whole health demands
+                        coherence from soil to system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 18: Final Image Grid -->
+    <section class="section-space">
+        <div class="container">
+            <div class="two-col-img-grid">
+                <div class="flex-1">
+                    <img src="GettyImages-1305667066.png" alt="Woman enjoying outdoors" class="responsive-img">
+                </div>
+                <div class="flex-1">
+                    <img src="pexels-yankrukov-5794047.png" alt="Healthcare practitioner applying treatment"
+                        class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

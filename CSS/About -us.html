@@ -1,0 +1,42 @@
+<section class="full-width-screen patient-direct-banner">
+  <div class="sp-container-wrapper">
+    <picture>
+    <source srcset="/admin/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/8543/69b913b486b55053648320-marquee-bg-about-us-v2.jpg.webp" type="image/webp"/>
+  <img src="/admin/media/cache/attachment/filter/wysiwyg_original/1ce6569ddaa67bc2162be5030a1ac716/8543/69b913b486b55053648320-marquee-bg-about-us-v2.jpg" alt="About us hero image"/>
+    </picture>
+    <h2 class="faq-main-title">About Us
+    </h2>
+  </div>
+</section>
+<style>
+   .faq-main-title {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .faq-main-title::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+  }
+  .faq-main-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+  }
+    @media screen and (max-width: 768px) {
+    .patient-direct-banner img {
+      max-width: 320px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .patient-direct-banner img {
+      max-width: 240px;
+    }
+  }
+</style>

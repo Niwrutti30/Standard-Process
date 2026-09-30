@@ -1,0 +1,376 @@
+```html
+<!-- =========================
+     VIDEO HERO SECTION
+========================= -->
+
+<section class="video-section">
+
+  <div class="video-section-content">
+
+    <h2>Watch Our Video</h2>
+
+    <a href="#video-modal" class="video-popup-link">
+      <span>Watch Video</span>
+      <span class="video-play-btn">▶</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     VIDEO POPUP
+========================= -->
+
+<div id="video-modal" class="video-modal-overlay">
+
+  <!-- Background -->
+  <a href="#!" class="video-modal-bg-close"></a>
+
+  <div class="video-modal-content">
+
+    <!-- Close Button -->
+    <a href="#!" class="video-close-btn" id="video-close">
+      ×
+    </a>
+
+    <!-- Vimeo Video -->
+    <div class="video-responsive-iframe">
+
+      <iframe
+        id="vimeo-video"
+        src="https://player.vimeo.com/video/447495510?api=1&autoplay=1"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     CSS
+========================= -->
+
+<style>
+
+/* VIDEO SECTION */
+
+.video-section {
+  width: 100%;
+  min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  box-sizing: border-box;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.30)
+    ),
+    url("/admin/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/11014/6a99a2db7277d625064981-970dd11a6ea3c0b87df60a2712d4fc9b_wholefoodbanner.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* CONTENT */
+
+.video-section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.video-section h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+
+/* VIDEO BUTTON */
+
+.video-popup-link {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* PLAY BUTTON */
+
+.video-play-btn {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* POPUP */
+
+.video-modal-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 99999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+
+/* OPEN POPUP */
+
+.video-modal-overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* DARK BACKGROUND */
+
+.video-modal-bg-close {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.85);
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/* VIDEO CONTAINER */
+
+.video-modal-content {
+  position: relative;
+
+  width: 90%;
+  max-width: 900px;
+
+  background: #000000;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+
+/* CLOSE BUTTON */
+
+.video-close-btn {
+  position: absolute;
+
+  top: -40px;
+  right: -10px;
+
+  color: #ffffff;
+
+  font-size: 35px;
+  font-weight: bold;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  z-index: 10;
+}
+
+.video-close-btn:hover {
+  color: #A89237;
+}
+
+
+/* RESPONSIVE VIDEO */
+
+.video-responsive-iframe {
+  position: relative;
+
+  width: 100%;
+  height: 0;
+
+  padding-bottom: 56.25%;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+
+/* IFRAME */
+
+.video-responsive-iframe iframe {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+
+  .video-section {
+    min-height: 400px;
+  }
+
+  .video-section h2 {
+    font-size: 32px;
+  }
+
+  .video-modal-content {
+    width: 94%;
+  }
+
+  .video-close-btn {
+    top: -35px;
+    right: 0;
+    font-size: 30px;
+  }
+
+}
+
+</style>
+
+
+<!-- =========================
+     VIMEO PLAYER API
+========================= -->
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  var iframe = document.getElementById("vimeo-video");
+
+  var videoModal = document.getElementById("video-modal");
+
+  var closeButton = document.getElementById("video-close");
+
+  var backgroundClose =
+    document.querySelector(".video-modal-bg-close");
+
+  var player = new Vimeo.Player(iframe);
+
+
+  /* =========================
+     OPEN VIDEO
+  ========================= */
+
+  document
+    .querySelector(".video-popup-link")
+    .addEventListener("click", function () {
+
+      player.play().catch(function(error) {
+        console.log("Vimeo play error:", error);
+      });
+
+    });
+
+
+  /* =========================
+     CLOSE BUTTON
+  ========================= */
+
+  closeButton.addEventListener("click", function () {
+
+    player.pause().then(function () {
+
+      console.log("Video paused");
+
+    }).catch(function(error) {
+
+      console.log("Vimeo pause error:", error);
+
+    });
+
+  });
+
+
+  /* =========================
+     CLICK OUTSIDE VIDEO
+  ========================= */
+
+  backgroundClose.addEventListener("click", function () {
+
+    player.pause().then(function () {
+
+      console.log("Video paused");
+
+    }).catch(function(error) {
+
+      console.log("Vimeo pause error:", error);
+
+    });
+
+  });
+
+});
+
+</script>
+```

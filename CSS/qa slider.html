@@ -1,0 +1,149 @@
+<section class="full-width-screen">
+  <div class="bg-beige">
+    <div class="hs">
+      <!-- state -->
+      <input type="radio" name="hslide" id="hs1" checked class="hs-radio"/>
+      <input type="radio" name="hslide" id="hs2" class="hs-radio"/>
+      <input type="radio" name="hslide" id="hs3" class="hs-radio"/>
+      <input type="radio" name="hslide" id="hs4" class="hs-radio"/>
+      <!-- slides (must stay the only <div> children of .hs) -->
+      <div class="hs-slide hs-slide-1">
+        <div class="hs-inner">
+          <h2 class="hs-title font-ivy-presto-headline">It starts in the soil
+          </h2>
+          <p class="hs-copy">Certified organic ground, farmed regeneratively, grows over 75% of the raw plant material in our products.
+          </p>
+          <a href="#" class="hs-cta">See how we farm</a>
+        </div>
+      </div>
+      <div class="hs-slide hs-slide-2">
+        <div class="hs-inner">
+          <h2 class="hs-title font-ivy-presto-headline">Whole food, kept whole
+          </h2>
+          <p class="hs-copy">A vertically integrated process protects the synergy of whole-food nutrients at every step, from harvest to bottle.
+          </p>
+          <a href="#" class="hs-cta">Follow the process</a>
+        </div>
+      </div>
+      <div class="hs-slide hs-slide-3">
+        <div class="hs-inner">
+          <h2 class="hs-title font-ivy-presto-headline">Research that guides us
+          </h2>
+          <p class="hs-copy">Systems biology and translational science at our Nutrition Innovation Center shape every formulation decision.
+          </p>
+          <a href="#" class="hs-cta">Visit the Center</a>
+        </div>
+      </div>
+      <div class="hs-slide hs-slide-4">
+        <div class="hs-inner">
+          <h2 class="hs-title font-ivy-presto-headline">Four generations on
+          </h2>
+          <p class="hs-copy">Since 1929, Dr. Royal Lee’s conviction about the whole food complex has carried this company forward.
+          </p>
+          <a href="#" class="hs-cta">Read our story</a>
+        </div>
+      </div>
+      <!-- arrows: one pair per slide -->
+      <label for="hs4" aria-label="Previous slide" class="hs-arrow hs-prev p1"></label>
+      <label for="hs2" aria-label="Next slide" class="hs-arrow hs-next n1"></label>
+      <label for="hs1" aria-label="Previous slide" class="hs-arrow hs-prev p2"></label>
+      <label for="hs3" aria-label="Next slide" class="hs-arrow hs-next n2"></label>
+      <label for="hs2" aria-label="Previous slide" class="hs-arrow hs-prev p3"></label>
+      <label for="hs4" aria-label="Next slide" class="hs-arrow hs-next n3"></label>
+      <label for="hs3" aria-label="Previous slide" class="hs-arrow hs-prev p4"></label>
+      <label for="hs1" aria-label="Next slide" class="hs-arrow hs-next n4"></label>
+      <!-- direct navigation (a <nav>, not a div, so the slide nth-of-type rules stay correct) -->
+      <nav class="hs-dots">
+        <label for="hs1" aria-label="Go to slide 1" class="hs-dot g1"></label>
+        <label for="hs2" aria-label="Go to slide 2" class="hs-dot g2"></label>
+        <label for="hs3" aria-label="Go to slide 3" class="hs-dot g3"></label>
+        <label for="hs4" aria-label="Go to slide 4" class="hs-dot g4"></label>
+      </nav>
+    </div>
+  </div>
+</section>
+<style>
+.hs{--hs-max:1540px;--hs-gut:40px;--hs-arrow:56px;--hs-lane:96px;position:relative;width:100%;min-height:480px;overflow:hidden;background:#00573D;}
+.hs *{box-sizing:border-box;}
+.hs-radio{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+.hs-slide{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0;visibility:hidden;transition:opacity .6s ease;}
+.hs-slide:after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(0,45,31,.78) 0%, rgba(0,45,31,.35) 45%, rgba(0,45,31,.08) 100%);}
+.hs-inner{position:relative;z-index:2;max-width:var(--hs-max);width:100%;margin:0 auto;padding:0 calc(var(--hs-gut) + var(--hs-lane)) 110px;}
+.hs-title{color:#A0E870;font-size:64px;line-height:1.08;font-weight:500;letter-spacing:-.5px;max-width:17ch;margin:0 0 18px;text-align:left;}
+.hs-copy{color:#F4F3EC;font-size:22px;line-height:1.55;max-width:52ch;margin:0 0 26px;}
+.hs-cta{display:inline-block;padding:.6rem 1.7rem;background:#A0E870;color:#00573D;font-size:16px;font-weight:500;letter-spacing:.01em;border-radius:24px;text-decoration:none;transition:background .2s ease, color .2s ease;margin-top:10px;}
+.hs-cta:hover{background:#FFFFFF;color:#00573D;}
+.hs-cta:focus-visible{background:#FFFFFF;color:#00573D;}
+#hs1:checked~.hs-slide:nth-of-type(1),#hs2:checked~.hs-slide:nth-of-type(2),#hs3:checked~.hs-slide:nth-of-type(3),#hs4:checked~.hs-slide:nth-of-type(4){opacity:1;visibility:visible;}
+.hs-arrow{position:absolute;top:50%;transform:translateY(-50%);width:var(--hs-arrow);height:var(--hs-arrow);border:1px solid rgba(160,232,112,.55);background:rgba(0,45,31,.35);backdrop-filter:blur(2px);cursor:pointer;z-index:6;display:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .2s ease, border-color .2s ease;}
+.hs-arrow:before{content:'';position:absolute;top:50%;left:50%;width:11px;height:11px;border-top:2px solid #A0E870;border-right:2px solid #A0E870;}
+.hs-prev:before{transform:translate(-40%,-50%) rotate(-135deg);}
+.hs-next:before{transform:translate(-60%,-50%) rotate(45deg);}
+.hs-arrow:hover{background:#A0E870;border-color:#A0E870;}
+.hs-arrow:active{background:#A0E870;border-color:#A0E870;}
+.hs-arrow:hover:before,.hs-arrow:active:before{border-top-color:#00573D;border-right-color:#00573D;}
+.hs-prev{left:max(var(--hs-gut), calc(50% - (var(--hs-max) / 2) + var(--hs-gut)));}
+.hs-next{right:max(var(--hs-gut), calc(50% - (var(--hs-max) / 2) + var(--hs-gut)));}
+#hs1:checked~.p1,#hs1:checked~.n1,#hs2:checked~.p2,#hs2:checked~.n2,#hs3:checked~.p3,#hs3:checked~.n3,#hs4:checked~.p4,#hs4:checked~.n4{display:block;}
+.hs-dots{position:absolute;left:0;right:0;bottom:44px;z-index:5;display:flex;gap:10px;max-width:var(--hs-max);margin:0 auto;padding:0 calc(var(--hs-gut) + var(--hs-lane));pointer-events:none;}
+.hs-dot{width:44px;height:3px;background:rgba(244,243,236,.4);cursor:pointer;transition:background .25s ease;pointer-events:auto;position:relative;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
+.hs-dot:before{content:'';position:absolute;left:0;right:0;top:-14px;bottom:-14px;}
+.hs-dot:hover{background:rgba(244,243,236,.75);}
+#hs1:checked~.hs-dots .g1,#hs2:checked~.hs-dots .g2,#hs3:checked~.hs-dots .g3,#hs4:checked~.hs-dots .g4{background:#A0E870;}
+#hs1:focus-visible~.hs-dots .g1,#hs2:focus-visible~.hs-dots .g2,#hs3:focus-visible~.hs-dots .g3,#hs4:focus-visible~.hs-dots .g4{outline:2px solid #A0E870;outline-offset:4px;}
+.hs-slide-1{background-image:url("/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/11057/6a99a30690b7f687281852-69d6250c1888a538199020-nutirition-innovation-center.png");}
+.hs-slide-2{background-image:url("/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/11058/6a99a2db7277d625064981-970dd11a6ea3c0b87df60a2712d4fc9b_wholefoodbanner.png");}
+.hs-slide-3{background-image:url("/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/11059/6a99a338546f3639383762-home-page-desk-view.webp");}
+.hs-slide-4{background-image:url("/media/cache/attachment/filter/wysiwyg_original/4dbc178c2ebed276168fb5a715adf9ec/11059/6a99a338546f3639383762-home-page-desk-view.webp");}
+@media (prefers-reduced-motion:reduce){
+.hs-slide{transition:none;}
+}
+@media (max-width:1151px){
+.hs{min-height:420px;--hs-gut:24px;--hs-arrow:48px;--hs-lane:76px;}
+.hs-title{font-size:52px;}
+.hs-copy{font-size:20px;}
+}
+@media (max-width:900px){
+.hs{--hs-lane:0px;}
+.hs-slide{position:relative;display:none;min-height:440px;transition:none;}
+#hs1:checked~.hs-slide:nth-of-type(1),#hs2:checked~.hs-slide:nth-of-type(2),#hs3:checked~.hs-slide:nth-of-type(3),#hs4:checked~.hs-slide:nth-of-type(4){display:flex;}
+.hs-inner{padding:0 24px 92px;}
+.hs-title{font-size:40px;margin-bottom:14px;max-width:100%;}
+.hs-copy{font-size:18px;margin-bottom:20px;}
+.hs-arrow{top:auto;bottom:24px;transform:none;width:44px;height:44px;}
+.hs-prev{left:auto;right:max(80px, calc(50% - (var(--hs-max) / 2) + 80px));}
+.hs-next{right:max(24px, calc(50% - (var(--hs-max) / 2) + 24px));}
+.hs-dots{bottom:45px;padding:0 24px;}
+.hs-dot{width:32px;}
+}
+@media (max-width:767px){
+.hs{min-height:380px;}
+}
+@media (max-width:600px){
+.hs-slide{min-height:380px;}
+.hs-inner{padding:0 20px 80px;}
+.hs-title{font-size:30px;margin-bottom:10px;}
+.hs-copy{font-size:15px;line-height:1.45;margin-bottom:16px;}
+.hs-cta{font-size:14px;padding:.5rem 1.2rem;}
+.hs-arrow{width:40px;height:40px;bottom:20px;}
+.hs-arrow:before{width:9px;height:9px;}
+.hs-prev{right:68px;}
+.hs-next{right:20px;}
+.hs-dots{bottom:39px;padding:0 20px;gap:8px;}
+.hs-dot{width:26px;}
+}
+@media (max-width:479px){
+.hs{min-height:330px;}
+.hs-slide{min-height:330px;}
+.hs-inner{padding:0 20px 76px;}
+.hs-title{font-size:26px;}
+.hs-copy{font-size:14px;margin-bottom:14px;}
+.hs-dot{width:20px;}
+}
+@media (max-width:360px){
+.hs{min-height:300px;}
+.hs-slide{min-height:300px;}
+.hs-title{font-size:23px;}
+.hs-dot{width:16px;}
+}
+</style>

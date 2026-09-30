@@ -1,0 +1,8 @@
+.marquee-slide-infa.brand-logo .logo-item{padding:0 25px;min-width:300px;}
+.marquee-slide-infa.brand-logo .marquee-slider{row-gap:40px;}
+.marquee-slide-infa.brand-logo .marquee-group{animation-play-state:running!important;}
+@media all and (max-width:767px){
+.marquee-slide-infa.brand-logo .logo-item{padding:0 10px;min-width:200px;}
+.marquee-slide-infa.brand-logo .logo-item img{max-height:80px;}
+.marquee-group{animation-play-state:running!important;}
+}

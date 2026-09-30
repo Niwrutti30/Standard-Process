@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who We Are</title>
+    <!-- prettier-ignore -->
+    <style>
+
+        /* 1. Global Resets & Layout */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #F1EFE6; color: #00573D; }
+        .container { max-width: 1540px; width: 100%; margin: 0 auto; padding: 0 40px; }
+        .responsive-img { max-width: 100%; height: auto; display: block; }
+        .text-center { text-align: center; }
+
+        /* 2. Typography */
+        .text-dark-green { color: #00573D; }
+        .text-serif { font-family: 'Playfair Display', 'Georgia', serif; font-weight: 500; }
+        .text-sans { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6; }
+        h2, .large-quote { font-size: 32px; font-weight: 500; line-height: 1.2; text-align: center; margin: 0 auto; max-width: 731px; }
+
+        /* 3. Section Spacing & Column Layouts */
+        .section-space { margin: 60px 0; }
+        .two-col { display: flex; align-items: center; justify-content: center; gap: 80px; }
+        .flex-1 { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .mw-320 { max-width: 320px; text-align: left; width: 100%; }
+        .mw-850 { max-width: 850px; margin: 0 auto; }
+        .mw-950 { max-width: 950px; margin: 0 auto; }
+
+        /* 4. Background Covers & Hero Titles */
+        .bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: 470px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; }
+        .hero-title { font-family: 'Playfair Display', 'Georgia', serif; color: #A0E870; line-height: 1.1; font-weight: 500; text-align: center; margin: 0; }
+        h1.hero-title-main { font-size: 104px; letter-spacing: -1px; max-width: 861px; margin: 0 auto; }
+        h2.hero-title-lg { font-size: 88px; margin-top: 0; max-width: 878px; margin: 0 auto; }
+        h2.hero-title-md { font-size: 80px; margin-top: 0; margin-bottom: 30px; max-width: 850px; margin: 0 auto; }
+        .hero-section { background-image: url('Who-We-Are-herosection.png'); }
+        .soil-hero { background-image: url('soil roots.png'); }
+        .banner-no-text { background-image: url('systems biology.png'); padding: 0; }
+        .future-hero { background-image: url('future nutrition.png'); margin-bottom: 60px; }
+
+        /* 5. Buttons */
+        .btn-primary { display: inline-block; margin-top: 20px; background-color: #A0E870; color: #00573D; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; padding: 15px 35px; border-radius: 30px; text-decoration: none; transition: transform 0.2s, opacity 0.3s; }
+        .btn-primary:hover { opacity: 0.9; transform: scale(1.02); }
+
+        /* 6. Breakpoints: Tab (1151px) */
+        @media (max-width: 1151px) {
+            .section-space { margin: 40px 0; }
+            .bg-cover { height: 370px; }
+            .text-sans { font-size: 16px; }
+            .two-col { flex-direction: column; gap: 20px; }
+            .mobile-order-first { order: -1; }
+            .mw-320 { max-width: 77%; text-align: center; margin-bottom: 20px; }
+            h1.hero-title-main { font-size: 88px; }
+            h2.hero-title-lg { font-size: 72px; }
+            h2.hero-title-md { font-size: 64px; }
+        }
+
+        /* 7. Breakpoints: Mobile (767px) */
+        @media (max-width: 767px) {
+            .section-space { margin: 30px 0; }
+            .bg-cover { height: 290px; }
+            .text-sans { font-size: 15px; }
+            h2, .large-quote { font-size: 28px; margin: 0 auto; }
+            h2.hero-title-lg, h2.hero-title-md { font-size: 48px; margin-top: 0; }
+            h1.hero-title-main { font-size: 64px; }
+            .btn-primary { padding: 12px 20px; font-size: 15px; width: 100%; max-width: 300px; line-height: 1.4; }
+            .container { padding: 0 20px; }
+        }
+
+        /* 8. Breakpoints: Small Mobile (400px) */
+        @media (max-width: 400px) {
+            h1.hero-title-main { font-size: 51.2px; }
+            h2.hero-title-lg, h2.hero-title-md { font-size: 35.2px; }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section bg-cover">
+      <div class="container">
+        <h1 class="hero-title hero-title-main">
+          The future of nutrition can’t wait
+        </h1>
+      </div>
+    </section>
+
+    <!-- Doctor Royal Lee Section -->
+    <section class="section-space">
+      <div class="container">
+        <div class="two-col">
+          <div class="flex-1">
+            <p class="text-sans text-dark-green mw-320">
+              Since 1929, our founder, Dr. Royal Lee, understood what modern
+              science is just now proving: real health begins with the
+              whole-food complex, not isolated parts.
+            </p>
+          </div>
+          <div class="flex-1 mobile-order-first">
+            <img
+              src="Dr royal lee image section.png"
+              alt="Dr. Royal Lee"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section-space">
+      <div class="container">
+        <h2 class="text-serif text-dark-green large-quote">
+          Four generations later, his vision continues to guide us, and his
+          legacy lives on.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Soil Roots Section -->
+    <section class="soil-hero bg-cover">
+      <div class="container">
+        <h2 class="hero-title hero-title-lg">
+          We start where vitality begins: the soil.
+        </h2>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container text-center">
+        <p class="text-sans text-dark-green mw-850">
+          When the soil thrives, so does the food &mdash; and so does the body.
+          On our certified organic farm, we use regenerative farming practices
+          to grow nutrient-dense crops that supply over 80%* of our ingredients.
+        </p>
+      </div>
+    </section>
+
+    <!-- Whole Food Image Section -->
+    <section class="section-space">
+      <div class="container">
+        <div class="two-col">
+          <div class="flex-1">
+            <img
+              src="whole food imaeg.png"
+              alt="Whole Food Plants"
+              class="responsive-img"
+            />
+          </div>
+          <div class="flex-1">
+            <p class="text-sans text-dark-green mw-320">
+              Our vertically integrated process preserves nutritional integrity.
+              This protects the synergy of whole-food nutrients at every step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section-space">
+      <div class="container">
+        <h2 class="text-serif text-dark-green large-quote">
+          No shortcuts. No compromises.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Systems Biology Section -->
+    <section class="banner-no-text bg-cover"></section>
+    <section class="section-space">
+      <div class="container text-center">
+        <p class="text-sans text-dark-green mw-950">
+          We study whole-food nutrition at our Nutrition Innovation Center,
+          through systems biology and translational science. Research guides our
+          decisions from crop selection to evidence-based formulations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Group 512 Section -->
+    <section class="section-space">
+      <div class="container">
+        <div class="two-col">
+          <div class="flex-1">
+            <p class="text-sans text-dark-green mw-320">
+              This is whole-food nutrition, the way nature intended, and how the
+              future demands it.
+            </p>
+          </div>
+          <div class="flex-1 mobile-order-first">
+            <img
+              src="Group 512.png"
+              alt="Red Plant Leaves"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section-space">
+      <div class="container">
+        <h2 class="text-serif text-dark-green large-quote">
+          This is what it takes to change lives. A commitment to whole food,
+          whole systems, whole health.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Future Nutrition Section -->
+    <section class="future-hero bg-cover">
+      <div class="container flex-col-center">
+        <h2 class="hero-title hero-title-md">
+          Join us. The future of nutrition is here.
+        </h2>
+        <a href="#" class="btn-primary"
+          >Get started with a Standard Process account</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+/* font-family */
+h1,h2,h3,h5,h6{font-family:'IvyPresto Headline', 'Georgia', serif;}
+p,a,span,label,h4{font-family:"Owners Text", sans-serif;}
+
+/* ===== TOP NAV BAR ===== */
+.top-nav-bar{width:100%;background-color:#00573D;}
+.top-nav-inner{max-width:1200px;margin:0 auto;height:50px;padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:80px;}
+
+/* LINKS */
+.top-nav-link{color:#ffffff;font-size:20px;font-weight:500;text-decoration:none;letter-spacing:0.3px;transition:opacity 0.3s ease;}
+.top-nav-link:hover{opacity:0.7;}
+
+/* 1. Global Resets & Layout */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background-color:#F1EFE6;color:#00573D;}
+.container{max-width:1540px;width:100%;margin:0 auto;padding:0 40px;}
+.responsive-img{max-width:100%;height:auto;display:block;}
+.text-center{text-align:center;}
+.section-space{padding:60px 0;}
+.bg-light-green{background-color:#A0E870;}
+
+/* 2. Typography */
+.text-dark-green{color:#00573D;}
+.text-serif{font-weight:500;}
+.text-sans{font-size:25px;line-height:1.6;}
+
+/* 3. Section 1: Hero Settings */
+.hero-section{padding:90px 0 100px 0;}
+h1.hero-title{font-size:60px;margin-bottom:30px;}
+.hero-subtitle{font-size:25px;max-width:1078px;margin:0 auto 60px auto!important;}
+.icon-grid{display:flex;justify-content:center;gap:150px;align-items:center;max-width:900px;margin:0 auto;}
+.icon-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;}
+.icon-item img{height:160px;width:auto;}
+.icon-text{font-size:16px;font-weight:600;}
+
+/* 4. Section Banners */
+.banner-section{background-size:cover;background-position:center;background-repeat:no-repeat;width:100%;height:600px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+.food-banner{background-image:url('//useruploads.vwo.io/useruploads/972666/images/970dd11a6ea3c0b87df60a2712d4fc9b_wholefoodbanner.png');position:relative;}
+.systems-banner{background-image:url('//useruploads.vwo.io/useruploads/972666/images/1ef059bd83dc76f58bd68b9c5f27c40a_wholesystemsbanner.png');position:relative;}
+.health-banner{background-image:url('//useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/4cbfa1e59727c6bd480b78b289ce5025_wholehealthbanner.jpg');position:relative;}
+.banner-section.food-banner:before{content:'';position:absolute;width:100%;height:100%;background:rgb(0 0 0 / 16%);}
+.banner-section.systems-banner:before{content:'';position:absolute;width:100%;height:100%;background:rgb(0 0 0 / 16%);}
+.banner-section.health-banner:before{content:'';position:absolute;width:100%;height:100%;background:rgb(0 0 0 / 16%);}
+.banner-icon{margin-bottom:20px;background-color:#A0E870;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat;-webkit-mask-position:bottom;mask-size:contain;mask-repeat:no-repeat;mask-position:bottom;}
+.food-icon{width:77px;height:138px;-webkit-mask-image:url('//useruploads.vwo.io/useruploads/972666/images/d646fc207a0d0df337ee1db785c45d32_wholefood.png');mask-image:url('//useruploads.vwo.io/useruploads/972666/images/d646fc207a0d0df337ee1db785c45d32_wholefood.png');}
+.systems-icon{width:156px;height:154px;-webkit-mask-image:url('//useruploads.vwo.io/useruploads/972666/images/e144fbae537e2b471f012ab8b4fa3bd4_wholesystems.png');mask-image:url('//useruploads.vwo.io/useruploads/972666/images/e144fbae537e2b471f012ab8b4fa3bd4_wholesystems.png');}
+.health-icon{width:83px;height:160px;-webkit-mask-image:url('//useruploads.vwo.io/useruploads/972666/images/9902af0e89b004fd5d168dd7dc131bea_wholehealth.png');mask-image:url('//useruploads.vwo.io/useruploads/972666/images/9902af0e89b004fd5d168dd7dc131bea_wholehealth.png');}
+.banner-title{font-size:130px;color:#A0E870;font-weight:500;margin:0;z-index:1;}
+
+/* 5. Section 3: Soil Intro */
+.Nutrition-begins.soil-intro-title{font-size:60px;color:#00573D;line-height:1.1;max-width:1097px;margin-bottom:30px;}
+.soil-intro-title{font-size:60px;color:#00573D;line-height:1.1;max-width:942px;margin-bottom:30px;}
+.clinical-care.soil-intro-title{font-size:60px;color:#00573D;line-height:1.1;max-width:1327px;margin-bottom:30px;}
+.two-col-text{display:flex;gap:60px;align-items:flex-start;}
+.two-col-text .flex-1{flex:1;}
+
+/* 6. Base Media Layouts & Forms */
+.quote-layout{display:flex;align-items:center;gap:100px;}
+.quote-layout .flex-1{flex:1;}
+.large-quote{font-size:60px;color:#00573D;line-height:1.1;max-width:573px;}
+.quote-p{font-size:25px;line-height:1.6;}
+.two-col-img-grid{display:flex;gap:20px;justify-content:space-between;}
+.two-col-img-grid .flex-1{flex:1;}
+.two-col-img-grid .flex-1 img{width:100%;height:auto;display:block;}
+.pull-quote-centered{font-size:39px;color:#00573D;text-align:center;max-width:1169px;margin:0 auto;line-height:1.2;}
+
+/* Back to top */
+html{scroll-behavior:smooth;}
+.back-to-top{display:flex;gap:12px;align-items:center;justify-content:center;margin:50px 0;text-decoration:none;color:#0c5843;font-weight:700;transition:color 0.18s ease;}
+.back-to-top:hover{color:#016c36;}
+.back-to-top-text{display:inline-block;line-height:1;letter-spacing:0.6px;}
+
+/* Circle that holds the icon */
+.back-to-top-circle{width:42px;height:42px;background-color:#00573D;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:transform 0.18s ease, background-color 0.18s ease;color:#fff;}
+
+/* Hover effect on circle */
+.back-to-top:hover .back-to-top-circle{transform:translateY(-3px);background-color:#85ac34;}
+
+/* SVG sizing and stroke color follow current layout */
+.chevron-svg{width:30px;height:30px;display:block;}
+
+/* 7. Breakpoints: Tab (1151px) */
+@media(max-width:1151px){
+.section-space{padding:40px 0;}
+.hero-section{padding:60px 0;}
+.icon-grid{gap:60px;max-width:100%;}
+.Nutrition-begins.soil-intro-title{font-size:52px;max-width:100%;}
+.soil-intro-title{font-size:52px;max-width:100%;}
+.clinical-care.soil-intro-title{font-size:52px;max-width:100%;}
+.two-col-text{flex-direction:column;gap:0px;}
+.quote-layout{flex-direction:column;gap:22px;align-items:flex-start;}
+h1.hero-title{font-size:52px;}
+.banner-title{font-size:80px;}
+.banner-section{height:370px;}
+.large-quote{font-size:52px;max-width:100%;}
+.pull-quote-centered{font-size:32px;max-width:100%;}
+.food-icon{width:48px;height:86px;}
+.systems-icon{width:97px;height:96px;}
+.health-icon{width:52px;height:100px;}
+.hero-subtitle{font-size:22px;}
+.text-sans{font-size:22px;}
+.quote-p{font-size:22px;}
+}
+@media (max-width: 959px){
+.banner-title{font-size:72px;}
+.food-icon{width:42px;height:76px;}
+.systems-icon{width:86px;height:85px;}
+.health-icon{width:46px;height:88px;}
+
+.soil-intro-title{font-size:46px;}
+.Nutrition-begins.soil-intro-title{font-size:46px;}
+.clinical-care.soil-intro-title{font-size:46px;}
+
+.large-quote{font-size:46px;}
+h1.hero-title{font-size:46px;}
+}
+@media (max-width: 992px){
+.top-nav-inner{height:40px;gap:40px;}
+.top-nav-link{font-size:18px;}
+}
+
+/* 8. Breakpoints: Mobile (767px) */
+@media(max-width:767px){
+.section-space{padding:30px 0;}
+.icon-grid{flex-direction:row;gap:20px;}
+h1.hero-title{font-size:38px;}
+.banner-section{height:350px;}
+.soil-intro-title{font-size:38px;}
+.Nutrition-begins.soil-intro-title{font-size:38px;}
+.clinical-care.soil-intro-title{font-size:38px;}
+.large-quote{font-size:38px;}
+.container{padding:0 20px;}
+.icon-item img{height:60px;}
+.icon-text{font-size:12px;}
+.quote-layout{gap:12px;}
+.two-col-img-grid{flex-direction:column;}
+.pull-quote-centered{font-size:29px;}
+.hero-subtitle{font-size:18px;}
+.text-sans{font-size:18px;}
+.quote-p{font-size:18px;}
+}
+@media (max-width: 599px){
+.banner-title{font-size:60px;}
+.food-icon{width:35px;height:63px;}
+.systems-icon{width:72px;height:71px;}
+.health-icon{width:38px;height:74px;}
+}
+@media (max-width: 600px){
+.top-nav-inner{height:auto;flex-direction:column;gap:12px;padding:12px 16px;}
+.top-nav-link{font-size:16px;}
+}
+@media(max-width:479px){
+
+
+}
+@media(max-width:413px){
+.soil-intro-title{font-size:34px;margin-bottom:20px;}
+.Nutrition-begins.soil-intro-title{font-size:34px;margin-bottom:20px;}
+.clinical-care.soil-intro-title{font-size:34px;margin-bottom:20px;}
+.large-quote{font-size:34px;}
+}
+
+/* 9. Breakpoints: Small Mobile (400px) */
+@media (max-width: 389px){
+.banner-title{font-size:42px;}
+.food-icon{width:25px;height:44px;}
+.systems-icon{width:50px;height:49px;}
+.health-icon{width:27px;height:51px;}
+}

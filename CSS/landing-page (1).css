@@ -1,0 +1,616 @@
+
+        /* common container css */
+        /* .sp-container-wrapper {max-width: 1540px;margin: 0 auto;padding: 0 15px;} */
+        
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        /* section.full-width-screen { margin: 0 -28px; } */
+        body, html {height: 100%;font-family: Arial, sans-serif;}
+        img {max-width: 100%;height: auto;display: block;margin: 0 auto;vertical-align: text-bottom;width:100%;}
+        h2 {font-size: 32px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight:500;}
+        h4 {font-size: 22px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight:400;margin: 15px 0 !important;}
+        p {font-size: 18px;font-family: "Roboto", "Helvetica", Arial, sans-serif;font-weight: normal;line-height: 28px;margin: 10px 0 0 0 !important;}
+        a.btn.sp-prod-links {display: inline-block;padding: 8px 20px;background-color: #00573D; color: #fff;text-decoration: none;border-radius: 4px;font-size: 18px; margin-top: 20px; }
+        a.btn.sp-prod-links:hover { background: #6d7e44; }
+        .mrgn-tp-btm {margin: 60px 0;}
+        /* welcome to the standard process css start */
+        .care-practitioners {max-width: 1040px;margin: 0 auto;text-align: center;}
+        /* We are obessed with soil quality */
+        .preserve-potency {display: flex;background: #00573D; min-height:350px;}
+        .soil-quality-picture {width: 40%;}
+        .soil-quality-content {width: 60%;color: #fff;margin-left: calc(970px - 770px);padding-right: 125px;
+         align-self: center;}
+        a.wht-bg-btn {display: inline-block;text-decoration: none;padding: 10px 25px;background: #fff; font-weight: 600;color: #00573d;border-radius: 6px;margin-top: 20px;font-size: 18px;border: 2px solid #fff;transition: all 0.3s ease;}
+        a.wht-bg-btn:hover {background: transparent;color: #fff;border-color: #fff;}
+        /* Four Card CSS start */
+        /* .supporting-cards.four-cards-inline .cmn-suprt-card { position: relative; padding-bottom: 55px; }
+        .suport-flx-cards {display: flex;gap: 20px;}
+        .suport-flx-cards .cmn-suprt-card { width:calc((100% - 60px) / 4); border:1px solid #e8e8e8; padding:10px; padding-bottom:20px; transition:all ease 0.5s; display:flex; flex-direction:column; background:#fff;}
+        .suport-flx-cards .cmn-suprt-card:hover {transform: scale(1.05);}
+        .content-box {padding: 0 10px; display:flex; flex-direction:column; flex:1;}
+        .content-box p{ margin-bottom:26px; }
+        .content-box .btn-card-action{ margin-top:auto; align-self:flex-start; } */
+        /* Video CSS */
+        .growing-practice-video { width: 100%; max-width: 960px; margin: 30px auto 20px; }
+        .growing-practice-video iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block;border: 0; }
+        /* Charlie DuBois President CSS */
+        .clinical-research {display: flex;background: #f4f4f4;}
+        .charlie-duo-picture{ width:50%; display:flex; align-items:center; }
+        .charlie-duo-picture .video-ratio{ width:100%; position:relative; padding-top:56.25%; }
+        .charlie-duo-picture iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+        .natural-health-care {width: 50%;align-self: center;padding-left: 90px;padding-right: 50px;}
+        .nutrition-innovation.legacy-food .clinical-research {background: unset;}
+        .nutrition-innovation.legacy-food .clinical-research .natural-health-care {padding: 0 90px 0 0;}
+
+        .standard-process-family.mrgn-tp-btm.not-ready {margin-bottom: 0;}
+
+        /* Gold Standard  Page Start */
+        .hero-section-gold-standard{ width:100%; height:470px; background-image:url('https://standardprocesscom.corewebdna.com/files/images/pages/the-gold-standard/Group 6936.webp?f=jpg'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:flex-start; position:relative; }
+        .hero-overlay{ width:100%; height:100%; display:flex; align-items:center; }
+        .hero-content{ max-width:710px; margin-left:3%; }
+        .hero-content h1{ margin:0; font-size:46px; color:#404040 !important; font-weight:700; text-shadow:0px 4px 8px rgba(0,0,0,0.35); }
+        .hero-content h2{ margin-top:10px; font-size:38px; font-style:italic; font-weight:500; color:#404040 !important; text-shadow:0px 4px 8px rgba(0,0,0,0.35); }
+        .left-image-content-section{ padding:90px 0 40px; }
+        .left-image-content-grid{ display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:162px; max-width:1540px; margin:auto; padding:0 15px; }
+        /* .left-image-content-grid{ display:grid; align-items:center; gap:60px; max-width:1540px; margin:auto; padding:0 15px; } */
+
+        /* Gold Standard  Page End */
+
+        /* Responsive CSS Start */
+        @media screen and (max-width:1899px) {
+         /* .soil-quality-content {margin-left: calc(800px - 750px);} */
+         .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{padding-right:50px !important;}  
+         section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 51%;} 
+        }
+        @media (max-width: 1884px) and (min-width: 1860px){
+        .soil-quality-content {margin-left: calc(947px - 750px);}
+        }
+        @media (max-width: 1859px) and (min-width: 1830px){
+        .soil-quality-content {margin-left: calc(915px - 750px);}
+        }
+        @media (max-width: 1829px) and (min-width: 1800px){
+        .soil-quality-content {margin-left: calc(895px - 750px);}
+        }
+        @media (max-width: 1799px) and (min-width: 1700px){
+        .soil-quality-content {margin-left: calc(845px - 750px);}
+        }
+        @media (max-width: 1699px) and (min-width: 1600px){
+        .soil-quality-content {margin-left: calc(815px - 750px);}
+        }
+         @media screen and (min-width:1600px){
+        /* Newsroom Page */
+        .newsroom-page{margin-top:50px !important;}
+        .newsroom-page .accessibility-statement{min-height:560px;}
+        }
+        @media screen and (max-width:1599px) {
+        .soil-quality-content {margin-left: 28px !important;padding:30px 30px 30px 15px;}  
+        .soil-quality-picture {position: relative;overflow: hidden;} 
+        .soil-quality-picture img {position: absolute;height: 100%;object-fit: cover;} 
+        section.feed-your-mind.full-width-section .sp-container-wrapper{padding-right:30px !important; }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{padding-right:15px !important;}
+        .soil-quality-picture.purification-program-img img { position: relative;}
+        /* Newsroom Page */
+        .newsroom-page{margin-top:50px !important;}
+        .newsroom-page .accessibility-statement{min-height:500px;}
+        .newsroom-content h1{font-size:32px;}
+        .newsroom-content h3{font-size:19px;}
+        .newsroom-content p{font-size:16px;}
+        }
+
+        @media screen and (max-width: 1439px) {
+        section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 55%;}  
+        }
+
+        @media screen and (max-width:1400px) { .clinical-studies-links .links-row { flex-wrap:wrap; gap:16px; } .clinical-studies-links a { white-space:normal; } }
+
+        @media screen and (max-width:1359px) {
+        .soil-quality-content {padding-top: 20px;padding-bottom: 20px;}
+        .left-image-content-grid {gap: 50px;} 
+
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process { padding-left: 15px; }
+        } 
+
+        @media screen and (max-width:1279px) {
+         .qualifies-image {background-position: 70% 100%;} 
+         .page-mediherb-pets .pets-considerations-cta .btn {font-size: 15px;}
+
+         /* body purifiaction */
+          .standard-process-family.mrgn-tp-btm.metabolic-reset-info.program-page-section.hear-what{margin-top:0;}
+        }
+
+        @media (max-width: 1223px) and (min-width: 1200px){
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process { padding-left: 0px;}        
+        }
+
+        @media (max-width: 1200px){
+        .events-grid{grid-template-columns:repeat(3, 1fr);}
+        }
+
+        @media (max-width: 1199px) {
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(3, 1fr); }
+        .collaborators-section .logo-item img{ max-width:140px; }
+        .collaborators-section .logo-row-centered{ display:contents; gap:0; margin-top:0; }
+        }
+
+        @media screen and (max-width:1151px) {
+        .mrgn-tp-btm {margin: 40px 0;} 
+        p {font-size: 16px;} 
+        h4 {font-size: 22px;}  
+        .natural-health-care {padding-left: 50px;padding-right: 15px;}
+        .nutrition-innovation.legacy-food .natural-health-care {padding-right: 50px !important;}
+        .nutrition-innovation.legacy-food .natural-health-care br {display: none;}
+        a.wht-bg-btn {font-size: 16px;}
+        a.btn.sp-prod-links {font-size: 16px;}
+        .hero-content img{ width:20%; }
+        .hero-content h1{ font-size:38px !important; max-width:745px; }
+        .wfss-qualifies-section{padding:0;}
+        .wfss-benefits-section{padding:60px 0px;}
+        .next-level-process{padding-left:40px;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process{padding:0 15px !important;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process h2{font-size:27px !important;}
+        .free-course-registration.lfrt-img.rght-img .next-level-process a.pro-requirment, .free-course-registration.lfrt-img.rght-img .next-level-process p.practice-description{font-size:16px !important; }
+        .free-course-registration.lfrt-img .next-level-process{padding-right:20px;}
+        section.wfss-qualifies-section.wellness-coaching{margin-bottom:60px !important; }
+        .page-mediherb-pets .pets-considerations-cta .btn {font-size: 14px;}
+        .content-right p {max-width: 100%;}
+        .page-mediherb-pets .why-mediherb-grid {gap: 20px;}
+
+        .inc-minmum-price h1 { font-size: 30px; }
+        .inc-minmum-price ul li, .roman-list li{font-size:16px;}
+        .inc-minmum-price ol li{font-size:16px;}
+
+        /* common top-banner height for tablet */
+        .empwoer-knowlege{min-height: 370px;}
+
+        /* Newsroom Page */
+        .newsroom-page{margin-top:40px !important;}
+        .newsroom-page .accessibility-statement{min-height:420px;}
+        .newsroom-page .tele-phone-support{margin:40px 0 0 0 !important;}
+        .newsroom-content h1{font-size:28px;}
+        .newsroom-content h3{font-size:17px;}
+        .newsroom-content p{font-size:15px;}
+        }
+
+        @media (max-width: 1024px) {
+        .growing-practice-video { max-width: 100%; }
+        .hero-content{ margin-left:0; }
+        .hero-content h1{ font-size:32px; }
+        .hero-content h2{ font-size:24px; }
+        .left-image-content-section{ padding:60px 0 30px; }
+        .left-image-content-grid{ gap:50px; }
+        .product-featured-section{ padding:30px 0 60px; }
+        .featured-product-grid{ gap:50px; }
+        .product-right h2{ font-size:28px; }
+        .product-right .product-right-desc{ font-size:17px; }
+        .vet-info-section{ padding:30px 0 60px; }
+        .vet-info-grid{ gap:50px; }
+        .vet-info-title{ font-size:30px; }
+        .vet-info-description{ font-size:17px; }
+        .intro,.image-text,.future,.profile-section,.values-section,.quote,.video-section{ padding:40px 20px; }
+        .sp-container-wrapper.profile-inner{ grid-template-columns:1fr; text-align:center; }
+        .profile-bio{ padding-left:0; max-width:100%; }
+        .hero-section-about-us .hero-title{ font-size:42px; }
+        .value-card{ flex:1 1 calc(45% - 20px); }
+
+        /* content block education on demand */
+        .git-section{grid-template-columns:1fr;gap:2rem;padding:25px 15px; }
+        .git-profile{flex-direction:row;align-items:center; }
+        .profile-img, .profile-img img{max-width:120px;max-height:120px; }
+        .profile-bio{text-align:justify; }
+        .btn-container{flex-direction:row;flex-wrap:wrap;justify-content:center;min-height: auto !important; }
+
+        /* body purification */
+        .testimonial-flip-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+        .testimonial-flip-item:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center;}
+        .flip-card{max-width:320px;}
+
+        /* hero inner Section - about-us-live CSS start  */
+        .flower-bg{display:none !important;}
+        .intro-left .section-title, .future-text .section-title, .image-text .content .section-title, .profile-bio h2, .values-section .text-section h2, .narrative.text-section .section-title{font-size:32px;}
+        .intro-left .section-copy, .future-text .section-copy, .image-text .content .section-copy, .profile-bio p, .values-section .text-section p, .narrative.text-section .section-copy{font-size:17px;}
+        .profile-section.charlie-profile .profile-bio{text-align:center;} 
+        .profile-section.charlie-profile .profile-photo-wrap{justify-self:center;max-width:80%;}
+        .values-cards.values-sort-cards .value-card{min-width:200px;text-align:left;}
+        .intro.holistic,.image-text.image-text-include,.future.figure-include,.values-section.values-sectionbtwo,.profile-section.charlie-profile,.quote.quote-include,.video-section.video-sectionbtwo{gap:25px;}
+        .hero-section-introduce .hero-title{font-size:42px;} 
+        .quote.quote-include .quote-text{font-size:22px;}
+        .quote.quote-include .quote-author{font-size:16px;}
+        .values-cards.values-sort-cards .value-card h2{font-size:20px;}
+        .values-cards.values-sort-cards .value-card p{font-size:15px;}
+        section.profile-section.charlie-profile .profile-bio {padding-left: 0;}
+
+        /* event page */
+        .events-page-banner-inner h1{font-size:46px;}
+
+        /* newsroom page */
+        .news-gap-top{margin-top: 22px !important;}
+        }
+
+        @media screen and (max-width: 1023px) {
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process {padding-left: 25px;} 
+        .collaborators-section .logo-grid {gap: 5px;}
+        }
+
+        /* @media (min-width: 992px){
+        .desktop-break{ display:inline; }
+        .support-icon{ width:120px; height:120px; } } */
+
+         @media (max-width: 991px) and (min-width: 576px){
+        .wfss-benefits-grid{display:flex;justify-items:center; }
+        .courses-grid{display:flex;justify-content:center;gap:35px; }
+        .qualifies-container{grid-template-columns:1fr;}
+        .qualifies-image{min-height:380px;background-position: center center;}
+        .qualify-heading{font-size:26px;}
+
+        .page-mediherb-pets .mediherb-pets-hero{ min-height:380px; padding:60px 20px; }
+        .page-mediherb-pets .pets-considerations-grid{ grid-template-columns:1fr; gap:40px; }
+        .page-mediherb-pets .pets-considerations-cta{ flex-direction:column; align-items:flex-start; gap:16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ height:48px; padding:0 24px; line-height:48px; }
+        .page-mediherb-pets .why-mediherb-grid{ grid-template-columns:repeat(2, 1fr); gap:32px; }
+
+        section.product-featured-section.metabolic-reset-program.program-page-section { padding: 20px 0 !important; margin-top: 20px !important; }
+
+        /* event page */
+        .events-page-banner{height:400px;}
+        .events-page-banner-inner h1{font-size:42px;}
+        /* .events-grid{grid-template-columns:repeat(2, 1fr);} */
+        .events-grid > .content-block{flex:0 0 calc(50% - 12px);}
+        }
+
+        @media screen and (max-width:991px) {
+        h2 {font-size: 30px;} 
+        h4 {font-size: 20px;} 
+        .benefit-title{font-size:20px;}
+        .benefit-text{font-size:16px;}
+        .courses-grid{grid-template-columns:repeat(2, 1fr);}
+        .course-body h3{font-size:20px;}
+        .course-body p{font-size:16px;}
+        .wfss-qualifies-section{padding:0;}
+        section.level-process{margin-top:40px;}  
+        
+        .clinical-studies-layout{ grid-template-columns:1fr; gap:32px; }
+        .clinical-studies-image-left img{ width:100%; max-height:none; aspect-ratio:16 / 9; }
+        .clinical-studies-content{ max-width:100%; text-align:center; padding:0 20px; }
+        .clinical-studies-links .links-row{ justify-content:center !important; flex-wrap:wrap; gap:16px; }
+        .clinical-studies-links a{ white-space:normal; }
+        .scientific-experts .expert-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(3, 1fr); }
+        .collaborators-section .logo-row-centered{ grid-column:1 / -1; justify-content:center; }
+        .collaborators-section .logo-item img{ max-width:140px; }
+        section.wfss-courses-section.patient-resources .courses-grid {display: grid;} 
+
+        /* .orange-section .orange-content{ flex-direction:column; text-align:center; gap:0px; }
+        .orange-section .icon-logo{ max-width:75px; }
+        .orange-section .orange-left h2{ font-size:24px; }
+        .orange-section .orange-right p{ font-size:16px; }
+        .health-support-container{ margin:0 auto; padding:0 20px; }
+        .support-box{ padding:28px 32px; }
+        .support-icon{ width:100px; height:100px; }
+        .support-text h3{ font-size:20px; }
+        .support-text p{ font-size:16px; }
+        .supporting-cards.clinical-studies-four.health-interest{ margin-top:40px; }
+        .health-support-section{ margin-top:40px !important; }
+        .orange-section .orange-left h2{ margin-bottom:5px; }
+        .sleep-stress-hero .hero-banner img{ object-fit:cover; height:240px; } */
+
+        /* event page card */
+        .event-body h3{min-height:38px;}
+        .event-meta{min-height:52px;}
+        }
+
+        @media screen and (max-width:959px) {
+        /* .suport-flx-cards {flex-wrap: wrap;} 
+        .suport-flx-cards .cmn-suprt-card {width: calc((100% - 20px) / 2);}   */
+        .charlie-duo-picture {align-self: center;}  
+        .courses-grid{display:grid;}
+        .free-course-registration.lfrt-img.rght-img{flex-wrap:wrap;}
+        .free-course-registration.lfrt-img{flex-wrap:wrap;}
+        .free-course-registration.lfrt-img.rght-img .lf-picture{width:100% !important; order:1 !important; }
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper .next-level-process{ max-width:100% !important;padding:30px 15px !important;}
+        .free-course-registration.lfrt-img.rght-img .sp-container-wrapper{width:100% !important;order:2;}
+        .free-course-registration.lfrt-img .lf-picture{width:100% !important;}
+        .free-course-registration.lfrt-img .sp-container-wrapper{width:100%;}
+        .free-course-registration.lfrt-img .next-level-process{padding:30px 15px !important;}
+        section.feed-your-mind.full-width-section .sp-container-wrapper{padding-right:unset !important;}
+        .wfss-benefits-section {padding: 30px 0 0 0;}
+        .natural-health-care {padding-left: 30px;}
+        section.level-process.full-width-section.full-width-screen.your-practice .sp-container-wrapper {width: 100%;}  
+        section.level-process.full-width-section.full-width-screen.your-practice .next-level-process {max-width: 100%;}
+        section.level-process.full-width-section.full-width-screen.your-practice {margin-top: 40px !important;}
+        section.eduction-event, section.protocol-support.additinal-clinical, section.wfss-courses-section.patient-resources {margin-top: 25px !important;}
+        /*  inSITE MAP Policy - API */
+        .roman-list, .inc-minmum-price ul{margin-left:10px;}
+        .inc-minmum-price ol{margin-left:10px;}
+        }
+        @media screen and (max-width: 900px){
+        .puri-key-resource{flex-direction:column;}
+        }
+
+        @media screen and (max-width:819px) {
+         .natural-health-care {padding-left: 30px;}
+         .nutrition-innovation.legacy-food .natural-health-care {padding-right: 30px !important;} 
+         /* p {font-size: 18px;}  */
+        
+         /*  inSITE MAP Policy - API */
+        .inc-minmum-price h1 { font-size: 28px; }
+        .inc-minmum-price ul li, .roman-list li{font-size:15px;}
+        .inc-minmum-price ol li{font-size:15px;}
+        .minimum-adver-price{margin:30px 0 0 0 !important;}
+        }
+
+         @media screen and (max-width: 799px){
+        .hero-content img{ width:18%; }
+        .hero-content h1{ font-size:32px !important; }
+        .wfss-benefits-section{padding:30px 0 !important;}
+        .courses-header h2{font-size:26px !important; }
+        .wfss-benefits-grid{padding-bottom:20px !important;}
+        .qualify-block{margin-bottom:0px !important;}
+        section.wfss-qualifies-section{margin-bottom:30px !important;}
+        .free-course-registration.lfrt-img .next-level-process h2{font-size:26px !important;}
+        .qualify-block:last-child{margin-top:25px;}
+        .wfss-benefits-grid{flex-wrap:wrap;justify-content:space-between;gap:20px !important;}
+        .benefit-item{width:48%;}
+
+        /* body purification */
+        section.wfss-benefits-section.purification-benefits.program-works .benefit-item.purification-benefit img{width:60% !important;}
+        section.wfss-benefits-section.purification-benefits.program-works .wfss-benefits-grid.purification-grid{justify-content:center;}
+        .wfss-qualifies-section.wellness-coaching.happy-person{margin-bottom:10px !important;}
+        /* detox */
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start{margin-bottom:10px !important;}
+        /* Newsroom Page */
+        .newsroom-page{margin-top:30px !important;}
+        .newsroom-page .accessibility-statement{min-height:340px;}
+        .newsroom-page .statement-access h2{font-size:44px;}
+        .newsroom-content h1{font-size:24px;}
+        .newsroom-content h3{font-size:16px;}
+        .newsroom-content p{font-size:15px;}
+        }
+
+        @media screen and (max-width: 768px){
+        .hero-content{ max-width:90%; margin-left:0; padding:18px; }
+        .hero-content h1{ font-size:28px; }
+        .hero-content h2{ font-size:20px; }
+        .left-image-content-section{ padding:30px 0 30px; }
+        .left-image-content-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .image-left img{ margin:0 auto; }
+        .content-right h2{ font-size:28px; }
+        .content-right p{ font-size:16px; max-width:100%; }
+        .product-featured-section{ padding:30px 0 10px; }
+        .featured-product-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .product-right .product-right-desc{ max-width:100%; margin:auto; margin-bottom:25px; }
+        .product-right { order: 1;}
+        .btn-learn{ margin:auto; }
+        .vet-info-grid{ grid-template-columns:1fr; text-align:center; gap:20px; }
+        .vet-info-description{ max-width:100%; margin:0 auto 25px; }
+        .intro,.image-text,.future,.profile-section,.values-section,.quote,.video-section{ padding:30px 15px; }
+        .value-card{ flex:1 1 100%; text-align:center; }
+        .hero-section-about-us .hero-title{ font-size:36px; }
+        .courses-grid{grid-template-columns:1fr 1fr;}
+
+        .page-mediherb-pets .left-image-content-grid{ grid-template-columns:1fr; text-align:center; }
+        .page-mediherb-pets .pets-considerations-cta{ display:flex; flex-direction:column; align-items:center; gap:16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ height:48px; line-height:48px; width:auto; text-align:center; }
+        .title-strike-line{ flex-direction:column; gap:16px; }
+        .title-strike-line::before{ width:100%; max-width:120px; }
+        .title-strike-line::after{ width:100%; max-width:120px; }
+
+        /* Widget Tab responsive */
+        .webinar-tab-styles .webinar-tabs a[role="tab"]{ display:block; padding:12px 0; border-bottom:none;}
+        .webinar-tab-styles .webinar-tabs .nav-tabs .nav-item:not(:first-of-type)::before{ display:none !important;}
+        .webinar-tab-styles .webinar-tabs hr{ display:none; }
+        .webinar-tab-styles .webinar-tabs a[role="tab"][aria-selected="true"]{ border-bottom:2px solid #00573d; width:fit-content;}
+
+        /* hero inner Section - about-us-live CSS start  */
+        .narrative.text-section .text{padding:0 6px;}
+        .profile-photo-wrap{margin-top:15px;max-width:100%;}
+        .intro-left .section-title, .future-text .section-title, .image-text .content .section-title, .profile-bio h2, .values-section .text-section h2, .narrative.text-section .section-title{font-size:28px;}
+        .intro-left .section-copy, .future-text .section-copy, .image-text .content .section-copy, .profile-bio p, .values-section .text-section p, .narrative.text-section .section-copy{font-size:16px;}
+        .intro.holistic,.image-text.image-text-include,.future.figure-include,.values-section.values-sectionbtwo,.profile-section.charlie-profile,.quote.quote-include,.video-section.video-sectionbtwo{gap:20px;}
+        .intro.holistic .intro-left{width:100%;text-align:left;} 
+        .future-text.future-title, .image-text.image-text-include .content{width:100%;text-align:left;}
+        .intro.holistic .intro-right, .image-text.image-text-include .img-wrap, .future.figure-include .img{width:100%;}
+        .values-cards.values-sort-cards .value-card{margin-bottom:15px;} 
+        .profile-section.charlie-profile .profile-bio{padding-left:0;text-align:left;}
+        /*h2 steinclude*/
+        .quote.quote-include .quote-text{font-size:20px;}
+        .quote.quote-include .quote-author{font-size:15px;}
+        .values-cards.values-sort-cards .value-card h2{font-size:18px;}
+        .values-cards.values-sort-cards .value-card p{font-size:14px;}
+
+        /* content page of the newsroom */
+        .news-gap-top{margin-top: 18px !important;}
+
+        }
+
+        @media screen and (max-width:767px) {
+        .preserve-potency, .clinical-research {flex-wrap: wrap;}
+        .soil-quality-content {width: 100%;order: 2;}
+        .soil-quality-picture, .charlie-duo-picture, .natural-health-care {width: 100%;}
+        .care-practitioners {text-align: center;} 
+        .growing-practice-video { margin: 20px auto 16px; }
+        .natural-health-care {padding: 20px 15px;}
+        .nutrition-innovation.legacy-food .natural-health-care {order: 2;padding: 20px 0  0 0 !important;}
+        .wfss-benefits-grid{display:grid;grid-template-columns:repeat(2, 1fr);}
+        .courses-grid{display:grid !important;grid-template-columns:repeat(2, 1fr) !important;justify-items:center !important;gap:30px; }
+        .benefit-item{width:100%;}
+
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-item img{ max-width:120px; }
+        .collaborators-section .logo-row-centered{ display:contents; gap:0; margin-top:0; }
+        .soil-quality-picture img {position:unset;height: auto;}
+        section.full-width-screen.process-difference .preserve-potency {margin: 20px 0 !important;}
+
+        /* .health-support-container{ gap:20px; }
+        .support-box{ padding:24px; }
+        .support-top{ flex-direction:column; align-items:center; text-align:center; gap:0px; }
+        .support-icon{ width:80px; height:80px; margin-bottom:12px !important; }
+        .support-text h3{ font-size:20px; }
+        .support-text p{ font-size:16px; } */
+
+        /* common top-banner height for tablet */
+        .empwoer-knowlege{min-height: 290px;}
+
+        /* body purification */
+        .page-body-purification.customize-your-program .preserve-potency{flex-direction:column;text-align:center;}
+        .page-body-purification.customize-your-program .soil-quality-content{text-align:left;margin-top:20px;}
+        section.wfss-benefits-section.purification-benefits.program-works .wfss-benefits-grid.purification-grid{display:flex;}
+        section.full-width-screen.page-body-purification.customize-your-program .soil-quality-content{padding-top:0;margin-top:0 !important;}
+        }
+
+        /* content block education on demand */
+        @media (max-width: 700px){
+        .git-profile{flex-direction:column;align-items:center;text-align:center; }
+        .profile-img, .profile-img img{max-width:100px;max-height:100px; }
+        .main-title{font-size:1.6rem; }
+        .lead{font-size:0.95rem; }
+        .btn-container{flex-direction:column;align-items:center; }
+        .download-btn{width:auto; }
+        }
+        @media (max-width: 640px){
+        .testimonial-flip-grid{grid-template-columns:1fr;gap:32px;}
+        .flip-card{max-width:300px;}
+        }
+        
+        @media screen and (max-width:599px) {
+        .mrgn-tp-btm {margin: 30px 0;}
+        h2 {font-size: 26px;}   
+        .free-course-registration.lfrt-img .lf-picture {height: 350px;}
+        .empower-wrapper h2 {font-size: 26px;}
+
+        /* .sleep-stress-hero .hero-banner img{ object-fit:cover; height:200px; } */
+
+        /* Newsroom Page */
+        .newsroom-page{margin-top:25px !important;}
+        .newsroom-page .accessibility-statement{padding-bottom:56%;background-size:cover;min-height:unset;}
+        .newsroom-page .statement-access h2{font-size:36px;}
+        .newsroom-page .tele-phone-support{margin:30px 0 0 0 !important;}
+        .newsroom-content h1{font-size:22px;}
+        .newsroom-content h3{font-size:15px;}
+        .newsroom-content p{font-size:14px;}
+        }
+
+        @media (max-width: 576px){
+        .wfss-benefits-grid{grid-template-columns:1fr; }
+        .benefit-icon{width:110px;}
+        .benefit-title{font-size:18px;}
+        .benefit-text{font-size:15px;line-height:1.55;}
+        .courses-grid{grid-template-columns:1fr !important;}
+        .course-body h3{font-size:18px;}
+        .course-body p{font-size:15px;line-height:1.55;}
+        .qualifies-container{grid-template-columns:1fr;}
+        .qualify-heading{font-size:24px;}
+        .qualify-subheading{font-size:15px;line-height:1.55;}
+        .qualify-list{font-size:15px;line-height:1.55;}
+        .qualifies-image{min-height:380px;}
+        /* education on demand */
+        .education-on-demand-page .education-widget-section{padding:30px 0;}
+        /* event page */
+        .events-page-banner{height:auto;padding:60px 20px;}
+        .events-page-banner-inner h1{font-size:32px;}
+        /* .events-grid{grid-template-columns:1fr;} */
+        
+        .event-body{padding-right:16px;}
+        .event-meta{min-height:auto;}
+        /* .event-summary, .event-body h3{min-height:auto;} */
+        .event-body h3 {-webkit-line-clamp:2;}
+        .event-summary {-webkit-line-clamp:4;}
+        /* .content-block > div {width: 100%;} */
+        }
+
+        @media screen and (max-width:575px){
+        /* .suport-flx-cards .cmn-suprt-card{ width:100%; } */
+        .page-mediherb-pets .mediherb-pets-hero{ min-height:300px; padding:40px 20px; }
+        .page-mediherb-pets .mediherb-pets-hero-title{ font-size:26px; }
+        .page-mediherb-pets .mediherb-pets-hero-desc{ font-size:16px; }
+        .page-mediherb-pets .why-mediherb-grid{ grid-template-columns:1fr; }
+        .page-mediherb-pets .why-mediherb-title{ font-size:26px; margin-bottom:40px; }
+        .page-mediherb-pets .why-mediherb-icon{ width:120px; height:120px; }
+        .page-mediherb-pets .pets-considerations-cta{ display:block; text-align:center; }
+        .page-mediherb-pets .pets-considerations-cta .btn{ display:block; width:100%; max-width:320px; height:48px; line-height:48px; margin:0 auto 16px; }
+        .page-mediherb-pets .pets-considerations-cta .btn:last-child{ margin-bottom:0; }
+
+        .scientific-experts .expert-grid{ grid-template-columns:1fr; }
+        .collaborators-section .logo-grid{ grid-template-columns:repeat(2, 1fr); }
+        .collaborators-section .logo-row-centered{ flex-direction:column; align-items:center; gap:20px; }
+        .collaborators-section .logo-item img{ max-width:120px; }
+
+        /* .orange-section{ padding:25px 15px; }
+        .orange-section .icon-logo{ max-width:60px; }
+        .orange-section .orange-left h2{ font-size:20px; }
+        .orange-section .orange-right p{ font-size:14px; } */
+
+        .events-grid > .content-block{flex:0 0 100%;}
+        }
+
+        @media (max-width: 560px){
+        .clinical-studies-content h2{ font-size:24px; }
+        .clinical-studies-links .links-row{ flex-direction:column; align-items:center; gap:12px; }
+        }
+
+        @media (max-width: 480px){
+        .hero-content h1{ font-size:24px; }
+        .hero-content h2{ font-size:18px; }
+        .hero-section-about-us .hero-title{font-size:28px; }
+        .value-card h2{ font-size:16px; }
+        .value-card p{ font-size:14px; }
+        .course-body h3{font-size:18px;}
+        .course-body p{font-size:15px;}
+        .qualify-heading{font-size:22px;}
+
+        .health-support-section{ padding:35px 0px; }
+        /* .support-box{ padding:20px; }
+        .support-icon{ width:80px; height:80px; }
+        .support-text h3{ font-size:18px; }
+        .support-text p{ font-size:14px; } */
+
+        /* content block education on demand */
+        .main-title{font-size:1.4rem;}
+        .profile-img, .profile-img img{max-width:80px;max-height:80px;}
+
+        /* hero inner Section - about-us-live CSS start  */
+        .profile-photo-wrap{margin-top:10px;}
+        .intro-left .section-title, .future-text .section-title, .image-text .content .section-title, .profile-bio h2, .values-section .text-section h2, .narrative.text-section .section-title{font-size:24px;}
+        .intro-left .section-copy, .future-text .section-copy, .image-text .content .section-copy, .profile-bio p, .values-section .text-section p, .narrative.text-section .section-copy{font-size:15px;}
+        .intro.holistic,.image-text.image-text-include,.future.figure-include,.values-section.values-sectionbtwo,.profile-section.charlie-profile,.quote.quote-include,.video-section.video-sectionbtwo{padding:20px 12px;}  
+        /*h2 steinclude*/
+        .quote.quote-include .quote-text{font-size:18px;}
+        .quote.quote-include .quote-author{font-size:14px;}
+
+        /* event page */
+        .events-page-banner-inner h1{font-size:28px;}
+        }
+
+        @media screen and (max-width:479px) { .inc-minmum-price h1 { font-size: 24px; } 
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start{margin-top:30px;}
+        section.wfss-qualifies-section.wellness-coaching.ready-to-start .qualifies-container{gap:20px;}
+        section.testimonial-flip-section.grn-flip-cards .testimonial-flip-grid{padding:30px 0 !important;}
+        /*  inSITE MAP Policy - API */
+        .roman-list, .inc-minmum-price ul{margin-left:0;padding-left:10px;}
+        .inc-minmum-price ol{margin-left:0;padding-left:10px;}
+        }
+
+        @media screen and (max-width:424px) {
+         h2 {font-size: 24px;}   
+        }
+
+        @media (max-width: 413px){
+        .free-course-registration.lfrt-img .next-level-process h2, .courses-header h2, section.wfss-benefits-section .wfss-benefits-header h2{font-size:22px !important;}
+        .next-level-process a.link{font-size:14px !important;}
+        .who-qualify p{font-size:16px !important;}
+
+        /* event page */
+        .events-page-banner-inner h1{font-size:26px;}
+
+        /* Newsroom Page */
+        .newsroom-page{margin-top:20px !important;}
+        .newsroom-page .statement-access h2{font-size:30px;}
+        .newsroom-content h1{font-size:20px;}
+        .newsroom-content p{font-size:14px;}
+        }
+
+        @media screen and (max-width:389px) {
+         h2 {font-size: 22px !important;} 
+         .hero-content h1{ font-size:32px; }  
+
+         /* event page */
+        .events-page-banner-inner h1{font-size:24px;}
+        }
