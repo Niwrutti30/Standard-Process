@@ -1,0 +1,601 @@
+@import url('https://use.typekit.net/zst6peh.css');
+
+/* font-family */
+.owners-font{font-family:"owners-text";}
+.ivypresto{font-family:"ivypresto-headline";}
+
+/* ===== TOP NAV BAR ===== */
+.top-nav-bar{width:100%;background-color:#00573D;}
+.top-nav-inner{max-width:1200px;margin:0 auto;height:50px;padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:80px;}
+
+/* LINKS */
+.top-nav-link{color:#ffffff;font-size:20px;font-weight:500;text-decoration:none;letter-spacing:0.3px;transition:opacity 0.3s ease;}
+.top-nav-link:hover{opacity:0.7;}
+
+/* ===== HERO SECTION ===== */
+.hero-section{position:relative;width:100%;height:520px;max-height:85vh;overflow:hidden;background:url('//useruploads.vwo.io/useruploads/972666/images/3e6f3083ed6d3dea3859867b398b2ead_sphomepageheroposterimage.png') center/cover no-repeat;}
+
+/* MEDIA */
+.hero-media{position:absolute;inset:0;overflow:hidden;}
+.hero-video{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-width:100%;min-height:100%;transform:translate(-50%, -50%);pointer-events:none;}
+
+/* overlay */
+.hero-section::after{content:"";position:absolute;inset:0;background:rgba(0, 0, 0, 0.25);}
+
+/* CONTENT */
+.hero-content{position:relative;z-index:2;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
+
+/* TITLE */
+.hero-title{font-size:80px;line-height:1.05;font-weight:500;color:#A0E870;letter-spacing:-0.5px;max-width:800px;}
+
+/* TM */
+.hero-title .tm{font-size:16px;vertical-align:baseline;position:relative;top:3px;left:-1px;}
+
+/* SCROLL ICON */
+.hero-scroll{position:absolute;left:50%;transform:translateX(-50%);z-index:2;display:flex;align-items:center;justify-content:center;text-decoration:none;bottom:40px;}
+
+/* IMAGE ICON */
+.hero-scroll-icon{width:28px;height:auto;display:block;}
+.hero-scroll:hover{transform:translateX(-50%) translateY(5px);opacity:0.85;}
+
+/* ===== NUTRITION SECTION ===== */
+.hero-cta{display:flex;justify-content:center;align-items:center;gap:100px;margin-bottom:60px;margin-top:10px;flex-wrap:wrap;}
+
+/* .nutrition-section{background-color:#F1EFE6;background-image:url('//useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/a67e6c67375b5c7264fc4395fb90546e_capsuleimg.png');background-repeat:no-repeat;background-position:right center;background-size:600px;padding:100px 20px 0px;} */
+.nutrition-section{position:relative;background:#F1EFE6;padding:60px 20px 0px;overflow:visible;z-index:1;}
+
+/* Capsule Bg Image */
+.nutrition-section::after{content:"";position:absolute;right:0px;bottom:-250px;width:700px;height:700px;background:url('//useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/a67e6c67375b5c7264fc4395fb90546e_capsuleimg.png') no-repeat;background-size:300px;background-position:right bottom;z-index:2;pointer-events:none;}
+
+/* CONTAINER */
+.nutrition-container{max-width:1000px;margin:0 auto;text-align:center;}
+
+/* HEADING */
+.nutrition-heading{font-size:60px;font-weight:500;line-height:1.2;color:#00573D;margin-bottom:24px;}
+
+/* DESCRIPTION */
+.nutrition-description{font-size:20px;line-height:1.7;color:#00573D;margin-bottom:60px;position:relative;z-index:99;}
+
+/* FEATURES WRAPPER */
+.nutrition-features{display:flex;justify-content:center;align-items:center;gap:80px;margin-bottom:40px;}
+
+/* FEATURE ITEM */
+.nutrition-feature{text-align:center;}
+
+/* ICON */
+.nutrition-icon{width:80px;height:80px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;}
+.nutrition-icon img{width:100%;height:100%;object-fit:contain;}
+
+/* LABEL */
+.nutrition-label{font-size:20px;font-weight:500;color:#00573D;}
+
+/* BUTTON */
+.nutrition-btn{display:inline-block;padding:10px 26px;background-color:#A0E870;color:#00573D;font-weight:500;font-size:20px;border-radius:22px;text-decoration:none;transition:all 0.3s ease;}
+.nutrition-btn:hover{background-color:#00573d;color:#A0E870;}
+
+/* SECTION */
+.featured-products-section .featured-products-container{position:relative;z-index:1;}
+
+/* .featured-products-section{background:#F1EFE6;padding:30px 20px 100px;} */
+.featured-products-section{position:relative;padding:30px 20px 100px;background:#F1EFE6;}
+.featured-products-section::before{content:"";position:absolute;inset:0;background:none;z-index:0;}
+.featured-products-container{max-width:1440px;margin:0 auto;text-align:center;}
+.featured-products-heading{font-size:39px;font-weight:500;color:#00573D;margin-bottom:60px;text-align:left;}
+
+/* SLIDER */
+.featured-slider{position:relative;overflow:visible;}
+
+/* TRACK */
+.featured-slider-track{display:flex;transition:transform 0.6s ease;}
+.featured-slider-mask{overflow:hidden;}
+
+/* SLIDE */
+.featured-slide{min-width:100%;display:flex;justify-content:center;}
+
+/* INNER BOX (CARD STYLE) */
+.featured-slide-inner{display:flex;align-items:center;justify-content:space-between;background:#A0E870;border-radius:12px;padding:0 20px;width:100%;max-width:1440px;z-index:3;position:relative;}
+.featured-image{width:45%;text-align:center;}
+.featured-image img{width:100%;max-width:560px;height:auto;object-fit:contain;}
+.featured-content{width:50%;text-align:left;}
+.featured-badge{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background-color:#00573D;color:#A0E870;font-size:12px;font-weight:500;letter-spacing:0.5px;margin-bottom:12px;}
+.featured-title-wrap{display:flex;align-items:center;gap:14px;margin-bottom:4px;}
+.featured-title sup{font-size:20px;vertical-align:super;line-height:0;margin-left:2px;top:-0.2em;}
+.featured-badge{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background-color:#00573D;color:#A0E870;font-size:11px;font-weight:500;letter-spacing:0.5px;flex-shrink:0;}
+.featured-title{font-size:60px;font-weight:500;color:#00573D;line-height:1.2;margin:0;}
+.featured-text{font-size:20px;line-height:1.6;color:#00573D;margin-bottom:24px;max-width:600px;}
+.featured-btn{display:inline-block;padding:10px 22px;font-weight:500;background:#00573D;color:#A0E870;border-radius:20px;text-decoration:none;}
+.featured-btn:hover{background-color:#F1EFE6;color:#00573D;}
+
+/* second slide */
+.featured-slide:nth-child(3) .featured-slide-inner{background-color:#00573D;}
+.featured-slide:nth-child(3) .featured-badge{background-color:#A0E870;color:#00573D;}
+.featured-slide:nth-child(3) .featured-title{color:#A0E870;}
+.featured-slide:nth-child(3) .featured-text{color:#A0E870;}
+.featured-slide:nth-child(3) .featured-btn{background-color:#A0E870;color:#00573D;font-weight:500;}
+.featured-slide:nth-child(3) .featured-btn:hover{background-color:#F1EFE6;color:#00573D;}
+
+/* children's - Pro */
+.featured-slide.children-pro .featured-slide-inner{background-image:url(https://useruploads.visualwebsiteoptimizer.com//useruploads/972666/images/b32d48e5e7ea4882f41412b25204df39_childrensprosynbiotic.png);background-repeat:no-repeat;background-size:contain;background-position:left;}
+
+/* ARROWS */
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:#ffffff75;border:1px solid rgb(68 68 68 / 50%);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;z-index:5;}
+
+/* LEFT / RIGHT POSITION */
+.slider-arrow.left{left:-20px;}
+.slider-arrow.right{right:-20px;}
+
+/* ICON */
+.slider-arrow span{font-size:18px;color:#0b3d2e;}
+
+/* HOVER */
+.slider-arrow:hover{background:#00573D;border-color:#00573D;}
+.slider-arrow:hover span{color:#A0E870;}
+
+/* DOTS */
+.slider-dots{margin-top:20px;}
+.dot{display:inline-block;width:10px;height:10px;background:#ccc;margin:0 5px;border-radius:50%;cursor:pointer;}
+.dot.active{background:#0b3d2e;}
+
+/* Capsule Bg */
+
+/* .capsule-bg{background-image:url('https://useruploads.visualwebsiteoptimizer.com/useruploads/972666/images/a67e6c67375b5c7264fc4395fb90546e_capsuleimg.png');padding:0% 0 0 0;background-repeat:no-repeat;background-position:100% 4%;background-color:#F1EFE6;} */
+
+/* ===== REDEFINING SECTION ===== */
+
+/* .redefining-section{background-color:#f1efe7;padding:0px 20px 100px;} */
+.redefining-section{background:#F1EFE6;padding:0px 20px 100px;}
+.redefining-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:60px;}
+
+/* CONTENT COLUMN */
+
+/* .redefining-content{flex:1;max-width:600px;text-align:left;} */
+.redefining-content{width:50%;text-align:left;}
+.redefining-title{font-size:60px;font-weight:500;color:#00573D;line-height:1.1;margin-bottom:32px;}
+.redefining-text p{font-size:20px;line-height:1.6;color:#00573D;margin-bottom:24px;}
+
+/* BUTTON */
+.redefining-btn{display:inline-block;padding:12px 28px;background-color:#A0E870;color:#00573D;font-size:20px;font-weight:500;border-radius:25px;text-decoration:none;transition:background-color 0.3s ease;margin-top:10px;}
+.redefining-btn:hover{background-color:#00573d;color:#A0E870;}
+
+/* IMAGE COLUMN */
+
+/* .redefining-image{flex:1;display:flex;justify-content:flex-end;} */
+
+/* .redefining-image img{width:100%;max-width:500px;height:auto;border-radius:4px;object-fit:cover;} */
+.redefining-image{width:30%;}
+.redefining-image img{width:100%;height:auto;}
+
+/* ===== FARM TO FORMULATION ===== */
+.farm-formulation-section{position:relative;width:100%;height:600px;display:flex;align-items:center;overflow:hidden;background:#00573D;}
+
+/* Background Image Logic */
+.farm-formulation-section::before{content:"";position:absolute;inset:0;background-image:url('//useruploads.vwo.io/useruploads/972666/images/04fab4d111965151679a74ba8cd63e70_macroshotplantrootssoilhighlightingnaturesintricatedetailslifesbeginnings.png');background-size:cover;background-position:center;z-index:1;}
+
+/* Dark Overlay for Text Legibility */
+.farm-overlay{position:absolute;inset:0;background:linear-gradient(to right, rgba(0, 40, 20, 0.7) 0%, rgba(0, 0, 0, 0) 100%);z-index:2;}
+.farm-container{position:relative;z-index:3;width:100%;max-width:1440px;margin:0 auto;padding:0 40px;}
+.farm-content{max-width:500px;}
+.farm-title{font-size:80px;line-height:0.9;font-weight:500;color:#A0E870;margin-bottom:24px;}
+.farm-text{font-size:20px;line-height:1.5;color:#A0E870;max-width:400px;}
+
+/* ===== SOIL TO CONSISTENCY SECTION ===== */
+.soil-consistency-section{background-color:#00573D;padding:60px 20px;}
+.soil-container{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:80px;}
+
+/* LEFT COLUMN */
+.soil-left-col{flex:1;max-width:500px;position:sticky;top:100px;}
+.soil-title{font-size:60px;font-weight:500;color:#A0E870;line-height:1.1;margin-bottom:40px;}
+.soil-cta-btn{display:inline-block;padding:12px 30px;background-color:#A0E870;color:#00573D;font-size:20px;font-weight:500;border-radius:25px;text-decoration:none;transition:all 0.3s ease;}
+.soil-cta-btn:hover{background-color:#F1EFE6;color:#00573D;}
+
+/* RIGHT COLUMN */
+.soil-right-col{flex:1;max-width:600px;display:flex;flex-direction:column;gap:20px;}
+.soil-stat-item:first-child{border-top:none;padding-top:0;}
+.soil-stat-value{font-size:39px;font-weight:500;color:#A0E870;margin-bottom:12px;line-height:1.2;}
+.soil-check-icon{display:inline-flex;width:20px;height:20px;background:#A0E870;color:#00573D;border-radius:50%;align-items:center;justify-content:center;font-size:14px;margin-left:10px;vertical-align:middle;}
+.soil-stat-desc{font-size:20px;line-height:1.6;color:#A0E870;}
+
+/* ===== ORIGIN QUOTE SECTION ===== */
+.origin-quote-section{width:100%;padding:60px 0px;background-color:#F1EFE6;background-size:cover;background-position:center;display:flex;justify-content:center;align-items:center;}
+.origin-container{max-width:1440px;width:100%;display:flex;justify-content:center;}
+.origin-quote-card{padding:40px;text-align:center;border-radius:4px;}
+.origin-quote{font-size:39px;line-height:1.3;color:#00573D;margin:0 0 32px 0;font-weight:500;}
+.origin-author{font-size:20px;font-style:italic;letter-spacing:1px;color:#00573D;margin:0;}
+
+/* ===== FULL WIDTH FIELD VISUAL ===== */
+.field-visual-section{width:100%;line-height:0;overflow:hidden;padding-bottom:100px;background-color:#F1EFE6;}
+.field-image-container img{width:100%;height:600px;display:block;object-fit:cover;}
+
+/* ===== STEWARDSHIP SECTION ===== */
+.stewardship-section{background-color:#F1EFE6;padding:0px 20px;}
+.stewardship-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:80px;}
+
+/* CONTENT COLUMN */
+.stewardship-content{flex:1;max-width:600px;}
+.stewardship-title{font-size:60px;font-weight:500;color:#00573D;line-height:1.1;margin-bottom:32px;}
+.stewardship-text{font-size:20px;line-height:1.6;color:#00573D;margin-bottom:40px;}
+
+/* BUTTON */
+.stewardship-btn{display:inline-block;padding:12px 30px;background-color:#A0E870;color:#00573D;font-size:20px;font-weight:500;border-radius:25px;text-decoration:none;transition:background-color 0.3s ease;}
+.stewardship-btn:hover{background-color:#00573d;color:#A0E870;}
+
+/* IMAGE COLUMN */
+.stewardship-image{flex:1;display:flex;justify-content:flex-end;}
+.stewardship-image img{width:100%;max-width:600px;height:auto;border-radius:4px;object-fit:cover;}
+
+/* ===== EVENTS SECTION ===== */
+.events-section{background:#F1EFE6;padding:60px 20px;}
+.events-container{max-width:1440px;margin:0 auto;}
+.events-heading{font-size:39px;font-weight:500;color:#00573D;margin-bottom:40px;}
+
+/* ===== SLIDER ===== */
+.events-slider{position:relative;overflow:visible;}
+.events-slider-mask{overflow:hidden;}
+.events-slider-track{display:flex;transition:transform 0.6s ease;}
+
+/* ===== SLIDE ===== */
+.events-slide{min-width:100%;display:flex;justify-content:center;}
+
+/* CARD */
+.events-slide-inner{display:flex;align-items:center;justify-content:space-between;background:#00573D;border-radius:12px;padding:0px;width:100%;max-width:1440px;overflow:hidden;}
+
+/* ===== CONTENT ===== */
+.events-content{width:50%;padding:50px;}
+
+/* TITLE */
+.events-title{font-size:42px;font-weight:500;line-height:1.2;color:#A0E870;margin-bottom:10px;}
+
+/* SUBTITLE */
+.events-subtitle{font-size:24px;font-weight:500;line-height:1.5;color:#A0E870;margin-bottom:10px;}
+
+/* META */
+.events-meta{font-size:18px;line-height:1.6;color:#A0E870;margin-bottom:10px;max-width:430px;}
+
+/* META Speaker */
+.events-meta strong{font-size:20px;}
+
+/* BUTTON */
+.events-btn{display:inline-block;padding:8px 26px;background-color:#A0E870;color:#00573D;font-size:18px;font-weight:500;border-radius:22px;text-decoration:none;transition:all 0.3s ease;}
+.events-btn:hover{background-color:#F1EFE6;color:#00573D;}
+
+/* Slide 1 image */
+
+/* Slide 2 image */
+.events-slide:nth-child(1) .events-slide-inner{background-image:url('//useruploads.vwo.io/useruploads/972666/images/536b3034bc1161f4c2e16d41f3db2f24_1.png');background-repeat:no-repeat;background-position:top right;background-size:contain;}
+
+/* Slide 3 image */
+.events-slide:nth-child(2) .events-slide-inner{background-image:url('//useruploads.vwo.io/useruploads/972666/images/51d9b08946eaac67b1fd86f323d25915_glp1s.png');background-repeat:no-repeat;background-position:top right;background-size:inherit;background-color: #efece5;}
+.events-meta strong{display:block;margin-bottom:6px;}
+.events-speakers{margin:0 0 24px 18px;padding:0;color:#A0E870;font-size:17px;line-height:1.6;}
+.events-speakers li{margin-bottom:4px;}
+
+/* GLP-1s and Beyond */
+.events-slide:nth-child(2) .events-slide-inner .events-content {width: 100%;}
+.virtual-section {display: flex;align-items: center;}
+.virtual-section .virtual-logo img {width: 70px;}
+.virtual-section .symposium-txt p {margin: 0;padding-left: 15px;text-transform: uppercase;color: #1A553F;font-weight: 500;}
+.whole-person-approach {display: flex;margin: 30px 0 0 0;gap: 60px;}
+.whole-person-approach .metabolic-care h2 {color: #1A553F;font-weight: 500;margin: 10px 0 0 0;}
+.whole-person-approach .metabolic-care p {color: #1A553F;font-weight: 400;margin: 0 0 20px 0;}
+.whole-person-approach .metabolic-care p.session-date {font-size: 20px;margin: 0;font-weight: 400;}
+.whole-person-approach .register-today {width: 188px;align-self: end;}
+.whole-person-approach .register-today p {color: #1A553F;font-weight: 500;text-align: center;margin: 0;border-top: 1px solid #1A553F;border-bottom: 1px solid #1A553F;padding: 8px 0;line-height: 1.2em;}
+.whole-person-approach .register-today a.events-btn.owners-font {margin: 20px 0 0 0;}
+
+/* ===== IMAGE ===== */
+.events-image{width:50%;height:100%;display:flex;justify-content:flex-end;overflow:hidden;}
+.events-image img{width:100%;max-width:500px;height:auto;object-fit:cover;border-radius:6px;}
+
+/* ===== ARROWS ===== */
+.events-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:#ffffff75;border:1px solid rgb(68 68 68 / 50%);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;z-index:5;}
+.events-arrow.left{left:-20px;}
+.events-arrow.right{right:-20px;}
+.events-arrow span{font-size:18px;color:#00573D;}
+.events-arrow:hover{background:#00573D;border-color:#00573D;}
+.events-arrow:hover span{color:#A0E870;}
+
+/* ===== DOTS ===== */
+.events-dots{margin-top:20px;text-align:center;}
+.events-dot{display:inline-block;width:10px;height:10px;background:#ccc;margin:0 5px;border-radius:50%;cursor:pointer;}
+.events-dot.active{background:#0b3d2e;}
+
+/* ===== PRACTITIONER SECTION ===== */
+.practitioner-section{background-color:#F1EFE6;padding:0px 20px;}
+.practitioner-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:80px;}
+
+/* CONTENT */
+.practitioner-content{flex:1;max-width:600px;}
+.practitioner-title{font-size:60px;font-weight:500;color:#00573D;line-height:1.1;margin-bottom:24px;}
+.practitioner-text{font-size:20px;line-height:1.6;color:#00573D;margin-bottom:32px;}
+
+/* BUTTON */
+.practitioner-btn{display:inline-block;padding:10px 26px;background-color:#A0E870;color:#00573D;font-size:20px;font-weight:500;border-radius:22px;text-decoration:none;transition:all 0.3s ease;}
+.practitioner-btn:hover{background-color:#00573d;color:#A0E870;}
+
+/* IMAGE */
+.practitioner-image{flex:1;display:flex;justify-content:flex-end;}
+.practitioner-image img{width:100%;max-width:600px;height:auto;object-fit:cover;border-radius:4px;}
+
+/* ===== BACK TO TOP ===== */
+.backtotop-section{background-color:#F1EFE6;padding:30px 20px 40px;}
+.backtotop-container{max-width:1440px;margin:0 auto;display:flex;justify-content:center;}
+
+/* LINK */
+.backtotop-link{font-family:"Owners Text";font-size:20px;font-weight:500;color:#00573D;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:opacity 0.3s ease;}
+.backtotop-link:hover{opacity:0.7;}
+
+/* ARROW */
+html{scroll-behavior:smooth;}
+.back-to-top{display:inline-flex;gap:12px;align-items:center;justify-content:center;margin-top:50px;text-decoration:none;color:#ffffff;font-weight:500;transition:color 0.18s ease;}
+.back-to-top:hover{color:#016c36;}
+.back-to-top-text{display:inline-block;line-height:1;letter-spacing:0.6px;color:#00573d;}
+
+/* Circle that holds the icon */
+.back-to-top-circle{width:42px;height:42px;background-color:#00573d;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:transform 0.18s ease, background-color 0.18s ease;}
+
+/* Hover effect on circle */
+.back-to-top:hover .back-to-top-circle{transform:translateY(-3px);background-color:#85ac34;}
+
+/* SVG sizing and stroke color follow current layout */
+.chevron-svg{width:18px;height:18px;display:block;}
+@media (max-width: 1439px){
+.featured-title{font-size:56px;}
+.events-content{padding:30px 50px 30px;}
+}
+@media (max-width: 1359px){
+.featured-title{font-size:50px;}
+.events-title{font-size:36px;}
+.events-subtitle{font-size:20px;}
+.events-meta{font-size:16px;}
+.events-meta strong{font-size:18px;}
+.events-speakers{font-size:15px;}
+}
+@media (max-width: 1279px){
+.events-content{width:70%;}
+.events-slide:nth-child(2) .events-slide-inner {background-size: cover;}
+}
+@media (max-width: 1200px){
+.events-slide-inner{padding:0;}
+.events-content{padding:40px;}
+.events-image{display:flex;justify-content:flex-end;}
+.events-image img{max-width:440px;}
+}
+@media (max-width: 1151px){
+.hero-title{font-size:72px;}
+.nutrition-heading{font-size:46px;}
+.nutrition-section::after{background-size:225px;bottom:-170px;}
+.featured-slide-inner{padding:0;}
+.featured-title{font-size:42px;}
+.featured-text{font-size:16px;}
+.featured-content{width:60%;padding-left:20px!important;padding-right:20px;}
+.events-content{width:100%;}
+.events-btn{font-size:16px;}
+.events-slide:nth-child(1) .events-slide-inner .events-content{max-width:530px;}
+.whole-person-approach .register-today {width: 172px;}
+}
+@media (max-width: 1024px){
+.hero-cta{gap:80px;margin:16px 0 50px;}
+.nutrition-section::after{width:500px;height:500px;background-size:200px;bottom:-220px;}
+.soil-consistency-section{padding:80px 20px;}
+.soil-container{gap:40px;}
+.soil-title{font-size:48px;}
+.origin-quote-card{padding:20px 0;max-width:85%;}
+.origin-quote{font-size:30px;}
+.stewardship-container{gap:40px;}
+.stewardship-title{font-size:48px;}
+.events-image img{max-width:470px;}
+.events-content{padding:30px 0 30px 30px;}
+}
+@media (max-width: 1023px){
+.whole-person-approach .register-today {width: 164px;}
+}
+
+/* TABLET */
+@media (max-width: 992px){
+.top-nav-inner{height:40px;gap:40px;}
+.top-nav-link{font-size:17px;}
+.hero-title{font-size:60px;}
+.hero-scroll-icon{width:24px;}
+.hero-scroll{bottom:32px;}
+.nutrition-section{background-size:220px;background-position:right bottom;padding:50px 20px;}
+.nutrition-heading{font-size:46px;}
+.nutrition-description{font-size:20px;margin-bottom:50px;}
+.nutrition-features{gap:50px;}
+.hero-section{height:410px;}
+.featured-slide-inner{justify-content:center;gap:30px;}
+.featured-image{width:45%;}
+.featured-content{width:70%;}
+.featured-products-section{padding:10px 20px 60px;}
+.featured-title{font-size:28px;}
+.featured-products-heading{font-size:36px;margin-bottom:40px;}
+.redefining-section{padding:0px 20px 70px;}
+.redefining-container{gap:40px;}
+.redefining-title{font-size:36px;}
+.farm-title{font-size:60px;}
+.farm-formulation-section{height:500px;}
+.field-visual-section{padding-bottom:40px;}
+.events-slide-inner{padding:0;display:flex;align-items:center;}
+.events-content{flex:1;}
+.events-image{flex:1;display:flex;justify-content:flex-end;}
+.events-image img{width:100%;max-width:480px;height:auto;object-fit:cover;}
+.events-title{font-size:30px;}
+.events-subtitle{font-size:16px;}
+.events-meta{font-size:14px;}
+.backtotop-section{padding:25px 20px 35px;}
+.events-speakers{font-size:14px;}
+.events-btn{font-size:15px;}
+}
+@media (max-width: 991px){
+.events-slide:nth-child(2) .events-slide-inner {background-size: 115%;}   
+}
+@media (max-width: 959px){
+.featured-btn{font-size:14px;}
+.featured-text{font-size:14px;margin-bottom:6px;}
+.redefining-btn{font-size:17px;}
+.back-to-top{margin-top:10px;}
+.events-slide-inner{min-height:379px;background-size:55%!important;background-position:bottom right!important;}
+.events-content{flex:none;}
+.events-slide:nth-child(2) .events-slide-inner {background-position: top right !important;background-size: 140% !important;}
+.virtual-section .virtual-logo img {width: 55px;}
+}
+@media (max-width: 799px){
+.events-slide:nth-child(1) .events-slide-inner .events-content{max-width:unset;}
+.events-slide:nth-child(2) .events-slide-inner {background-size: 110% !important;}
+.whole-person-approach {flex-wrap: wrap;gap: 30px;}
+.whole-person-approach .metabolic-care {width: 100%;}
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+.hero-cta{flex-direction:column;align-items:center;gap:30px;margin:12px 0 40px;}
+.hero-cta .nutrition-btn{width:auto;min-width:200px;text-align:center;}
+.hero-section{height:290px;}
+.hero-video{width:140vw;height:78.75vw;}
+.hero-title{font-size:38px;line-height:1.2;}
+.hero-scroll-icon{width:20px;}
+.hero-scroll{bottom:24px;}
+.nutrition-section{background-size:460px;background-position:bottom right;padding:40px 16px;}
+.nutrition-section::after{width:350px;height:350px;background-size:150px;bottom:-130px;opacity:0.8;}
+.nutrition-heading{line-height:1.2;}
+.nutrition-description{font-size:18px;margin-bottom:32px;}
+.nutrition-features{flex-direction:column;gap:30px;margin-bottom:20px;}
+.nutrition-label{font-size:18px;}
+.nutrition-icon{width:64px;height:64px;}
+.featured-slide-inner{flex-direction:column;text-align:center;padding:30px 20px;}
+.featured-image,.featured-content{width:100%;}
+.featured-content{margin-top:20px;text-align:center;}
+.featured-products-heading{font-size:28px;line-height:1.2;margin-bottom:30px;}
+.featured-title-wrap{justify-content:center;gap:10px;}
+.featured-badge{width:38px;height:38px;font-size:10px;}
+.featured-title{font-size:24px;}
+.featured-title sup{font-size:14px;}
+.featured-products-container{text-align:center;}
+.slider-arrow{width:40px;height:40px;}
+.slider-arrow.left{left:10px;}
+.slider-arrow.right{right:10px;}
+.redefining-container{flex-direction:column-reverse;text-align:center;gap:30px;}
+.redefining-content{width:100%;text-align:center;}
+.redefining-section{padding:0px 16px 50px;}
+.redefining-title{font-size:28px;margin-bottom:20px;}
+.redefining-image{justify-content:center;width:50%;}
+.redefining-image img{max-width:100%;}
+.farm-formulation-section{height:auto;min-height:370px;padding:80px 0px;}
+.farm-overlay{background:rgba(0, 40, 20, 0.5);}
+.farm-container{padding:0 20px;text-align:center;}
+.farm-content{margin:0 auto;max-width:100%;}
+.farm-title{font-size:42px;margin-bottom:16px;}
+.farm-text{font-size:18px;max-width:100%;}
+.soil-consistency-section{padding:60px 20px;}
+.soil-container{flex-direction:column;gap:30px;}
+.soil-left-col,.soil-right-col{max-width:100%;text-align:left;}
+.soil-left-col{position:static;}
+.soil-title{font-size:36px;margin-bottom:24px;}
+.soil-stat-value{font-size:24px;}
+.origin-quote-section{padding:20px 0;}
+.origin-quote-card{padding:40px 24px;max-width:100%;}
+.origin-quote{font-size:24px;line-height:1.4;}
+.origin-author{font-size:14px;}
+.field-visual-section{padding-bottom:60px;}
+.field-image-container img{height:370px;object-position:center;}
+.stewardship-section{padding:0px 16px;}
+.stewardship-container{flex-direction:column;text-align:center;gap:30px;}
+.stewardship-image{justify-content:center;order:-1;}
+.stewardship-title{font-size:32px;}
+.stewardship-text{font-size:18px;}
+.events-section{padding:30px 16px;}
+.events-heading{font-size:28px;line-height:1.2;margin-bottom:24px;}
+.events-slide-inner{flex-direction:column;padding:10px 70px;}
+.events-content{width:100%;margin-bottom:20px;padding:20px 0 20px 0;}
+.events-image{display:none;}
+.events-title{font-size:28px;}
+.events-subtitle{font-size:18px;}
+.events-meta{font-size:16px;}
+.events-arrow{width:40px;height:40px;}
+.events-arrow.left{left:10px;}
+.events-arrow.right{right:10px;}
+.practitioner-container{flex-direction:column;text-align:center;gap:30px;}
+.practitioner-image{justify-content:center;order:-1;}
+.practitioner-title{font-size:28px;line-height:1.2;}
+.practitioner-text{font-size:20px;}
+.backtotop-section{padding:20px 16px 30px;}
+.backtotop-link{font-size:18px;}
+.backtotop-link .arrow{font-size:18px;}
+.featured-slide.children-pro .featured-slide-inner{background-position:top left;background-size:85%;justify-content:end;}
+.events-slide-inner{flex-direction:column;text-align:unset;padding:10px 50px;background-position:bottom right;}
+.events-content{width:100%;margin-bottom:20px;padding:20px 0 20px 0;}
+.events-slide-inner{background-size:60%!important;}
+}
+
+@media (max-width: 767px){
+ .virtual-section .virtual-logo img {width: 45px;}   
+.virtual-section .symposium-txt p {font-size: 15px;}
+.whole-person-approach .metabolic-care p.session-date {font-size: 18px;}
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+.top-nav-inner{height:auto;flex-direction:column;gap:12px;padding:12px 16px;}
+.top-nav-link{font-size:16px;}
+.nutrition-section::after{display:none;}
+}
+@media (max-width: 599px){
+.hero-title{font-size:42px;}
+.featured-slide.children-pro .featured-slide-inner{background-size:92%;}
+.featured-slide-inner{gap:15px;}
+.events-title{font-size:24px;}
+.events-subtitle{font-size:16px;}
+.events-meta{font-size:14px;}
+.events-meta strong{display:none;}
+ul.events-speakers{display:none;}
+.events-content{min-height:auto!important;padding:20px 0 0px 0;}
+.events-slide-inner{min-height:auto;}
+.events-slide:nth-child(2) .events-slide-inner {background-size: 160% !important;}
+.virtual-symposium {padding: 70px 0 0 0;}
+.events-slide:nth-child(1) .events-slide-inner {background-size: 90% !important;}
+}
+@media (max-width: 480px){
+.hero-cta{gap:20px;margin:10px 0 30px;}
+.nutrition-heading{font-size:34px;line-height:1.3;}
+.nutrition-section{background-size:320px;opacity:1;}
+.nutrition-section::after{display:none;}
+.nutrition-btn{font-size:18px;padding:9px 22px;}
+.nutrition-icon{width:56px;height:56px;}
+.featured-products-heading{font-size:24px;}
+.redefining-section{padding:0px 16px 40px;}
+.soil-consistency-section{padding:40px 16px;}
+.soil-title{font-size:28px;}
+.soil-stat-desc{font-size:16px;}
+.field-visual-section{padding-bottom:60px;}
+.field-image-container img{height:290px;}
+.events-section{padding:20px 16px;}
+.events-heading{font-size:24px;}
+.practitioner-title{font-size:24px;}
+.practitioner-text{font-size:18px;}
+.backtotop-section{padding:15px 16px 25px;}
+.backtotop-link{font-size:16px;}
+}
+@media (max-width: 479px){
+.featured-slide.children-pro .featured-slide-inner{background-size:95%;}
+.events-title{font-size:21px;}
+.events-subtitle{font-size:14px;}
+.events-meta{font-size:13px;}
+.events-content{padding:20px 0 0px 0;}
+.virtual-symposium {padding: 10px 0 0 0;}
+.events-slide:nth-child(2) .events-slide-inner {background-size: 110% !important;}
+.whole-person-approach {margin: 10px 0 0 0;gap: 20px;}
+.whole-person-approach .metabolic-care p.session-date {font-size: 16px;}
+.virtual-section .symposium-txt p {font-size: 14px;}
+.events-slide:nth-child(1) .events-slide-inner {background-size: 75% !important;}
+}
+@media (max-width: 413px){
+.featured-title{font-size:22px;}
+.events-slide-inner{padding:10px 35px;}
+.events-slide:nth-child(1) .events-slide-inner {background-size: 80% !important;}
+}
+@media (max-width: 389px){
+.hero-title{font-size:36px;}
+}
+@media (max-width: 359px){
+.events-slide-inner{padding:10px 20px;}
+.events-slide:nth-child(1) .events-slide-inner {background-size: 90% !important;}
+}
