@@ -1,0 +1,107 @@
+<section class="full-width-screen">
+  <div class="bg-beige vs-bg">
+    <div class="sp-container-wrapper">
+      <h2 class="vs-section-title font-ivy-presto-headline">Upcoming educational events</h2>
+      <div class="vs">
+        <input type="radio" name="vslide" id="vs1" checked class="vs-radio"/>
+        <!-- Add more slides: <input type="radio" name="vslide" id="vs2" class="vs-radio"/> -->
+
+        <div class="vs-track">
+          <!-- Vet Slide 1 -->
+          <div class="vs-slide">
+            <img src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/55879/6ad8874f519cc659293516-LN07337-27-Vet-Virtual-SP2x.png" alt="" fetchpriority="high" class="vs-img"/>
+            <div class="vs-inner">
+              <div class="vs-content">
+                <p class="vs-eyebrow">Veterinary</p>
+                <h2 class="vs-title font-ivy-presto-headline">The Longevity Playbook:</h2>
+                <p class="vs-title-sub">Science, Strategy, and Solutions</p>
+                <a href="#" class="vs-cta">Register Today!</a>
+                <p class="vs-note">^This program is pending RACE approval for 4 hours of continuing education credit in jurisdictions that recognize RACE for approval for veterinarians and credentialed veterinary technicians.</p>
+                <img src="/media/cache/attachment/filter/wysiwyg_original/87ce74c18aefc3f765aae166bfe23016/55880/6ad887622d402380828364-vet-sliderCE.png" alt="4 CE Credits^" class="vs-badge"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          When more slides are added, add arrows + dots here (same pattern as slider.html):
+          <label for="vs2" aria-label="Next slide" class="vs-arrow vs-next n1"></label> ...
+          <nav class="vs-dots"><label for="vs1" aria-label="Go to slide 1" class="vs-dot"></label> ...</nav>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.bg-beige{background-color:#F7F6F0;padding:40px 20px 60px;}
+.bg-beige.vs-bg{background-color:#f1efe6;}
+.vs-section-title{text-align:center;color:#00573D;font-weight:400;margin:0 0 clamp(24px, 3vw, 36px) 0;letter-spacing:-0.3px;font-size:39px;}
+.vs{position:relative;overflow:hidden;width:100%;max-width:1540px;aspect-ratio:1388 / 288;min-height:340px;background:#9BD25A;border-radius:20px;margin:0 auto;}
+.vs *{box-sizing:border-box;}
+.vs-radio{position:absolute;width:1px;height:1px;opacity:0;}
+.vs-track{position:relative;display:grid;height:100%;min-height:inherit;}
+.vs-slide{position:relative;grid-area:1 / 1;min-height:inherit;display:flex;align-items:center;opacity:0;visibility:hidden;transition:opacity 0.7s ease, visibility 0s 0.7s;}
+
+/* Slide Activation Selectors */
+#vs1:checked~.vs-track .vs-slide:nth-child(1),#vs2:checked~.vs-track .vs-slide:nth-child(2),#vs3:checked~.vs-track .vs-slide:nth-child(3),#vs4:checked~.vs-track .vs-slide:nth-child(4){opacity:1;visibility:visible;z-index:1;transition:opacity 0.7s ease;}
+.vs-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.vs-inner{position:relative;z-index:2;width:100%;max-width:800px;margin:0 auto;padding:30px 20px 10px 20px;}
+.vs-content{position:relative;display:inline-block;max-width:480px;}
+.vs-eyebrow{margin:0 0 0px!important;color:#C4512F;font-size:28px;font-weight:800;line-height:1.1;letter-spacing:0;}
+.vs-title{margin:0 0 8px;color:#00573D;font-size:44px;font-weight:400;line-height:1.15;letter-spacing:0;}
+.vs-title-sub{margin:0 0 20px!important;color:#00573D;font-size:30px;font-weight:700;line-height:1.25;letter-spacing:0.2px;}
+.vs-cta{display:inline-block;padding:9px 20px;letter-spacing:0.3px;border-radius:30px;background:#00573D;color:#A0E870;font-weight:700;font-size:14px;text-decoration:none;transition:background 0.2s ease, color 0.2s ease;box-shadow:none;}
+.vs-cta:hover,.vs-cta:focus-visible{background:#A0E870;color:#00573D;}
+.vs-note{margin:18px 0 0!important;max-width:455px;color:#00573D;font-size:10px;line-height:1.5;letter-spacing:0.2px;}
+.vs-badge{position:absolute;top:-20px;left:calc(100% + 140px);width:78px;height:78px;display:block;}
+
+/* Media Queries */
+@media (prefers-reduced-motion: reduce){
+.vs-slide{transition:none;}
+}
+@media (max-width: 1200px){
+.vs-inner{max-width:100%;padding-left:85px;padding-right:85px;}
+}
+@media (max-width: 900px){
+.vs{aspect-ratio:auto;min-height:320px;}
+.vs-eyebrow{font-size:26px;}
+.vs-inner{padding:32px 24px;}
+.vs-content{max-width:100%;padding-right:100px;}
+.vs-badge{top:0;left:auto;right:0;width:76px;height:76px;}
+.vs-title{font-size:36px;}
+.vs-title-sub{font-size:22px;}
+}
+@media (max-width: 600px){
+.bg-beige{padding:25px 12px 40px;}
+.vs{min-height:290px;border-radius:12px;}
+.vs-inner{padding:24px 20px 28px;}
+.vs-content{display:flex;flex-direction:column;align-items:flex-start;padding-right:0;}
+.vs-badge{width:64px;height:64px;margin:0 0 14px;order:-1;}
+.vs-eyebrow{font-size:22px;}
+.vs-title{font-size:28px;}
+.vs-title-sub{font-size:18px;margin-bottom:18px!important;}
+.vs-cta{font-size:14px;}
+.vs-note{font-size:10px;max-width:100%;}
+.vs-img{object-position:30%;}
+}
+@media (max-width: 480px){
+.vs-badge{top:-15px;}
+}
+@media (max-width: 425px){
+  .vs-title{font-size:24px;}  
+}
+@media (max-width: 400px){
+.vs-title{font-size:24px;}
+.vs-title-sub{font-size:16px;}
+.vs-inner{padding-left:16px;padding-right:16px;}
+}
+@media (max-width: 360px){
+    .vs-badge {
+        width: 54px;
+        height: 54px;}
+        .vs-title-sub{
+            margin-bottom: 10px!important;
+        }
+}
+</style>
